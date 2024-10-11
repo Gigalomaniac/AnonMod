@@ -1,0 +1,224 @@
+{
+  "smartPhone": {
+    "NAME": "Anon's Smartphone",
+    "FLAVOR": "A smartphone, always carried with her, whether in England or back home.",
+    "DESCRIPTIONS": [
+      "A phone used to record daily life. You can view #yMusic Scores.",
+      "anonmod: Music Score"
+    ]
+  },
+  "Guitar": {
+    "NAME": "Guitar",
+    "FLAVOR": "Anon's guitar, occasionally brings inspiration to its owner.",
+    "DESCRIPTIONS": [
+      "At the start of the performance, gain 1 layer of Variation."
+    ]
+  },
+  "Tomori_relic": {
+    "NAME": "Tomori's Band-Aid",
+    "FLAVOR": "A band-aid with a cute little penguin drawing.",
+    "DESCRIPTIONS": [
+      "At the start of the battle, gain Tomori's help NL Gravity(3)."
+    ]
+  },
+  "Soyorin_relic": {
+    "NAME": "Soyorin's Black Tea",
+    "FLAVOR": "The black tea that Soyorin likes, it tastes very familiar.",
+    "DESCRIPTIONS": [
+      "At the start of the battle, gain Soyorin's help NL Gravity(2)."
+    ]
+  },
+  "Sakiko_relic": {
+    "NAME": "Sakiko's Headband",
+    "FLAVOR": "A black and white headband.",
+    "DESCRIPTIONS": [
+      "At the start of the battle, gain Sakiko's help NL Gravity(1)."
+    ]
+  },
+  "Rana_relic": {
+    "NAME": "Rana's Parfait Cup",
+    "FLAVOR": "A parfait cup used by RiNG, how did it end up here?",
+    "DESCRIPTIONS": [
+      "At the start of the battle, gain Rana's help NL Gravity(-1)."
+    ]
+  },
+  "Rikki_relic": {
+    "NAME": "Rikki's Drumsticks",
+    "FLAVOR": "One of the essentials for a drummer, not provided by the venue.",
+    "DESCRIPTIONS": [
+      "At the start of the battle, gain Rikki's help NL Gravity(0)."
+    ]
+  },
+  "Mutsumi_relic": {
+    "NAME": "Mutsumi's Cucumber",
+    "FLAVOR": "A cucumber, it looks very appealing.",
+    "DESCRIPTIONS": [
+      "At the start of the battle, gain Mutsumi's help NL Gravity(-2)."
+    ]
+  },
+  "Anon_determination": {
+    "NAME": "MyGO!!!!!'s Emblem",
+    "FLAVOR": "Engraved with the memories of MyGO!!!!!, Chihaya Anon's determination.",
+    "DESCRIPTIONS": [
+      "The [Key] to the true ending."
+    ]
+  },
+  "Crychic": {
+    "NAME": "Crychic's Emblem",
+    "FLAVOR": "Memories that do not belong to you.",
+    "DESCRIPTIONS": [
+      "The [Key] to another ending."
+    ]
+  },
+  "Inner": {
+    "NAME": "InnerFavillae's Emblem",
+    "FLAVOR": "The price you have paid for this, now is the time of reckoning.",
+    "DESCRIPTIONS": [
+      "A non-existent badge NL The [Key] to an unknown ending."
+    ]
+  },
+  "GuitarWhiteAnon": {
+    "NAME": "Guitar - Asakusa and Slight Dew",
+    "FLAVOR": "The star-silver one is a limited edition guitar that Anon bought in London, which has accompanied her through the most shining moments of her life.",
+    "DESCRIPTIONS": [
+      "When you gain Gravity/ Shine, you also gain 1 layer of Shine/Gravity. When filled with rhythm, there is a chance to trigger 'Re-Production' (the probability increases with the number of battles, 1% for normal battles, 2% for elite battles, and 4% for boss battles)."
+    ]
+  },
+  "StarAnonGuitar": {
+    "NAME": "Anon's Guitar",
+    "FLAVOR": "Your most beloved guitar. To prevent you from getting lost, she personally customized an anchor point for you.",
+    "DESCRIPTIONS": [
+      "It can perform a time reversal, returning to the finale of this journey. Use with the right mouse button."
+    ]
+  },
+  "StarAnonPocketWatch": {
+    "NAME": "Silver Pocket Watch",
+    "FLAVOR": "It's time to set everything right!",
+    "DESCRIPTIONS": [
+      "It is now responding to your strongest desire, and you will need its help at the end of this journey."
+    ]
+  },
+  "EliteAshAnonKey": {
+    "NAME": "Empty Guitar Case",
+    "FLAVOR": "No matter when and where, they are always by your side.",
+    "DESCRIPTIONS": [
+      "It transforms your next non-elite fight into a special event."
+    ]
+  },
+  "FirstHalfKey": {
+    "NAME": "One Key",
+    "FLAVOR": "A key that appears to have a pair, unusable without the other half.",
+    "DESCRIPTIONS": [
+      "Just a key, why does she have it in her hand?"
+    ]
+  },
+  "SecondHalfKey": {
+    "NAME": "The Other Key",
+    "FLAVOR": "She hid her clues in that song, go and open a new chapter!",
+    "DESCRIPTIONS": [
+      "You vaguely recall something, a sense of familiarity surrounds your heart and fingertips."
+    ]
+  },
+  "Mana_relic": {
+    "NAME": "Mana's Donut",
+    "FLAVOR": "“So, Captain, try a little harder!”",
+    "DESCRIPTIONS": [
+      "At the start of battle, gain Mana's help NL Gravity(0)."
+    ]
+  },
+  "LastBullet": {
+    "NAME": "Pride",
+    "FLAVOR": "“The last bullet is for oneself...”",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain [E]. Whenever you play a card, increase the count by #y1. When the count exceeds #y600, lock your maximum HP to #y1."
+    ]
+  },
+  "FanService": {
+    "NAME": "Fan Service",
+    "FLAVOR": " ——Congratulations, this is a reward only for long-time fans",
+    "DESCRIPTIONS": [
+      "If you play fewer than 26 cards by the end of combat, randomly Upgrade a card in your deck."
+    ]
+  },
+  "FrenchFries": {
+    "NAME": "French Fries",
+    "FLAVOR": "Ksm's favorite fries",
+    "DESCRIPTIONS": [
+      "At the start of your turn, if it is a performance turn, gain an additional #y1 layer of Shine."
+    ]
+  },
+  "Gig": {
+    "NAME": "The Hope of Greater Kindness",
+    "FLAVOR": "Wishing you a joyful gameplay experience",
+    "DESCRIPTIONS": [
+      "Right-click to use: Increase the count by 1. Defeat all current enemies."
+    ]
+  },
+  "EnergyBlessing": {
+    "NAME": "Energy Blessing",
+    "FLAVOR": "The determination to protect others",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain [E] [E] [E]."
+    ]
+  },
+  "hpBlessing": {
+    "NAME": "HP Blessing",
+    "FLAVOR": "The courage to survive",
+    "DESCRIPTIONS": [
+      "Upon pickup, your maximum HP is multiplied by 100, and you fully recover after each combat."
+    ]
+  },"IdeaBlessing": {
+  "NAME": "Potion Blessing",
+  "FLAVOR": "The rationality that stands out",
+  "DESCRIPTIONS": [
+    "At the end of each combat, fill all empty potion slots with Idea Potions."
+  ]
+},
+  "AiHeartBlessing": {
+    "NAME": "Power Blessing",
+    "FLAVOR": "The belief that strides with pride",
+    "DESCRIPTIONS": [
+      "Whenever you obtain a card, upgrade it. At the start of your turn, gain three layers of Artifact."
+    ]
+  },
+  "Mashiro": {
+    "NAME": "Mashiro's Mushroom",
+    "FLAVOR": "Wait, did something just run past?",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain [E]. You feel a bit dizzy and might experience strange hallucinations."
+    ]
+  },
+  "StarAnonBike": {
+    "NAME": "Anon's Bicycle",
+    "FLAVOR": "A beloved item second only to the guitar.",
+    "DESCRIPTIONS": [
+      "Once per act, you may perform a leap in time and space, allowing you to enter any floor within the first five floors of the current act."
+    ]
+  },
+  "PositionZero": {
+    "NAME": "Position Zero",
+    "FLAVOR": "No matter how many times, I will definitely arrive...",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain [E]. At the start of combat, gain three times the amount of Strength, Agility, and Shine; when dying, return to the stage before, and increase the count by 1."
+    ]
+  },
+  "yakusokuNoBasho": {
+    "NAME": "Revue Invitation",
+    "FLAVOR": "That tiny hope, longing for the small miracle to come true.",
+    "DESCRIPTIONS": [
+      "Right-click to use, proceed to the stage of promise."
+    ]
+  },
+  "relic.SpiritFire": {
+    "NAME": "Spirit Ember",
+    "FLAVOR": "The small fire is delighted.",
+    "DESCRIPTIONS": [
+      "You can battle at rest sites.",
+      "Combat",
+      "Battle to obtain rewards.",
+      "Ruby Key",
+      "Restore %d HP",
+      "You cannot pick this up because the loadout mod is enabled."
+    ]
+  }
+}

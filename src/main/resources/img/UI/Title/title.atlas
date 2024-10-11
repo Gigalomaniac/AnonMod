@@ -1,0 +1,12 @@
+bangdreamStar.png
+size: 1920, 1440
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+title1
+  rotate: false
+  xy: 0, 0
+  size: 1920, 1440
+  orig: 1920, 1440
+  offset: 0, 0
+  index: -1

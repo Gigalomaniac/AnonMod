@@ -1,0 +1,80 @@
+[
+  {
+    "NAMES": [
+      "Variation"
+    ],
+    "DESCRIPTION": "When you have #yVariation, the cards you play are considered to be of the same type as the current rhythm."
+  },
+  {
+    "NAMES": [
+      "Idea"
+    ],
+    "DESCRIPTION": "Discover 1 card and add it to your hand. This card costs 0 for the turn and is Exhausted after use."
+  },
+  {
+    "NAMES": [
+      "Rhythm"
+    ],
+    "DESCRIPTION": "Whenever you play a card, gain a layer of the card type's #yRhythm. NL Playing a card of a different type from the current #yRhythm will clear the current #yRhythm. NL When you have 7 layers of #yRhythm, spend 7 layers of #yRhythm to gain an extra turn and enter the #yPerformance state!"
+  },
+  {
+    "NAMES": [
+      "Gravity"
+    ],
+    "DESCRIPTION": "For each layer of #yGravity you have, damage received is increased by 5%."
+  },
+  {
+    "NAMES": [
+      "Shine"
+    ],
+    "DESCRIPTION": "Gain 1 layer of #yShine. (Shine gives some of your cards additional effects.)"
+  },
+  {
+    "NAMES": [
+      "Performance"
+    ],
+    "DESCRIPTION": "Enter an additional turn and trigger the #yPerformance effect of the Live song. The Performance turn inherits the remaining Energy from the previous turn and gains an additional [E]."
+  },
+  {
+    "NAMES": [
+      "Preparing"
+    ],
+    "DESCRIPTION": "Cannot enter Performance."
+  },
+  {
+    "NAMES": [
+      "Music Score"
+    ],
+    "DESCRIPTION": "Namonaki: Clear negative effects and gain 20 Block. NL Senzaihyoumei: Gain 2 Strength and 2 Agility. NL Hekitenbansou: Gain [E] [E] and draw 2 cards. NL Kiritorisen: Gain 2 new Ideas. NL A Hitoshizuku: Apply 5 stacks of Weak and Vulnerable to all enemies. NL Silhouette Dance: Gain Block equal to the unblocked damage dealt. NL Haruhikage: Stun all enemies. NL Utakotoba: All your attack damage is doubled. NL Otoichie: Gain a Barrier and gain 20 Block. NL kikaikokoro: Gain 3 artifact."
+  },
+  {
+    "NAMES": [
+      "《girl's reboot》"
+    ],
+    "DESCRIPTION": "For every performance of 'The Triple Fugue of Void and Whiteness', gain +1 Strength and +1 Agility. If the number of Gravity and Shimmer cards is unequal, there's a 50% chance that 'I Love You What's It To You?' will draw one less card and a 50% chance to trigger one less cost reduction when played"
+  },
+  {
+    "NAMES": [
+      "《WorldLegacy》"
+    ],
+    "DESCRIPTION": "For every guitar performance of '-Asakusa & Miru-' from ‘The Triple Fugue of Void and Whiteness’, remove all 'Preparation' statuses. If all three Revues have been performed, gain a premonition of 5 every time you obtain a Performance Readiness."
+  },
+  {
+    "NAMES": [
+      "《mythology》"
+    ],
+    "DESCRIPTION": " Every performance of 'The Triple Fugue of Void and Whiteness' applies 2 layers of Gravity and 4 layers of Bind to all enemies and allies on the field. When 'Destroy You, What's It To You?' is performed, no Artifacts are gained."
+  },
+  {
+    "NAMES": [
+      "Signature"
+    ],
+    "DESCRIPTION": "When a Signature is on the field, it grants you a Barrier."
+  },
+  {
+    "NAMES": [
+      "lonely"
+    ],
+    "DESCRIPTION": "When there is only one song in the playlist, trigger an additional effect."
+  }
+]

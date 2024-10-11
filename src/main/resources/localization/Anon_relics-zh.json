@@ -1,0 +1,225 @@
+{
+  "smartPhone": {
+    "NAME": "爱音的手机",
+    "FLAVOR": "手机，无论是在英国还是回来都随身携带呢",
+    "DESCRIPTIONS": [
+      "用来记录日常的手机。可以查看 #y乐谱 。",
+      " anonmod:乐谱 "
+    ]
+  },
+  "Guitar": {
+    "NAME": "吉他",
+    "FLAVOR": "爱音的吉他，偶尔能为它的主人带来灵感",
+    "DESCRIPTIONS": [
+      "演出开始时，获得1层变奏。"
+    ]
+  },
+  "Tomori_relic": {
+    "NAME": "灯的创口贴",
+    "FLAVOR": "画着可爱小企鹅的创口贴。",
+    "DESCRIPTIONS": [
+      "战斗开始时，获得灯的帮助 NL 重力(3)。"
+    ]
+  },
+  "Soyorin_relic": {
+    "NAME": "爽世的红茶",
+    "FLAVOR": "爽世喜欢的红茶，味道很熟悉。",
+    "DESCRIPTIONS": [
+      "战斗开始时，获得爽世的帮助 NL 重力(2)。"
+    ]
+  },
+  "Sakiko_relic": {
+    "NAME": "祥子的发带",
+    "FLAVOR": "白黑相间的发带。",
+    "DESCRIPTIONS": [
+      "战斗开始时，获得祥子的帮助 NL 重力(1)。"
+    ]
+  },
+  "Rana_relic": {
+    "NAME": "乐奈的芭菲杯子",
+    "FLAVOR": "RiNG使用的芭菲杯子，怎么会出现在这里？",
+    "DESCRIPTIONS": [
+      "战斗开始时，获得乐奈的帮助 NL 重力(0)。"
+    ]
+  },
+  "Rikki_relic": {
+    "NAME": "立希 的鼓棒",
+    "FLAVOR": "鼓手的必备品之一，演出场地不提供。",
+    "DESCRIPTIONS": [
+      "战斗开始时，获得立希的帮助 NL 重力(0)。"
+    ]
+  },
+  "Mutsumi_relic": {
+    "NAME": "睦的小黄瓜",
+    "FLAVOR": "小黄瓜，卖相很好的样子。",
+    "DESCRIPTIONS": [
+      "战斗开始时，获得睦的帮助 NL 重力(-1)。"
+    ]
+  },
+  "Anon_determination": {
+    "NAME": "MyGO!!!!!的队徽",
+    "FLAVOR": "印刻着MyGO!!!!!的回忆，千早爱音的决心。",
+    "DESCRIPTIONS": [
+      "通往真结局的【钥匙】"
+    ]
+  },
+  "Crychic": {
+    "NAME": "Crychic的队徽",
+    "FLAVOR": "不属于你的记忆。",
+    "DESCRIPTIONS": [
+      "通往另一个结局的【钥匙】"
+    ]
+  },
+  "Inner": {
+    "NAME": "InnerFavillae的队徽",
+    "FLAVOR": "你曾为此付出的代价，现在已是清算时刻。",
+    "DESCRIPTIONS": [
+      "不曾存在的徽章 NL 通往未知结局的【钥匙】"
+    ]
+  },
+  "GuitarWhiteAnon": {
+    "NAME": "吉他-浅草&微露",
+    "FLAVOR": "星银色的一把是爱音在伦敦另外买的限量版吉他，曾伴她走过最闪耀的人生。",
+    "DESCRIPTIONS": [
+      "你获得重力/闪耀时同时也获得1层闪耀/重力。充满节奏时有概率触发“再生产”（概率随着战斗次数的增加而提升，普通战1%，精英战2%，boss战4%）。"
+    ]
+  },
+  "StarAnonGuitar": {
+    "NAME": "？爱音的吉他",
+    "FLAVOR": "你最心爱的吉他。为了防止你迷失，她亲自为你定制了锚点。",
+    "DESCRIPTIONS": [
+      "能够进行一次时间回退，返回到这场旅途的终幕之前。右键使用。"
+    ]
+  },
+  "StarAnonPocketWatch": {
+    "NAME": "银色腕表",
+    "FLAVOR": "是时候，让一切回归正轨了！",
+    "DESCRIPTIONS": [
+      "它现在正回应着你最强烈的愿望，在这场旅途的终点你会需要它的帮助。"
+    ]
+  },
+  "EliteAshAnonKey": {
+    "NAME": "空空的吉他箱子",
+    "FLAVOR": "无论何时何地，她们永远在你身边。",
+    "DESCRIPTIONS": [
+      "将你的下个非精英战斗变成特殊事件。"
+    ]
+  },
+  "FirstHalfKey": {
+    "NAME": "一把钥匙",
+    "FLAVOR": "看上应成配对的钥匙，缺少另一把无法使用。",
+    "DESCRIPTIONS": [
+      "只是一把钥匙，为什么会在她手里呢。"
+    ]
+  },
+  "SecondHalfKey": {
+    "NAME": "另外一把钥匙",
+    "FLAVOR": "她将自己的线索藏在了那首歌里，去打开新的篇章吧！",
+    "DESCRIPTIONS": [
+      "你隐约能回想起什么，熟悉的感觉围绕着心头还有指尖。"
+    ]
+  },
+  "Mana_relic": {
+    "NAME": "真奈的甜甜圈",
+    "FLAVOR": "“所以，队长再努力一下吧！”",
+    "DESCRIPTIONS": [
+      "战斗开始时，获得真奈的帮助 NL 重力(0)。"
+    ]
+  },
+  "LastBullet": {
+    "NAME": "骄傲",
+    "FLAVOR": "“最后一颗子弹，留给自己……”",
+    "DESCRIPTIONS": [
+      "在回合开始时获得 [E] 。每当使用一张牌，计数加 #y1 。计数大于 #y600 将你的最大生命锁定为 #y1 。"
+    ]
+  },
+  "FanService": {
+    "NAME": "粉丝福利",
+    "FLAVOR": " ——恭喜你，这是仅有老粉丝才能得到的奖励",
+    "DESCRIPTIONS": [
+      "如果你在战斗结束时打出的牌少于26张，则随机 升级 你牌组中的一张牌 。"
+    ]
+  },
+  "FrenchFries": {
+    "NAME": "薯条",
+    "FLAVOR": "ksm喜欢吃的薯条",
+    "DESCRIPTIONS": [
+      "回合开始时如果是演奏回合，额外给予 #y1 层 闪耀 。"
+    ]
+  },
+  "Gig": {
+    "NAME": "愈加善良的希望",
+    "FLAVOR": "祝你玩的开心",
+    "DESCRIPTIONS": [
+      "右键使用计数+1，消灭当前所有敌人。"
+    ]
+  },
+  "EnergyBlessing": {
+  "NAME": "能量祝福",
+  "FLAVOR": "守护他人的决意",
+  "DESCRIPTIONS": [
+    "在回合开始时获得 [E] [E] [E] 。"
+  ]
+},
+  "hpBlessing": {
+    "NAME": "体力祝福",
+    "FLAVOR": "生存下去的勇气",
+    "DESCRIPTIONS": [
+      "拾取时你的最大生命值增加至100倍，并且每场战斗后完全恢复）"
+    ]
+  },
+  "IdeaBlessing": {
+    "NAME": "药水祝福",
+    "FLAVOR": "卓尔不凡的理性",
+    "DESCRIPTIONS": [
+      "每场战斗结束，用点子药水填满所有空的药水栏位。"
+    ]
+  },
+  "AiHeartBlessing": {
+    "NAME": "能力祝福",
+    "FLAVOR": "昂首阔步的信念",
+    "DESCRIPTIONS": [
+      "每当你获得牌时，将其 升级 。回合开始时，获得三层 人工制品 。"
+    ]
+  },
+  "Mashiro": {
+    "NAME": "仓田真白的菌子",
+    "FLAVOR": "“等等，有什么东西跑过去了？”",
+    "DESCRIPTIONS": [
+      "在回合开始时获得 [E] ，你有点头晕，可能会产生奇怪的幻觉 。"
+    ]
+  },
+  "StarAnonBike": {
+    "NAME": "AnonBicycle",
+    "FLAVOR": "不亚于吉他的心爱之物。",
+    "DESCRIPTIONS": [
+      "每章节限一次，可以进行一次时间和空间上的跳跃，可以进入当前章节前面五层以内前楼层。"
+    ]
+  },
+  "PositionZero": {
+    "NAME": "PositionZero1",
+    "FLAVOR": "无论多少次，我一定会到达……",
+    "DESCRIPTIONS": [
+      "在回合开始时获得 [E] 。 战斗开始时，获得3倍点数的 力量 , 敏捷 和 闪耀 ，死亡时回到舞台前，计数+1。"
+    ]
+  },
+  "yakusokuNoBasho": {
+    "NAME": "Revue邀请函",
+    "FLAVOR": "那微小的希望，希冀着那小小的奇迹能够实现。",
+    "DESCRIPTIONS": [
+      "右键使用，前往约定的舞台。"
+    ]
+  },
+  "relic.SpiritFire": {
+  "NAME": "精神小火",
+  "FLAVOR": "小火它很高兴。",
+  "DESCRIPTIONS": [
+    "你可以在休息处战斗。",
+    "战斗",
+    "战斗以获得奖励。",
+    "红宝石钥匙",
+    "回复 %d 点生命",
+    "你无法拾起这个，因为启用了loadout mod"
+  ]
+}
+}

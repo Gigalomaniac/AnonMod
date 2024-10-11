@@ -1,0 +1,600 @@
+{
+  "Strike_Anon": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deals !D! damage."
+  },
+  "Defend_Anon": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "SavePower": {
+    "NAME": "Conserve Energy",
+    "DESCRIPTION": "Retain. NL Your next Attack card deals !M! additional damage."
+  },
+  "Printf": {
+    "NAME": "Print",
+    "DESCRIPTION": "Deals !D! damage. NL Add a Conserve Energy to your hand."
+  },
+  "MyInflame": {
+    "NAME": "Focus",
+    "DESCRIPTION": "Gain !M! Strength and !M! Agility."
+  },
+  "Tomori": {
+    "NAME": "Tomori's Confusion",
+    "DESCRIPTION": "Discard all cards in your hand. NL For each card discarded, add a Tiny Moment to your hand. NL Gain 'In Preparation' status. NL Retain and Exhaust.",
+    "UPGRADE_DESCRIPTION": "Discard all cards in your hand. NL For each card discarded, add an Upgraded Tiny Moment to your hand. NL Gain 'In Preparation' status. NL Retain and Exhaust."
+  },
+  "Soyorin": {
+    "NAME": "Soyorin's Enticement",
+    "DESCRIPTION": "Apply !M! stacks of Bind (twice the amount of your Gravity). Gain a number of Stacked Armor equal to the Bind stacks. NL Retain and Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply !M! stacks of Bind (four times the amount of your Gravity). Gain a number of Stacked Armor equal to the Bind stacks. NL Retain and Exhaust."
+  },
+  "Rikki": {
+    "NAME": "Rikki's Persistence",
+    "DESCRIPTION": "Switch to Rhythm. NL Gain !M! stacks of Variation. NL This card is not affected by Rhythm. NL Retain and Exhaust."
+  },
+  "Rana": {
+    "NAME": "Rana's Belonging",
+    "DESCRIPTION": "Deal !D! damage. NL Add 2 Special Parfaits to your draw pile. NL Retain and Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add 3 Upgraded Special Parfaits to your draw pile. NL Retain and Exhaust."
+  },
+  "Sakiko": {
+    "NAME": "Sakiko's Salary",
+    "DESCRIPTION": "Gain 20 Gold. NL Retain and Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain 20 Gold. NL Apply !M! stacks of Weak and Vulnerable to all enemies (four times the amount of your Gravity). NL Retain and Exhaust."
+  },
+  "Mutsumi": {
+    "NAME": "Mutsumi's ??",
+    "DESCRIPTION": "Deal !D! damage. NL Stun the target for 1 turn (does not work on Bosses). NL Retain and Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Stun the target for 2 turns (does not work on Bosses). NL Retain and Exhaust."
+  },
+  "GiveNote": {
+    "NAME": "Note Buff",
+    "DESCRIPTION": ""
+  },
+  "BasicSongs": {
+    "NAME": "Basic Songs",
+    "DESCRIPTION": "Choose one from Nameless Voice, Potential Manifest, and Azure Skies to play. This card ignores Rhythm.",
+    "UPGRADE_DESCRIPTION": "Choose one from Nameless Voice, Potential Manifest, and Azure Skies to play. This card ignores Rhythm and is Retained."
+  },
+  "OtoichieSongs": {
+    "NAME": "Melodious Gathering",
+    "DESCRIPTION": "Draw 1 card. NL Play: Melodious Gathering. NL When played, gain a Barrier and 20 Block. This card ignores Rhythm."
+  },
+  "NamonakiSongs": {
+    "NAME": "Namonaki",
+    "DESCRIPTION": "Play: Namonaki. NL When played, clear all negative effects and gain 20 Block."
+  },
+  "HaruhikageSongs": {
+    "NAME": "Haruhikage",
+    "DESCRIPTION": "Draw 1 card. NL Play: Haruhikage. NL When played, stun all enemies. This card ignores Rhythm (some may not want to listen...). NL Exhaust."
+  },
+  "HekitenbansouSongs": {
+    "NAME": "Hekitenbansou",
+    "DESCRIPTION": "Play: Hekitenbansou. NL When played, gain [E] [E] and draw 2 cards."
+  },
+  "UtakotobaSongs": {
+    "NAME": "Utakotoba",
+    "DESCRIPTION": "Draw 1 card. NL Play: Utakotoba. NL When played, all your attack damage is doubled. This card ignores Rhythm."
+  },
+  "KiritorisenSongs": {
+    "NAME": "Kiritorisen",
+    "DESCRIPTION": "Draw 1 card. NL Play: Kiritorisen. NL When played, gain 2 new Ideas. This card ignores Rhythm."
+  },
+  "HitoshizukuSongs": {
+    "NAME": "itoshizuku",
+    "DESCRIPTION": "Draw 1 card. NL Play: itoshizuku. NL When played, apply 5 stacks of Weak and Vulnerable to all enemies. This card ignores Rhythm."
+  },
+  "SilhouetteSongs": {
+    "NAME": "Silhouette Dance",
+    "DESCRIPTION": "Draw 1 card. NL Play: Silhouette Dance. NL When played, gain Block equal to the unblocked damage dealt. This card ignores Rhythm."
+  },
+  "SenzaihyoumeiSongs": {
+    "NAME": "Senzaihyoumei",
+    "DESCRIPTION": "Play: Senzaihyoumei. NL When played, gain 2 Strength and 2 Agility."
+  },
+  "RestOrPractice": {
+    "NAME": "Deferral",
+    "DESCRIPTION": "Deal !D! damage once. If the target's intent is not to attack, deal damage again."
+  },
+  "ChangeToAttackSongs": {
+    "NAME": "Switch to Attack Rhythm",
+    "DESCRIPTION": "Switch to Attack Rhythm."
+  },
+  "ChangeToSkillSongs": {
+    "NAME": "Switch to Skill Rhythm",
+    "DESCRIPTION": "Switch to Skill Rhythm."
+  },
+  "ChangeToPowerSongs": {
+    "NAME": "Switch to Power Rhythm",
+    "DESCRIPTION": "Switch to Power Rhythm."
+  },
+  "ChangeStateSongs": {
+    "NAME": "Switch Rhythm",
+    "DESCRIPTION": "Switch to a rhythm of your choice. NL This card is not affected by Rhythm.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Switch to a rhythm of your choice. NL This card is not affected by Rhythm."
+  },
+  "Minute": {
+    "NAME": "Tiny Moment",
+    "DESCRIPTION": "Draw 1 card. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Draw 1 card. NL Exhaust Retain."
+  },
+  "Idea": {
+    "NAME": "New Idea",
+    "DESCRIPTION": "Choose 1 of 3 random cards to add to your hand. NL This card's cost becomes 0 for the turn, gain Exhaust. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose 1 of 3 random cards to add to your hand. NL This card's cost becomes 0 for the turn, gain Exhaust."
+  },
+  "LittleExercise": {
+    "NAME": "Small Exercise",
+    "DESCRIPTION": "Deal !D! damage. Increase a *Tiny Moment* by 1 in your hand."
+  },
+  "Pafe": {
+    "NAME": "Special Parfait",
+    "DESCRIPTION": "Lose 10 Gold. NL Heal !M! HP. NL (Don't touch if you can't afford it). Exhaust.",
+    "UPGRADE_DESCRIPTION": "Heal !M! HP. NL (Someone has already paid for you). Exhaust."
+  },
+  "MindInflate": {
+    "NAME": "Inspiration Burst",
+    "DESCRIPTION": "Add X *Idea* cards to the draw pile, draw X more cards next turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add X+1 *Idea* cards to the draw pile, draw X+1 more cards next turn. NL Exhaust."
+  },
+  "HastyFinish": {
+    "NAME": "Hasty Conclusion",
+    "DESCRIPTION": "Exhaust all Rhythm. Deal !D! damage to all enemies for each Rhythm spent."
+  },
+  "VocalMe": {
+    "NAME": "I am So Dim",
+    "DESCRIPTION": "Apply !M! stacks of Weak to all enemies."
+  },
+  "UrgentPractice": {
+    "NAME": "Urgent Practice",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! stacks of Crescendo."
+  },
+  "EveryMinutes": {
+    "NAME": "A Lifetime Promise",
+    "DESCRIPTION": "Add !M! *Tiny Moments* to your hand."
+  },
+  "NoroshiSongs": {
+    "NAME": "Noroshi",
+    "DESCRIPTION": "Play: Noroshi. NL When played, apply 5 stacks of Weak and Vulnerable to all enemies. NL Draw 1 card."
+  },
+  "Release": {
+    "NAME": "Burst into Bloom",
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL If during the Play phase, double the damage."
+  },
+  "IdeaKing": {
+    "NAME": "Idea King",
+    "DESCRIPTION": "At the start of your turn, trigger Ideas. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, trigger Ideas."
+  },
+  "PassionPlay": {
+    "NAME": "Passionate Performance",
+    "DESCRIPTION": "Can only be used in Play state. NL Deal !D! damage to all enemies. NL Whenever this card is Retained, increase its damage by !M! for this combat. NL Retain."
+  },
+  "CurtainCall": {
+    "NAME": "Curtain Call",
+    "DESCRIPTION": "Can only be used in Play state. NL Deal !D! damage to all enemies. NL End your turn."
+  },
+  "Compressive": {
+    "NAME": "The Great Adversary",
+    "DESCRIPTION": "Gain !B! Block. NL For each enemy, gain an additional !M! Block."
+  },
+  "Gravity": {
+    "NAME": "Gravity Field",
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL (Deal 1 additional damage for each point of Gravity).",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to all enemies. NL (Deal 2 additional damage for each point of Gravity)."
+  },
+  "OnStage": {
+    "NAME": "On and Off Stage",
+    "DESCRIPTION": "Can only be used outside of Play state. NL Deal !D! damage. NL Retain your hand this turn."
+  },
+  "BetEverything": {
+    "NAME": "Bet It All",
+    "DESCRIPTION": "Empty your Rhythm. NL Enter Play state, end turn. NL Exhaust."
+  },
+  "Thinking": {
+    "NAME": "Thoughtful",
+    "DESCRIPTION": "This card cannot be Upgraded by this effect, cannot be played. NL When drawn, Upgrade all cards in your hand for this combat. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Cannot be played. NL When drawn, Upgrade all cards in your hand for this combat."
+  },
+  "BrainStorming": {
+    "NAME": "Brainstorming",
+    "DESCRIPTION": "Exit Play state, gain Preparing. Exhaust all cards in hand, for each, add an Idea to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Exit Play state, gain Preparing. Exhaust all cards in hand. NL For each, add an Idea to your hand. Gain an additional one. NL Exhaust."
+  },
+  "Absolute": {
+    "NAME": "Absolutely Smashed!",
+    "DESCRIPTION": "Deal !D! damage. NL Gain Variation equal to the damage dealt. NL Exhaust."
+  },
+  "PrePreparation": {
+    "NAME": "Pre-Show Preparation",
+    "DESCRIPTION": "At the start of each turn, draw !M! additional cards. NL If in Play state, gain an additional !M! [E]."
+  },
+  "ReadyExercise": {
+    "NAME": "Ready Exercise",
+    "DESCRIPTION": "Deal !D! damage. NL If Play has not started, gain [E]."
+  },
+  "ReLive": {
+    "NAME": "Re-Production",
+    "DESCRIPTION": "Remove 1 layer of Preparing, exit Play turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Remove 1 layer of Preparing effect, exit Play turn. NL Exhaust."
+  },
+  "allShing": {
+    "NAME": "Warmth and Light",
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL For each layer of Shine, deal an additional 3 damage. Current layers: !M!."
+  },
+  "PerfectPitch": {
+    "NAME": "Perfect Pitch",
+    "DESCRIPTION": "Switch to a rhythm of your choice, each time you choose a song, put this card back into your hand from the discard pile.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Switch to a rhythm of your choice. NL Each time you choose a song, put this card back into your hand from the discard pile."
+  },
+  "IBegYou": {
+    "NAME": "I Beg of You",
+    "DESCRIPTION": "Apply !M! stacks of Bind. For each layer of Gravity you have, apply an additional stack."
+  },
+  "Logic": {
+    "NAME": "Logic Break",
+    "DESCRIPTION": "Gain Block equal to the number of cards in your Exhaust pile + 4.",
+    "UPGRADE_DESCRIPTION": "Gain Block equal to the number of cards in your Exhaust pile + 7.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Gain !B! Block.)"
+    ]
+  },
+  "LittleStar": {
+    "NAME": "Tiny Star Shards",
+    "DESCRIPTION": "Randomly deal !D! damage to an enemy twice. NL For each layer of Shine you have, deal an additional instance, current layers: !M!."
+  },
+  "FinishBand": {
+    "NAME": "I'm Here to End the Band",
+    "DESCRIPTION": "Draw !M! cards. NL Clear your playlist, gain [E] for each song removed."
+  },
+  "Ha": {
+    "NAME": "Ha?",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !D! Block. NL Each time this card is played, its damage is permanently increased by 1 for the rest of the game. NL Exhaust."
+  },
+  "StarLight": {
+    "NAME": "Did You Shine Too?",
+    "DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL For each layer of Shine you have, draw an additional card, current layers: !M!."
+  },
+  "LongTimeVagetarian": {
+    "NAME": "Long-Term Vegetarian Consequences",
+    "DESCRIPTION": "Unleash Eternal Life: Gain 6 stacks of Multilayered Armor. NL For each layer of Idea King you have, unleash it an additional time (you currently have !M! layers).",
+    "UPGRADE_DESCRIPTION": "Unleash Eternal Life: Gain 8 stacks of Multilayered Armor. NL For each layer of Idea King you have, unleash it an additional time (you currently have !M! layers)."
+  },
+  "KiraKiraDokiDoki": {
+    "NAME": "KiraKiraDokiDoki",
+    "DESCRIPTION": "Gain !M! stacks of Shine."
+  },
+  "FutureVision": {
+    "NAME": "Future Vision",
+    "DESCRIPTION": "At the start of your turn, if in Play phase, NL foresee !M!."
+  },
+  "GravitationalCollapse": {
+    "NAME": "Gravitational Collapse",
+    "DESCRIPTION": "Deal !D! damage. NL Apply Gravity to the target equal to your own."
+  },
+  "DreamComeTrue": {
+    "NAME": "Dream Come True",
+    "DESCRIPTION": "Trigger the effect of the first song in your current Play playlist. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Trigger the effect of the first song in your current Play playlist."
+  },
+  "Traction": {
+    "NAME": "Traction of Gravity",
+    "DESCRIPTION": "Deal !D! damage. NL Gain [E] NL Gain 2 stacks of Gravity.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain [E] [E] NL Gain 2 stacks of Gravity."
+  },
+  "Simper": {
+    "NAME": "Simper",
+    "DESCRIPTION": "Gain !B! Block. NL If your band is formed, draw !M! cards; otherwise, draw next turn."
+  },
+  "LogicDeepDive": {
+    "NAME": "Deep Dive in Logic",
+    "DESCRIPTION": "Choose a card from your Exhaust pile, add it to your hand. This card's cost is now 0. (Some don't want overtime). NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose a card from your Exhaust pile, add it to your hand. This card's cost is now 0. (Some don't want overtime). NL Exhaust."
+  },
+  "Unite": {
+    "NAME": "United Assault!",
+    "DESCRIPTION": "Deal !M! damage to all enemies. NL For each band member, deal an additional !D! damage in a random way. NL (Rikki will secretly add 2 more points).",
+    "UPGRADE_DESCRIPTION": "Deal !M! damage to all enemies. NL For each band member, deal an additional !D! damage in a random way. NL (Rikki will secretly add 2 more points)."
+  },
+  "AreYourequired": {
+    "NAME": "Are You Needed?",
+    "DESCRIPTION": "Deal !D! damage. NL For each other enemy, gain [E]."
+  },
+  "FirstCosmicVelocity": {
+    "NAME": "First Cosmic Velocity",
+    "DESCRIPTION": "Reduce Gravity by !M!."
+  },
+  "Stars": {
+    "NAME": "Stars Align",
+    "DESCRIPTION": "Remove all Shine. NL For each layer, gain 1 Strength and 1 Dexterity. NL (You can gain a total of !M! points)."
+  },
+  "WholeLifeTime": {
+    "NAME": "A Lifetime...?",
+    "DESCRIPTION": "At the end of your turn, add a *Tiny Moment* to your draw pile and gain !M! Block. NL If Play has started, double the effect."
+  },
+  "Accomplice": {
+    "NAME": "Accomplice",
+    "DESCRIPTION": "Gain 3 Gravity and apply 3 Gravity to the target. NL Then apply Bind to the target equal to your current Gravity (you can now apply !M! damage).",
+    "UPGRADE_DESCRIPTION": "Gain 4 Gravity and apply 4 Gravity to the target. NL Then apply Bind to the target equal to your current Gravity (you can now apply !M! damage)."
+  },
+  "AnonTokyo": {
+    "NAME": "ANON TOKYO",
+    "DESCRIPTION": "Put all your Band member cards into your hand. NL Exhaust."
+  },
+  "WishYouHappiness": {
+    "NAME": "Wish You Happiness",
+    "DESCRIPTION": "Apply !M! stacks of Bind. NL Then deal damage equal to the Bind stacks on the target."
+  },
+  "Crychic": {
+    "NAME": "Crychic's Shadow",
+    "DESCRIPTION": "For each Crychic member in your band, apply 2 stacks of Bind. For each MyGO member, apply 1 stack of Gravity. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "For each Crychic member in your band, apply !M! stacks of Bind. For each MyGO member, apply 1 stack of Gravity. NL Exhaust."
+  },
+  "AmIRequired": {
+    "NAME": "Am I Required?",
+    "DESCRIPTION": "Gain !B! Block. NL Gain a number of Stacked Armor equal to your Gravity stacks."
+  },
+  "RiNGInvite": {
+    "NAME": "RiNG's Performance Support",
+    "DESCRIPTION": "Can only be used during the Play phase. NL Gain [E] [E]. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Can only be used during the Play phase. NL Gain [E] [E] [E]. NL Exhaust."
+  },
+  "Determination": {
+    "NAME": "Determination",
+    "DESCRIPTION": "At the start of your turn, gain [E] equal to the number of Shine stacks you have."
+  },
+  "Grin": {
+    "NAME": "Grin",
+    "DESCRIPTION": "Exhaust all Rhythm. NL Gain !B! Block for each stack of Rhythm. Draw !M! cards next turn."
+  },
+  "NeverSleepLate": {
+    "NAME": "Never Sleep Late",
+    "DESCRIPTION": "Gain Block equal to the total number of Bind stacks on all enemies.",
+    "UPGRADE_DESCRIPTION": "Gain Block equal to twice the total number of Bind stacks on all enemies."
+  },
+  "DespairBreak": {
+    "NAME": "Despair Break",
+    "DESCRIPTION": "Can only be used when in 'Preparing' and not in 'Performance Prep' state. Gain a number of Intangible equal to the number of band members (you can now gain !M! stacks). NL Exhaust."
+  },
+  "HopeBanish": {
+    "NAME": "Banish Hope",
+    "DESCRIPTION": "Double your Shine. NL Then deal damage equal to your Shine stacks. You now have !M! stacks of Shine. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Triple your Shine. NL Then deal damage equal to your Shine stacks. You now have !M! stacks of Shine. NL Exhaust."
+  },
+  "AstoundingWisdom": {
+    "NAME": "Astounding Wisdom",
+    "DESCRIPTION": "Your Ideas no longer Exhaust. NL Also, there's a hint of Spring Shadow."
+  },
+  "Reversion": {
+    "NAME": "Reverse Musician",
+    "DESCRIPTION": "Reverse your playlist. NL Gain Block equal to the number of songs (you can now gain !B! Block)."
+  },
+  "WhyShouldWePlay": {
+    "NAME": "Why Should We Play ___!",
+    "DESCRIPTION": "Remove your earliest song and deal !D! damage. NL Add an Idea to your hand. NL (If it's Spring Shadow, it will be re-added to the playlist)."
+  },
+  "LoveMeIFYouCan": {
+    "NAME": "Love Me 'IF' You Can",
+    "DESCRIPTION": "Make the next performance of Haiyine unable to generate effects."
+  },
+  "ItsChord": {
+    "NAME": "Chord Demonstration",
+    "DESCRIPTION": "Deal !D! damage once, for each card played this turn, gain 1 Variation. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage once, for each card played this turn, gain 1 Variation.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (You have played",
+      " cards this turn.)",
+      " cards this turn.)"
+    ]
+  },
+  "Sad": {
+    "NAME": "Sad",
+    "DESCRIPTION": "When entering the live stage, perform an additional song."
+  },
+  "MachineHeartSongs": {
+    "NAME": "Mechanical Heart",
+    "DESCRIPTION": "Draw 1 card. NL Play: Mechanical Heart. NL When played, gain 3 Artifact stacks. This card ignores Rhythm."
+  },
+  "WholeLifeBand": {
+    "NAME": "I Never Wanted to Form a Band Anyway...",
+    "DESCRIPTION": "Deal !D! damage to all targets present, trigger an additional time for each point of Gravity you have. Then clear your Gravity."
+  },
+  "barrel": {
+    "NAME": "The Barrel from the Rat Teacher",
+    "DESCRIPTION": "Pay half of your gold and health, let's all run away with the barrel!"
+  },
+  "CatHero": {
+    "NAME": "The Merit of the Dragon",
+    "DESCRIPTION": "Decrease Gravity by 2, gain 2 Strength and 2 Agility."
+  },
+  "WhyWholeLifeBand": {
+    "NAME": "Form a Band for a Lifetime!",
+    "DESCRIPTION": "In this battle, 'Tiny Moment' is no longer Exhausted, and every time 'Tiny Moment' is used, you and all enemies gain !M! stacks of Gravity, you gain !M! stacks of Multilayered Armor."
+  },
+  "RhythmGuitar": {
+    "NAME": "Rhythm Guitar",
+    "DESCRIPTION": "For each Attack card in your hand, deal !D! damage.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (You have",
+      " Attack cards.)",
+      " Attack cards.)"
+    ]
+  },
+  "WhiteTrio": {
+    "NAME": "White Trio",
+    "DESCRIPTION": "Choose one revue performance from three. This card ignores rhythm.",
+    "UPGRADE_DESCRIPTION": "Choose one revue performance from three. This card ignores rhythm. NL Retain."
+  },
+  "GirlsReboot": {
+    "NAME": "Destruction of You, What's It to You?",
+    "DESCRIPTION": "At the start of the performance: Gain 'Retrograde', gain half the number of Gravity layers plus 5 layers of Multilayered Armor, gain 1 layer of Artifact, and then all targets on the field gain 1 layer of Weak."
+  },
+  "WorldLegacy": {
+    "NAME": "Salvation of You, What's It to You?",
+    "DESCRIPTION": "At the start of the performance: Gain 'Star Relic', clear 2 negative statuses, gain 4 layers of Regeneration, and [E]."
+  },
+  "WhiteMythology": {
+    "NAME": "Love for You, What's It to You?",
+    "DESCRIPTION": "At the start of the performance: Gain 'White Mythology', draw 5 cards, randomly swap the costs of cards in hand. Then reduce the cost of the card with the highest cost by 1 and repeat for half the number of Shine layers plus 1 time."
+  },
+  "WhiteAnonHaruhikageSongs": {
+    "NAME": "Spring Shadow Within Reach",
+    "DESCRIPTION": "Spend 5 HP. Draw one card. Play: Spring Shadow (Fiona version). At the start of the performance, gain 1 layer of Intangible, apply 2 layers of Vulnerable to all targets on the field. This card ignores rhythm. NL Exhaust, Exhaust."
+  },
+  "WorldLegacyAnon": {
+    "NAME": "Flashbulb Memory",
+    "DESCRIPTION": "Extend the duration of 'Time Witness' by 10 minutes. Remove it from the battle after use."
+  },
+  "haventFiguredItOut": {
+    "NAME": "(Tentative Card Name)",
+    "DESCRIPTION": "All enemies lose 2 Strength this turn, repeated a number of times equal to your Shine stacks.",
+    "FLAVOR": "The 1st 'Aine Cup' Champion NL Designed by #b---Ice Water---"
+  },
+  "LockMachineHeartSongs": {
+    "NAME": "Mechanical Heart",
+    "DESCRIPTION": "Draw 1 card. NL Play: Mechanical Heart NL At the start of the play, gain 3 levels of Artifact. This card ignores Rhythm.",
+    "EXTENDED_DESCRIPTION": [
+      "Mechanical Heart",
+      "Draw 1 card. NL Play: Mechanical Heart NL At the start of the play, gain 3 levels of Artifact. This card ignores Rhythm. NL (Requires 2 keys to unlock)",
+      "You have found the true heart."
+    ]
+  },
+  "AIHeartSongs": {
+    "NAME": "AI Heart Songs",
+    "DESCRIPTION": "Play: Mechanical Heart NL At the start of the play, gain 3 levels of Artifact. This card ignores Rhythm. NL (Requires !M! more keys to unlock)",
+    "UPGRADE_DESCRIPTION": "Play: Mechanical Heart NL At the start of the play, gain 3 levels of Artifact. This card ignores Rhythm. NL (The lock has been opened)",
+    "EXTENDED_DESCRIPTION": [
+      "Mechanical Heart",
+      "Play: Mechanical Heart NL At the start of the play, gain 3 levels of Artifact. This card ignores Rhythm. NL (Requires !M! more keys to unlock)",
+      "It seems as if admonitions are echoing in your ears, she is gently soothing you, crying softly.",
+      "Play: Mechanical Heart NL At the start of the play, gain 3 levels of Artifact. This card ignores Rhythm. NL This card can be unlocked with two keys."
+    ],
+    "FLAVOR": "Control, Response, Optimal, Supply NL Joy, Sorrow, Hesitation, Resonance NL Condition, Overload, Halt, Operation"
+  },
+  "yuzu_SimplifiedCombo": {
+    "NAME": "Simplified Combo",
+    "DESCRIPTION": "Choose: Select up to !M! cards in your hand to transform into Strike+X with a cost of 0; Defend+X with a cost of 0. NL Exhaust."
+  },
+  "yuzu_Image": {
+    "NAME": "Scarecrow Puppet",
+    "DESCRIPTION": "Retain. NL Gain !M! temporary HP, when the temporary HP is broken, escape from non-boss battles.",
+    "FLAVOR": "It seems that living people are always the last target of monsters."
+  },
+  "yuzu_Climax": {
+    "NAME": "Climbing to a Crescendo",
+    "DESCRIPTION": "Choose: Draw a number of cards equal to the number of times you've drawn this card, gain that many [E]. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose: Draw a number of cards equal to the number of times you've drawn this card, gain that many [E].",
+    "FLAVOR": "It's time to get excited, but for now, we're still warming up."
+  },
+  "KoiKouEnishiSongs": {
+    "NAME": "Bonded by Love",
+    "DESCRIPTION": "Play: Bonded by Love NL At the start of the play, upgrade the first 6 unupgraded cards you draw during this battle. This card ignores Rhythm.",
+    "FLAVOR": "Ciallo～(∠・ω< )⌒★"
+  },
+  "yuzu_ClimaxOption": {
+    "NAME": "Crescendo Option",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "Draw !M! cards.",
+      "Gain !M! [E]."
+    ]
+  },
+  "KarenShing": {
+    "NAME": "The Next Stage",
+    "DESCRIPTION": "This card cannot be Upgraded, nor can it be played. NL When drawn, apply *1 layer of Shine to Aine City, draw a card. It cannot be Exhausted.",
+    "FLAVOR": "Because she wants to stand on the stage again, because the audience wants it, she comes from the Revue Starlight mod, a stage girl who has crossed over."
+  },
+  "dust": {
+    "NAME": "Dust to Dust",
+    "DESCRIPTION": "Lose !M! HP and gain !B! Block.",
+    "FLAVOR": "“Under the stars and the moon, dusting is just a daily routine.”"
+  },
+  "Scapegoat": {
+    "NAME": "Scapegoat",
+    "DESCRIPTION": "Make the chosen enemy gain Signature, Exhaust.",
+    "FLAVOR": "“I'm just an intern, do I really have the power to sign?”"
+  },
+  "UnderMixer": {
+    "NAME": "Under the Mixer",
+    "DESCRIPTION": "Deal damage equal to all Block values lost.",
+    "UPGRADE_DESCRIPTION": " NL (Deal !D! damage.)",
+    "FLAVOR": "“I stand under the mixer, pouring in my youth.”"
+  },
+  "ProjectTwo": {
+    "NAME": "Spring Shadow Phase II",
+    "DESCRIPTION": "Deal !D! damage to all enemies, gain gold equal to unblocked damage, Exhaust.",
+    "FLAVOR": "“This project will pay well, won't it?”"
+  },
+  "CatchCivilEngineering": {
+    "NAME": "Draft for Civil Engineering",
+    "DESCRIPTION": "Make all enemies gain Signature, Exhaust.",
+    "UPGRADE_DESCRIPTION": "Make all enemies gain Signature, gain 5 layers of Metalization, Exhaust.",
+    "FLAVOR": "“I've never been happy working in civil engineering!”"
+  },
+  "RelatedHouseholds": {
+    "NAME": "Connected Families",
+    "DESCRIPTION": "Draw !M! cards, gain !M! potions, gain !B! Block, Exhaust.",
+    "FLAVOR": "“My grandmother is the project manager!”"
+  },
+  "RedRomantic": {
+    "NAME": "Red Romance",
+    "DESCRIPTION": "Exhaust all Block, gain half the Block in HP restored.",
+    "UPGRADE_DESCRIPTION": "Exhaust all Block, gain the full Block in HP restored.",
+    "FLAVOR": "“You can't work on a construction site without knowing how to relax.”"
+  },
+  "LeadershipInspection": {
+    "NAME": "Leadership Inspection",
+    "DESCRIPTION": "Remove all Signature statuses from enemies, for each Signature removed, gain !M! Strength and !M! Agility.",
+    "FLAVOR": "“The leaders come to inspect, the foreman finds faults every day.”"
+  },
+  "Mixer": {
+    "NAME": "Mixer Truck",
+    "DESCRIPTION": "Reduce HP to 1, gain 99 Block, and 1 Strength, Exhaust.",
+    "FLAVOR": "“The mixer truck is here, we must finish the cement work tonight!”"
+  },
+  "LeaderScapegoat": {
+    "NAME": "The Boss Makes You Take the Blame!",
+    "DESCRIPTION": "Make the chosen enemy gain Signature NL Inherent Exhaust.",
+    "FLAVOR": "Do I really have the authority to sign as an intern?"
+  },
+  "Roselia": {
+    "NAME": "Roselia",
+    "DESCRIPTION": "This card cannot be Upgraded, nor can it be played. When drawn, end your performance, losing 1 Strength and 1 Agility. NL It cannot be Exhausted.",
+    "FLAVOR": "The place we aim for has not changed. What we aim for is the 'Summit,' just one!"
+  },
+  "UntouchableFuture": {
+    "NAME": "The Unreachable Future",
+    "DESCRIPTION": "Send all damage taken this turn into the future. Exhaust. Retain.",
+    "UPGRADE_DESCRIPTION": "Send all damage taken this turn into the future. Exhaust. Retain.",
+    "FLAVOR": "Your wish? Or is it your retribution..."
+  },
+  "untouchableFutureToken": {
+    "NAME": "Unreachable Future Token",
+    "DESCRIPTION": "When this card is Exhausted, take !M! damage. NL Ethereal."
+  },
+  "YouthfulBeautifulSongs": {
+    "NAME": "Youthful and Beautiful",
+    "DESCRIPTION": "Play: Potential Manifest NL At the start of the play, gain 20 Block. Loner: Gain 2 Strength and 2 Agility."
+  },
+  "LackOfVitalitySongs": {
+    "NAME": "Lack of Vitality",
+    "DESCRIPTION": "Play: Lack of Vitality NL At the start of the play, apply 3 Weak stacks to all enemies. Loner: All enemies lose 2 Strength."
+  },
+  "HekitenbansouStarSongs": {
+    "NAME": "Azure Skies Companion (Star)",
+    "DESCRIPTION": "Play: Azure Skies Companion (Star) NL At the start of the play, draw 3 cards. Loner: Gain 2 Energy, and draw 2 cards next turn."
+  },
+  "SoloConcertSongs": {
+    "NAME": "Solo Concert",
+    "DESCRIPTION": "Choose one song to play from the following: Youthful and Beautiful, Lack of Vitality, Azure Skies Companion. This card ignores Rhythm.",
+    "UPGRADE_DESCRIPTION": "Choose one song to play from the following: Youthful and Beautiful, Lack of Vitality, Azure Skies Companion. This card ignores Rhythm. Retain.",
+    "FLAVOR": "Memories are still dormant."
+  },
+  "OtherHelp": {
+    "NAME": "Outside Assistance",
+    "DESCRIPTION": "Discover a card from another Anon's help, treat this card as an Idea. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Discover a card from another Anon's help, empower it, treat this card as an Idea. Exhaust.",
+    "FLAVOR": "From the depths of despair..."
+  }
+}

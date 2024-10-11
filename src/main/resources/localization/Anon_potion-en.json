@@ -1,0 +1,16 @@
+{
+  "liveboost": {
+    "NAME": "Live Boost Drink",
+    "DESCRIPTIONS": [
+      "Upgrade a random card in your deck.",
+      "Upgrade two random cards in your deck."
+    ]
+  },
+  "IdeaPotion": {
+    "NAME": "Bottled Idea",
+    "DESCRIPTIONS": [
+      "Add an Idea card to your hand.",
+      "Add two Idea cards to your hand."
+    ]
+  }
+}

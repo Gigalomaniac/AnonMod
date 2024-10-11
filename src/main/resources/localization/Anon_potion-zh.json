@@ -1,0 +1,16 @@
+{
+  "liveboost":{
+    "NAME":"liveboost饮料",
+    "DESCRIPTIONS":[
+      "升级你牌组中的一张随机牌。",
+      "升级你牌组中的两张随机牌。"
+    ]
+  },
+  "IdeaPotion":{
+  "NAME":"瓶装点子",
+  "DESCRIPTIONS":[
+    "将一张 点子 置入手牌。",
+    "将两张 点子 置入手牌。"
+  ]
+}
+}

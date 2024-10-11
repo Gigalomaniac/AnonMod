@@ -1,0 +1,12 @@
+{
+  "PhantomCardModifier": {
+    "NAME": "幻影",
+    "DESCRIPTION": "幻影 牌在离开手牌或回合结束时即会消失， #r不会 进入消耗堆。 NL 计算相同的牌时，不计入此牌。 NL 幻影 牌无法成为 #y幻影 、 #y魔镜 、 #y双持 、 #y夜魇 的目标。"
+  },
+  
+  "IdeaCardModifier": {
+    "NAME": "点子",
+    "DESCRIPTION": "打出此牌后，使手牌中 %s 攻击牌的基础伤害提高 #b%d 点，并获得 %s 效果。",
+    "EXTENDED_DESCRIPTION": ["的一张", "所有"]
+  }
+}

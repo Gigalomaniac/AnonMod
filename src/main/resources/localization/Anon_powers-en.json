@@ -1,0 +1,503 @@
+{
+  "Ash": {
+    "NAME": "Ash",
+    "DESCRIPTIONS": [
+      "Currently have ",
+      " layers, reducing ",
+      "% incoming damage, when Anon's ash reaches 100, gain all blessings, it's time to end this game!"
+    ]
+  },
+  "AshAnonBeat": {
+    "NAME": "Anon's Rhythm",
+    "DESCRIPTIONS": [
+      "After playing ", " cards, proceed with InnerFavillae's Live."
+    ]
+  },
+  "AshAnonMemory": {
+    "NAME": "Anon's Memory",
+    "DESCRIPTIONS": [
+      "Will not take damage. NL ",
+      "Mechanical Heart NL Play: Gain ash-like shine.",
+      "Star Trail NL Play: Clear negative status, gain 50 armor, 1 layer of artifact.",
+      "Soul Festival NL Play: Apply 3 layers of vulnerability, 3 layers of weakness, and 3 layers of debilitation to the opponent.",
+      "The End of Ideals NL Play: End your live, apply 1 layer of preparation to the opponent.",
+      "Self-Destructive Factor NL Play: Reduce the opponent's max HP by 5 (minimum of 1).",
+      "Rebirth of a Maiden NL Play: Clear one of the opponent's positive states, restore 50 HP.",
+      "Falling Maiden NL Play: End your turn.",
+      "Falling Maiden NL Play: Deal 4 times 5 damage.",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "AshAnonSongs": {
+    "NAME": "InnerFavillae's Songs",
+    "DESCRIPTIONS": [
+      "Anon is preparing to play:"
+    ]
+  },
+  "AstoundingWisdomPower": {
+    "NAME": "Astounding Wisdom",
+    "DESCRIPTIONS": [
+      "Your new ideas and Spring Shadows no longer deplete."
+    ]
+  },
+  "AveMujica": {
+    "NAME": "AveMujica",
+    "DESCRIPTIONS": [
+      "When you have other AveMujica members, you will not take damage."
+    ]
+  },
+  "AveMujicaBelief": {
+    "NAME": "AveMujica's Belief",
+    "DESCRIPTIONS": [
+      "Upon exiting the stage, apply 5 layers of AveMujica's shine to all remaining AveMujica members."
+    ]
+  },
+  "AveMujicaShining": {
+    "NAME": "AveMujica's Shine",
+    "DESCRIPTIONS": [
+      "AveMujica's ", " layers of shine, each layer increases damage by 5%"
+    ]
+  },
+  "beat": {
+    "NAME": "Rhythm",
+    "DESCRIPTIONS": [
+      "Anon is now in ", " with ", " layers of rhythm."
+    ]
+  },
+  "CarryOffShining": {
+    "NAME": "Not Your Shine",
+    "DESCRIPTIONS": [
+      "Not your ", " layers of shine, each layer increases damage by 5%"
+    ]
+  },
+  "CrychicDream": {
+    "NAME": "The Dream Named Crychic",
+    "DESCRIPTIONS": [
+      "Remaining ", " turns to leave the band: Remove your HP and max HP according to the remaining HP value of Sakiko Toyokawa, then die. (At least keep 1 point)"
+    ]
+  },
+  "DeterminationPower": {
+    "NAME": "Determination",
+    "DESCRIPTIONS": [
+      "At the start of the turn, gain ", " [E] points."
+    ]
+  },
+  "muiscStart": {
+    "NAME": "Climbing to a Crescendo!",
+    "DESCRIPTIONS": [
+      "Climbing to a Crescendo! You currently have an additional performance round."
+  ]
+},
+  "EnemyHeavy": {
+    "NAME": "Gravity",
+    "DESCRIPTIONS": [
+      "Current received gravity ", ", each layer of gravity increases incoming damage by 5%"
+    ]
+  },
+  "FutureVisionPower": {
+    "NAME": "Future Vision",
+    "DESCRIPTIONS": [
+      "At the start of each turn, if in the performance state, foresee"
+    ]
+  },
+  "heavy": {
+    "NAME": "Gravity",
+    "DESCRIPTIONS": [
+      "Current received gravity ", ", each layer of gravity increases incoming damage by 5%"
+    ]
+  },
+  "ImAnon": {
+    "NAME": "I am, Anon?",
+    "DESCRIPTIONS": [
+      "Outside the performance stage, lose ", " HP for each card played. NL When HP is less than 75%, 50%, 25%, end your turn."
+    ]
+  },
+  "InnerFavillaeShining": {
+    "NAME": "Ash-like Shine",
+    "DESCRIPTIONS": [
+      "Belonging to Anon's ", " layers of shine, each layer increases damage by 10%"
+    ]
+  },
+  "inspiration": {
+    "NAME": "Inspiration",
+    "DESCRIPTIONS": [
+      "Anon is influenced by someone, now has ", " good ideas"
+    ]
+  },
+  "LoveMe'IF'YouCan": {
+    "NAME": "LoveMe'IF'YouCan",
+    "DESCRIPTIONS": [
+      "The next ", " performances will not take effect."
+    ]
+  },
+  "musicStart": {
+    "NAME": "Climbing to a Crescendo!",
+    "DESCRIPTIONS": [
+      "Climbing to a Crescendo! Currently have additional extra turns."
+    ]
+  },
+  "notLive": {
+    "NAME": "Preparing!",
+    "DESCRIPTIONS": [
+      "Preparing! Unable to enter live for the next ", " turns."
+    ]
+  },
+  "PrePreparation": {
+    "NAME": "Preparation",
+    "DESCRIPTIONS": [
+      "At the start of each turn, draw an additional ", " cards. NL If in the performance state, gain an additional ", " [E]."
+    ]
+  },
+  "SakikoBeat": {
+    "NAME": "Sakiko Toyokawa's Rhythm",
+    "DESCRIPTIONS": [
+      "Sakiko Toyokawa has musical talent far beyond that of Anon, after playing ", " cards, end your Live, your turn."
+    ]
+  },
+  "SakikoConsciousness": {
+    "NAME": "Sakiko Toyokawa's Determination",
+    "DESCRIPTIONS": [
+      "Sakiko Toyokawa now has ", " layers of determination, each layer reduces incoming damage by 5%, non-linearly stacking. Current damage reduction:"
+    ]
+  },
+  "Shining": {
+    "NAME": "Shine",
+    "DESCRIPTIONS": [
+      "Accumulating a star-like brilliance NL Now have ", " layers of shine."
+    ]
+  },
+  "SilhouettePower": {
+    "NAME": "Silhouette Dance!",
+    "DESCRIPTIONS": [
+      "This turn gain Block equal to the unblocked damage dealt."
+    ]
+  },
+  "songs": {
+    "NAME": "Songs",
+    "DESCRIPTIONS": [
+      "The Live playlist for later (currently playing the ", " song):"
+    ]
+  },
+  "variation": {
+    "NAME": "Variation",
+    "DESCRIPTIONS": [
+      "The next ", " card plays will ignore types."
+    ]
+  },
+  "WholeLifeBand": {
+    "NAME": "Form a Band for a Lifetime!",
+    "DESCRIPTIONS": [
+      "In this battle, 'Tiny Moments' are no longer consumed, and every time 'Tiny Moment' is used, you and all enemies gain ", " layers of gravity, ", " layers of Multilayered Armor."
+    ]
+  },
+  "WholeLifeTimePower": {
+    "NAME": "A Lifetime...?",
+    "DESCRIPTIONS": [
+      "At the end of your turn, add a 'Tiny Moment' to your draw pile and gain ", " Block. NL If the performance has started, double the effect."
+    ]
+  },
+  "BlessingFalling": {
+    "NAME": "Blessing: Tsuirakugaaru:-Fallen Up-",
+    "DESCRIPTIONS": [
+      "Remove all of the opponent's shines."
+    ]
+  },
+  "BlessingGirlRelive": {
+    "NAME": "Blessing: syouzyosaisei:-Re Born-",
+    "DESCRIPTIONS": [
+      "Clear most of the opponent's positive states."
+    ]
+  },
+  "BlessingIdealEnd": {
+    "NAME": "Blessing: risounohate:-The End of Dreams-",
+    "DESCRIPTIONS": [
+      "Your opponent can no longer enter live."
+    ]
+  },
+  "BlessingMachineHeart": {
+    "NAME": "Blessing: kikaikokoro:-AI Heart-",
+    "DESCRIPTIONS": [
+      "For each card the opponent plays, gain 2 Block."
+    ]
+  },
+  "BlessingStarTrails": {
+    "NAME": "Blessing: hosinokiseki:-Star Trace- ",
+    "DESCRIPTIONS": [
+      "For each card the opponent plays, they lose 1 HP."
+    ]
+  },
+  "BlessingSuicideFactor": {
+    "NAME": "Blessing: zimetuzi-n:-Destruction-",
+    "DESCRIPTIONS": [
+      "When you gain a status effect, clear them."
+    ]
+  },
+  "BlessingZhenHunJi": {
+    "NAME": "Blessing: tamasizumenomaturi:-Repose of Souls-",
+    "DESCRIPTIONS": [
+      "The opponent's HP and max HP are set to 1 and cannot be increased."
+    ]
+  },
+  "ChallengeFalling": {
+    "NAME": "Challenge: Tsuirakugaaru:-Fallen Up-",
+    "DESCRIPTIONS": [
+      "Remaining ", " turns: Removed when all other trials are lifted. NL When the countdown ends, bestow the blessing of the Falling Maiden upon Anon: Permanently remove all shines from the opponent."
+    ]
+  },
+  "ChallengeGirlRelive": {
+    "NAME": "Challenge: syouzyosaisei:-Re Born-",
+    "DESCRIPTIONS": [
+      "Remaining ", " turns: Lifted when Anon has at least 3 debuffs. NL When the countdown ends, bestow the blessing of Maiden Rebirth upon Anon: Clear most of the opponent's positive states."
+    ]
+  },
+  "ChallengeIdealEnd": {
+    "NAME": "Challenge: risounohate:-The End of Dreams-",
+    "DESCRIPTIONS": [
+      "Remaining ", " turns: Lifted when at least ten attack cards are played this turn. NL When the countdown ends, bestow the blessing of The End of Ideals upon Anon: Your opponent can no longer enter live."
+    ]
+  },
+  "ChallengeMachineHeart": {
+    "NAME": "Challenge: kikaikokoro:-AI Heart-",
+    "DESCRIPTIONS": [
+      "Remaining ", " turns: Lifted by entering the preparation performance with an attack rhythm through attack cards. NL When the countdown ends, bestow the blessing of the Mechanical Heart upon Anon: For each card the opponent plays, gain 2 Block."
+    ]
+  },
+  "ChallengeStarTrails": {
+    "NAME": "Challenge: hosinokiseki:-Star Trace-",
+    "DESCRIPTIONS": [
+      "Remaining ", " turns: Lifted by entering the preparation performance with a skill rhythm through skill cards. NL When the countdown ends, bestow the blessing of Star Trails upon Anon: For each card the opponent plays, they lose 1 HP."
+    ]
+  },
+  "ChallengeSuicideFactor": {
+    "NAME": "Challenge: risounohate:-The End of Dreams-",
+    "DESCRIPTIONS": [
+      "Remaining ", " turns: Lifted when filling the live gauge 3 times in one turn. NL When the countdown ends, bestow the blessing of the Self-Destructive Factor upon Anon: When you gain a status effect, clear them."
+    ]
+  },
+  "ChallengeZhenHunJi": {
+    "NAME": "Challenge: tamasizumenomaturi:-Repose of Souls-",
+    "DESCRIPTIONS": [
+      "Remaining ", " turns: Lifted by entering the preparation performance with a power rhythm through power cards. NL When the countdown ends, bestow the blessing of the Soul Festival upon Anon: The opponent's HP and max HP are set to 1 and cannot be increased."
+    ]
+  },
+  "GIRLSBANDCRY": {
+    "NAME": "GIRLSBANDCRY",
+    "DESCRIPTIONS": [
+      "When you have other TOGENASHI TOGEARI members, you will not take damage."
+    ]
+  },"GirlsReboot": {
+  "NAME": "《GirlsReboot》",
+  "DESCRIPTIONS": [
+    "For each performance of 'The Triple Fugue of Void and Whiteness', gain 1 Strength and 1 Agility point; if your Gravity and Shimmer counts are unequal, there's a 50% chance that 'I Love You, What's It To You?' will draw one less card and a 50% chance to reduce costs one less time when played."
+  ]
+},
+  "WorldLegacy": {
+    "NAME": "《WorldLegacy》",
+    "DESCRIPTIONS": [
+      "Whenever the guitar performance '-Asakusa & Miru-' from 'The Triple Fugue of Void and Whiteness' triggers successfully, it removes all 'In Preparation' statuses; if all three Revues have been performed, each time you gain a Performance Readiness, you can foresee 5 steps ahead."
+    ]
+  },
+  "WhiteMythology": {
+    "NAME": "《WhiteMythology》",
+    "DESCRIPTIONS": [
+      "ach performance of 'The Triple Fugue of Void and Whiteness' imposes 2 layers of Gravity and 4 layers of Bind on all enemies and allies on the field; when 'Destroy You, What's It To You?' is performed, no Artifacts are acquired."
+    ]
+  },
+  "WorldCrown": {
+    "NAME": "What is a Promise",
+    "DESCRIPTIONS": [
+      "At the end of the turn, if the Star Relic - 'Star Cup' has perished, apply 10 stacks of 'Starlight Shine' and 10 stacks of 'Reversion' to Star Anon. NL When perishing, grant 'Promise' to Star Anon."
+    ]
+  },
+  "TimeCreepWitness": {
+    "NAME": "Time Creep Witness",
+    "DESCRIPTIONS": [
+      "At the end of the turn, randomly remove #b",
+      " buffs from the player and gain them."
+    ]
+  },
+  "AutoShieldPower": {
+    "NAME": "Automatic Corresponding Matrix",
+    "DESCRIPTIONS": [
+      "Whenever you play 1 card, gain #b",
+      " Block. At the end of the turn, take damage equal to your Block."
+    ]
+  },
+  "Recollect": {
+    "NAME": "Recollection",
+    "DESCRIPTIONS": [
+      "You are no longer affected by negative status effects. NL Immune to all damage."
+    ]
+  },
+  "Love": {
+    "NAME": "Love",
+    "DESCRIPTIONS": [
+      "Whenever you play an Attack card, add a Void to the draw pile."
+    ]
+  },
+  "Promise": {
+    "NAME": "Promise",
+    "DESCRIPTIONS": [
+      "Whenever you play a Skill card, gain 1 Reversion."
+    ]
+  },
+  "DeterminationToProtectHer": {
+    "NAME": "Determination to Protect Her",
+    "DESCRIPTIONS": [
+      "Whenever you play 1 card, gain #b",
+      " Block. At the end of the turn, take damage equal to your Block."
+    ]
+  },
+  "StarAnonShining": {
+    "NAME": "Starlight Shine",
+    "DESCRIPTIONS": [
+      "Shining with starlight,"," stacks of shine, each stack increases damage by 5%"
+    ]
+  },
+  "BackTrack": {
+    "NAME": "Reversion",
+    "DESCRIPTIONS": [
+      "By using the silver wristwatch, when attacked, recover #b",
+      " HP and increase by #b1 stack. At the end of the turn, reduce to match the number of 'Starlight Shine' stacks. NL When damage is not less than #b100, additionally remove one negative status from yourself, and remove one of your positive statuses."
+    ]
+  },
+  "Witness": {
+    "NAME": "Time Witness",
+    "DESCRIPTIONS": [
+      "Remaining #b",
+      " minutes #b",
+      " seconds, restart this journey at the end of time... NL After having 'Determination to Protect Her', you will control this spacetime."
+    ]
+  },
+  "KoiKouEnishi": {
+    "NAME": "Bonded by Love",
+    "DESCRIPTIONS": [
+      "The next #b",
+      " unupgraded cards you draw will be upgraded in this battle."
+    ]
+  },
+  "YUZUImagePower": {
+    "NAME": "Scarecrow Puppet",
+    "DESCRIPTIONS": [
+      "When temporary life is broken, escape from non-boss battles."
+    ]
+  },
+  "KiraKiraShining": {
+    "NAME": "Glittering Shine",
+    "DESCRIPTIONS": [
+      "Glittering with #b"," stacks of shine, each stack increases damage by 10%"
+    ]
+  },
+  "Leader": {
+    "NAME": "Leader Anon",
+    "DESCRIPTIONS": [
+      "I am the leader! I am not affected by negative status effects. NL Immune to all damage."
+    ]
+  },
+  "CarStstoryPower": {
+    "NAME": "Over Twenty Years of Work Experience",
+    "DESCRIPTIONS": [
+      "After #b",
+      " turns, explode and deal #b",
+      " penalty damage.",
+      "Upon its death, self-destruct and deal #b"
+    ]
+  },
+  "RevueStarlight": {
+    "NAME": "Re-Production",
+    "DESCRIPTIONS": [
+      "You are no longer affected by negative status effects this turn. NL Immune to all damage."
+    ]
+  },
+  "IllationPower": {
+    "NAME": "Performance",
+    "DESCRIPTIONS": [
+      "Grant Aine City Hall #y","% damage reduction, when reaching #y5 stacks, will exit the stage due to the curtain call."
+    ]
+  },
+  "KarenShining": {
+    "NAME": "Shine",
+    "DESCRIPTIONS": [
+      "Aine City Hall now has #y"," stacks of shine. Each stack increases damage by 5%. When perishing, lose half the number of stacks."
+    ]
+  },
+  "DustAnonSign": {
+    "NAME": "Signature",
+    "DESCRIPTIONS": [
+      "When a Signature is on the field, it grants you a Barrier."
+    ]
+  },
+  "Speed": {
+    "NAME": "Speed Up!",
+    "DESCRIPTIONS": [
+      "You are no longer affected by increased damage from Gravity."
+    ]
+  },
+  "EncorePower": {
+    "NAME": "Encore",
+    "DESCRIPTIONS": [
+      "When the rhythm meter is full, gain [E]. If in Preparing state, gain an additional 1 Strength and 1 Agility."
+    ]
+  },
+  "Liability": {
+    "NAME": "Liable!",
+    "DESCRIPTIONS": [
+      "At the end of your turn, gain #b",
+      " layers of Vulnerable, #b",
+      " layers of Weak, lose #b",
+      " Gold, negate #b",
+      " positive effects."
+    ]
+  },
+  "WithoutLiability": {
+    "NAME": "Irresponsible!",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain #b1",
+      " layers of Strength, recover #b",
+      " HP, gain #b",
+      " Gold, gain",
+      " [E], gain #b1",
+      " layer of Variation."
+    ]
+  },
+  "DustAnonLeaderSign": {
+    "NAME": "Signature",
+    "DESCRIPTIONS": [
+      "At the start of your turn, apply #b1 layer of 'Irresponsible' to the player. When an enemy dies, convert all 'Irresponsible' on Dust Anon to 'Liable'."
+    ]
+  },
+  "RoseliaShining": {
+    "NAME": "Gently Blooming Shine",
+    "DESCRIPTIONS": [
+      "Glistening with #b"," layers of shine, each layer increases damage by 5%."
+    ]
+  },
+  "PrepareForLive": {
+    "NAME": "Prepare for the Show!",
+    "DESCRIPTIONS": [
+      "You are no longer affected by negative status effects. NL Immune to all damage."
+    ]
+  },
+  "untouchableFuturePower": {
+    "NAME": "Unreachable Future!",
+    "DESCRIPTIONS": [
+      "Recording the damage you receive."
+    ]
+  },
+  "TrueIllationPower": {
+    "NAME": "Performance",
+    "DESCRIPTIONS": [
+      "Grant Aine City Hall #y","% damage reduction, when reaching #y5 stacks, will exit the stage due to the performance's end."
+    ]
+  },
+  "TheEndKarenShining": {
+    "NAME": "Shine",
+    "DESCRIPTIONS": [
+      "Aine City Hall now has #y"," layers of shine. Each layer increases damage by 5%."
+    ]
+  }
+}

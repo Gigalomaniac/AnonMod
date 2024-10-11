@@ -1,0 +1,509 @@
+{
+  "Ash": {
+    "NAME": "余烬",
+    "DESCRIPTIONS": [
+      "当前有",
+      "层，减少",
+      "%收到伤害，当灰爱音的灰烬达到100时，获得所有祝福，该结束这场游戏了！"
+    ]
+  },
+  "AshAnonBeat": {
+    "NAME": "灰爱音的节奏",
+    "DESCRIPTIONS": [
+      "在使用","张牌后进行属于InnerFavillae的Live。"
+    ]
+  },
+  "AshAnonMemory": {
+    "NAME": "灰爱音的记忆",
+    "DESCRIPTIONS": [
+      "不会收到伤害。 NL ",
+      "机械心 NL 演奏：获得灰烬般的闪耀。",
+      "星之轨迹 NL 演奏：清除负面状态，获得50护甲，1层人工制品。",
+      "镇魂祭 NL 演奏：给予对手3层脆弱3层易伤3层虚弱。",
+      "理想的尽头 NL 演奏：结束你的live，给予对手1层整备中",
+      "自灭因子 NL 演奏：使对手失去5点生命上限（最低为1）",
+      "少女再生 NL 演奏：清除对手一个正面状态,恢复50点生命值",
+      "坠落少女 NL 演奏：结束你的回合",
+      "坠落少女 NL 演奏：造成4次5点伤害",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "AshAnonSongs": {
+    "NAME": "InnerFavillae的曲目",
+    "DESCRIPTIONS": [
+      "灰爱音准备演奏："
+    ]
+  },
+  "AstoundingWisdomPower": {
+    "NAME": "惊世智慧",
+    "DESCRIPTIONS": [
+      "你的新点子和春日影不再消耗。"
+    ]
+  },
+  "AveMujica": {
+    "NAME": "AveMujica",
+    "DESCRIPTIONS": [
+      "你拥有其他AveMujica成员时，你不会收到伤害。"
+    ]
+  },
+  "AveMujicaBelief": {
+    "NAME": "AveMujica的信念",
+    "DESCRIPTIONS": [
+      "退场时，给予所有剩余的AveMujica队员5层属于AveMujica的闪耀。"
+    ]
+  },
+  "AveMujicaShining": {
+    "NAME": "属于AveMujica的闪耀",
+    "DESCRIPTIONS": [
+      "属于AveMujica的","层闪耀，每层增加5%伤害"
+    ]
+  },
+  "beat": {
+    "NAME": "节奏",
+    "DESCRIPTIONS": [
+      "Anon现在处于","拥有"," 层节奏。"
+    ]
+  },
+  "CarryOffShining": {
+    "NAME": "不属于你的 ",
+    "DESCRIPTIONS": [
+      "不属于你的"," 层闪耀，每层增加5%伤害"
+    ]
+  },
+  "CrychicDream": {
+    "NAME": "名为Crychic的梦",
+    "DESCRIPTIONS": [
+      "还剩","个回合退出乐队：按照丰川祥子剩余生命值的数值移除你的生命值及上限，然后死亡。（至少保留1点）"
+    ]
+  },
+  "DeterminationPower": {
+    "NAME": "“决心”",
+    "DESCRIPTIONS": [
+      "回合开始时，获得","点 [E] 。"
+    ]
+  },
+  "muiscStart": {
+    "NAME": "渐进高潮！",
+    "DESCRIPTIONS": [
+      "渐进高潮！当前拥有额外演奏回合。"
+    ]
+  },
+  "EnemyHeavy": {
+    "NAME": "重力",
+    "DESCRIPTIONS": [
+      "当前收到的重力",",每层重力都会使收到的伤害增加5%"
+    ]
+  },
+  "FutureVisionPower": {
+    "NAME": "未来视",
+    "DESCRIPTIONS": [
+      "在每回合开始时，如果是演出状态，预见"
+    ]
+  },
+  "heavy": {
+    "NAME": "重力",
+    "DESCRIPTIONS": [
+      "当前收到的重力",",每层重力都会使收到的伤害增加5%"
+    ]
+  },
+  "ImAnon": {
+    "NAME": "我是，爱音？",
+    "DESCRIPTIONS": [
+      "演出阶段以外，每使用一张牌失去","点生命。 NL 生命小于75%，50%，25%时，结束你的回合。"
+    ]
+  },
+  "InnerFavillaeShining": {
+    "NAME": "灰烬般的闪耀",
+    "DESCRIPTIONS": [
+      "属于灰爱音的"," 层闪耀，每层增加10%伤害"
+    ]
+  },
+  "inspiration": {
+    "NAME": "点子",
+    "DESCRIPTIONS": [
+      "Anon受到的某人影响，现在有 "," 个好点子"
+    ]
+  },
+  "LoveMe'IF'YouCan": {
+    "NAME": "LoveMe'IF'YouCan",
+    "DESCRIPTIONS": [
+      "接下来","次演奏无法生效。"
+    ]
+  },
+  "musicStart": {
+    "NAME": "渐进高潮！",
+    "DESCRIPTIONS": [
+      "渐进高潮！当前有额外追加回合"
+    ]
+  },
+  "notLive": {
+    "NAME": "整备中！",
+    "DESCRIPTIONS": [
+      "整备中！接下来","个回合无法进入live。"
+    ]
+  },
+  "PrePreparation": {
+    "NAME": "事前准备",
+    "DESCRIPTIONS": [
+      "在每回合开始时额外抽","张牌。 NL 如果是演出状态，额外获得","点 [E]"
+    ]
+  },
+  "SakikoBeat": {
+    "NAME": "丰川祥子的节奏",
+    "DESCRIPTIONS": [
+      "丰川祥子拥有远超千早爱音的音乐天赋，在使用","张牌后结束你的Live,你的回合。"
+    ]
+  },
+  "SakikoConsciousness": {
+    "NAME": "丰川祥子的决心",
+    "DESCRIPTIONS": [
+      "丰川祥子现在拥有"," 层决心，每层减少5%收到伤害，非线性叠加。当前减伤："
+    ]
+  },
+  "Shining": {
+    "NAME": "闪耀",
+    "DESCRIPTIONS": [
+      "积累着星辰般的光辉 NL 现在有 "," 层闪耀"
+    ]
+  },
+  "SilhouettePower": {
+    "NAME": "影色舞!",
+    "DESCRIPTIONS": [
+      "本回合获得与所造成的未被格挡的伤害相等的 格挡 "
+    ]
+  },
+  "songs": {
+    "NAME": "曲目",
+    "DESCRIPTIONS": [
+      "之后Live的歌单(目前演奏","首哦)："
+    ]
+  },
+  "variation": {
+    "NAME": "变奏",
+    "DESCRIPTIONS": [
+      "接下来","次出牌无视种类。"
+    ]
+  },
+  "WholeLifeBand": {
+    "NAME": "要组一辈子的乐队！",
+    "DESCRIPTIONS": [
+      "在本次战斗中“小小的瞬间”不再被消耗，且每当使用“小小的瞬间”时，使你和所有敌人获得","层重力， "," 层多层护甲。"
+    ]
+  },
+  "WholeLifeTimePower": {
+    "NAME": "一辈子……？",
+    "DESCRIPTIONS": [
+      "在你的回合结束时，在你的抽牌堆中加入一张 一个瞬间 ，获得 "," 点 格挡。 获得 ", " 点 重力 。"
+    ]
+  },
+  "BlessingFalling": {
+    "NAME": "祝福：坠落少女",
+    "DESCRIPTIONS": [
+      "移除对手的所有闪耀。"
+    ]
+  },
+  "BlessingGirlRelive": {
+    "NAME": "祝福：少女再生",
+    "DESCRIPTIONS": [
+      "清除对手的大部分正面状态。"
+    ]
+  }
+  ,
+  "BlessingIdealEnd": {
+    "NAME": "祝福：理想的尽头",
+    "DESCRIPTIONS": [
+      "你的对手无法再进入live。"
+    ]
+  },
+  "BlessingMachineHeart": {
+    "NAME": "祝福：机械心",
+    "DESCRIPTIONS": [
+      "对手每使用一张牌，获得2点格挡。"
+    ]
+  },
+  "BlessingStarTrails": {
+    "NAME": "祝福：星之轨迹",
+    "DESCRIPTIONS": [
+      "对手每使用一张牌失去1点生命。"
+    ]
+  },
+  "BlessingSuicideFactor": {
+    "NAME": "祝福：自灭因子",
+    "DESCRIPTIONS": [
+      "每当你获得异常状态时，清除它们。"
+    ]
+  },
+  "BlessingZhenHunJi": {
+    "NAME": "祝福：镇魂祭",
+    "DESCRIPTIONS": [
+      "对手的生命值和最大生命值变为1，且无法增加。"
+    ]
+  },
+  "ChallengeFalling": {
+    "NAME": "祝福：坠落少女",
+    "DESCRIPTIONS": [
+      "剩余","回合：解除其他所有试炼时解除。 NL 倒计时结束时给予灰爱音祝福：永久移除对手的所有闪耀。"
+    ]
+  },
+  "ChallengeGirlRelive": {
+    "NAME": "祝福：少女再生",
+    "DESCRIPTIONS": [
+      "剩余","回合：灰爱音拥有不少于3个debuff时解除。 NL 倒计时结束时给予灰爱音祝福：清除对手的大部分正面状态。"
+    ]
+  },
+  "ChallengeIdealEnd": {
+    "NAME": "祝福：理想的尽头",
+    "DESCRIPTIONS": [
+      "剩余","回合：本回合使用不少于十张攻击牌时解除。 NL 倒计时结束时给予灰爱音祝福：你的对手无法再进入live。"
+    ]
+  },
+  "ChallengeMachineHeart": {
+    "NAME": "祝福：机械心",
+    "DESCRIPTIONS": [
+      "剩余","回合：通过攻击牌，以攻击节奏进入准备演奏解除。 NL 倒计时结束时给予灰爱音祝福：对手每使用一张牌，获得2点格挡。"
+    ]
+  },
+  "ChallengeStarTrails": {
+    "NAME": "祝福：星之轨迹",
+    "DESCRIPTIONS": [
+      "剩余","回合：通过技能牌，以技能节奏进入准备演奏解除。 NL 倒计时结束时给予灰爱音祝福：对手每使用一张牌失去1点生命。"
+    ]
+  },
+  "ChallengeSuicideFactor": {
+    "NAME": "祝福：自灭因子",
+    "DESCRIPTIONS": [
+      "剩余","回合：一回合充满3次你的live槽时解除。 NL 倒计时结束时给予灰爱音祝福：每当你获得异常状态时，清除它们。"
+    ]
+  },
+  "ChallengeZhenHunJi": {
+    "NAME": "祝福：镇魂祭",
+    "DESCRIPTIONS": [
+      "剩余","回合：通过能力牌，以能力节奏进入准备演奏解除。 NL 倒计时结束时给予灰爱音祝福：对手的生命值和最大生命值变为1，且无法增加。"
+    ]
+  },
+  "GIRLSBANDCRY": {
+    "NAME": "GIRLSBANDCRY",
+    "DESCRIPTIONS": [
+      "你拥有其他TOGENASHI TOGEARI成员时，你不会收到伤害。"
+    ]
+  },
+  "GirlsReboot": {
+    "NAME": "《逆行》",
+    "DESCRIPTIONS": [
+      "《虚白三重奏》每次演奏1点力量1点敏捷；如果你的重力与闪耀数量不相等，“我爱你，与你何干？”演奏时有50%概率少抽1张牌，有50%概率少触发1次减费。"
+    ]
+  },
+  "WorldLegacy": {
+    "NAME": "《星遗物》",
+    "DESCRIPTIONS": [
+      "《虚白三重奏》每次吉他-浅草&微露触发概率成功会移除所有“整备中”；如果三场revue都演奏过，每次获得演出预备时， 预见 5。"
+    ]
+  },
+  "WhiteMythology": {
+    "NAME": "《白神话》",
+    "DESCRIPTIONS": [
+      "《虚白三重奏》每次演奏给敌我全场施加2层 重力 4层 缠绕 ；“毁灭你，与你何干？”演奏时不再获得 人工制品 。"
+    ]
+  },
+  "WorldChalice": {
+    "NAME": "何为爱",
+    "DESCRIPTIONS": [
+      "回合结束时如果星遺物-『星杖』已经死亡，移除自身所有负面状态，移除玩家2个正面状态. NL 死亡时，给予星爱音“爱”"
+    ]
+  },
+  "WorldCrown": {
+    "NAME": "何为约定",
+    "DESCRIPTIONS": [
+      "回合结束时如果星遺物-『星杯』已经死亡，给予星爱音10层“星光般的闪耀”，10层回溯. NL 死亡时，给予星爱音“约定”"
+    ]
+  },
+  "TimeCreepWitness": {
+    "NAME": "时间潜行见证者",
+    "DESCRIPTIONS": [
+      "回合结束时，会随机移除玩家 #b",
+      "个buff，并获得他们."
+    ]
+  },
+  "AutoShieldPower": {
+    "NAME": "自动对应矩阵",
+    "DESCRIPTIONS": [
+      "每当你打出1张卡, 获得 #b",
+      " 点 格挡 . 在回合结束时对你造成等同其格挡的伤害."
+    ]
+  },
+  "Recollect": {
+    "NAME": "回忆",
+    "DESCRIPTIONS": [
+      "你不再受到负面状态的影响. NL 免疫所有伤害."
+    ]
+  },
+  "Love": {
+    "NAME": "爱",
+    "DESCRIPTIONS": [
+      "每当你使用攻击牌，将一张虚空加入抽牌堆"
+    ]
+  },
+  "Promise": {
+    "NAME": "约定",
+    "DESCRIPTIONS": [
+      "每当你使用技能牌，获得1点回溯"
+    ]
+  },
+  "DeterminationToProtectHer": {
+    "NAME": "守护她的决心",
+    "DESCRIPTIONS": [
+      "每当你打出1张卡, 获得 #b",
+      " 点 格挡 . 在回合结束时对你造成等同其格挡的伤害."
+    ]
+  },
+  "StarAnonShining": {
+    "NAME": "星光般的闪耀",
+    "DESCRIPTIONS": [
+      "闪烁着星光的"," 层闪耀，每层增加5%伤害"
+    ]
+  },
+  "BackTrack": {
+    "NAME": "回溯",
+    "DESCRIPTIONS": [
+      "通过使用银色腕表，收到攻击时回复 #b",
+      " 点 生命,并且增加 #b1 层。回合结束时，减少直至与“星光般的闪耀”层数相同。 NL 伤害不小于 #b200 时，额外移除自身一个负面状态,移除你一个正面状态"
+    ]
+  },
+  "Witness": {
+    "NAME": "时间见证者",
+    "DESCRIPTIONS": [
+      "剩余 #b",
+      " 分 #b",
+      " 秒，重启这场位于时空尽头的旅途…… NL 当拥有“守护她的决心”后，将掌控这个时空."
+    ]
+  },
+  "KoiKouEnishi": {
+    "NAME": "以恋结缘",
+    "DESCRIPTIONS": [
+      "接下来你抽到的 #b",
+      " 张未升级牌将在本场战斗中升级"
+    ]
+  },
+  "YUZUImagePower": {
+    "NAME": "稻草人偶",
+    "DESCRIPTIONS": ["当临时生命击破时，从非boss站中逃跑。"]
+  },
+  "KiraKiraShining": {
+    "NAME": "闪闪发光的闪耀",
+    "DESCRIPTIONS": [
+      "闪闪发光的 #b"," 层闪耀 ，每层增加5%伤害"
+    ]
+  },
+  "Leader": {
+    "NAME": "领导爱音",
+    "DESCRIPTIONS": [
+      "我是领导！我不会受到负面状态的影响. NL 免疫所有伤害."
+    ]
+  },
+  "CarStstoryPower": {
+  "NAME": "二十多年工龄",
+  "DESCRIPTIONS": [
+    "在 #b",
+    " 回合后，爆炸并造成 #b",
+    " 点罚金。",
+    "在它的死亡时，自爆并造成 #b"
+  ]
+},
+  "RevueStarlight": {
+    "NAME": "再 生 産",
+    "DESCRIPTIONS": [
+      "本回合你不再受到负面状态的影响. NL 免疫所有伤害."
+    ]
+  },
+  "IllationPower": {
+    "NAME": "演绎",
+    "DESCRIPTIONS": [
+      "给予爱城华恋 #y","% 减伤 ，达到 #y5 层时会因为演出谢幕而退场。 "
+    ]
+  },
+  "KarenShining": {
+    "NAME": "闪耀",
+    "DESCRIPTIONS": [
+      "爱城华恋现在拥有 #y"," 层闪耀。每层增加5%伤害。死亡时会失去一半的层数。"
+    ]
+  },
+  "DustAnonSign": {
+    "NAME": "签字",
+    "DESCRIPTIONS": [
+      "场上存在签字时，使你获得壁垒。 "
+    ]
+  },
+  "Speed": {
+    "NAME": "加速！",
+    "DESCRIPTIONS": [
+      "你不再收到重力的伤害增加影响。 "
+    ]
+  },
+  "EncorePower": {
+    "NAME": "安可",
+    "DESCRIPTIONS": [
+      "充满节奏条时，获得 [E] 。如果处于整备中，额外获得1点 力量 和1点 敏捷 。 "
+    ]
+  },
+  "Liability": {
+    "NAME": "有责任！",
+    "DESCRIPTIONS": [
+      "在回合结束时，获得 #b ",
+      " 层易伤, #b",
+      " 层脆弱，失去 #b",
+      " 点金币，抵消 #b",
+      " 次正面效果。"
+    ]
+  },
+  "WithoutLiability": {
+    "NAME": "无责任！",
+    "DESCRIPTIONS": [
+      "在回合开始时，获得 #b1",
+      "层力量, 恢复 #b",
+      " 点生命，获得 #b",
+      " 点金币，获得",
+      " [E] ，获得 #b1",
+      " 层 变奏 。"
+    ]
+  },
+  "DustAnonLeaderSign": {
+    "NAME": "签字",
+    "DESCRIPTIONS": [
+      "在回合开始时给予打玩家 #b1 层“无责任”，当敌方死亡时，将打灰爱音的所有“无责任”转换为“有责任”。 "
+    ]
+  },
+  "RoseliaShining": {
+    "NAME": "静静绽放的闪耀",
+    "DESCRIPTIONS": [
+      "闪闪发光的 #b"," 层闪耀 ，每层增加5%伤害"
+    ]
+  },
+  "PrepareForLive": {
+    "NAME": "准备演出！",
+    "DESCRIPTIONS": [
+      "你不再受到负面状态的影响. NL 免疫所有伤害。"
+    ]
+  },
+  "untouchableFuturePower": {
+    "NAME": "无法触及的未来！",
+    "DESCRIPTIONS": [
+      "正在记录你收到的伤害。"
+    ]
+  },
+  "TrueIllationPower": {
+    "NAME": "演绎",
+    "DESCRIPTIONS": [
+      "给予爱城华恋 #y","% 减伤 ，达到 #y5 层时会因为演出谢幕而退场。 "
+    ]
+  },
+  "TheEndKarenShining": {
+    "NAME": "闪耀",
+    "DESCRIPTIONS": [
+      "爱城华恋现在拥有 #y"," 层闪耀。每层增加5%伤害。"
+    ]
+  }
+}

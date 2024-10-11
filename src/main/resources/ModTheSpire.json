@@ -1,0 +1,16 @@
+{
+  "modid": "AnonMod",
+  "name": "AnonMod",
+  "author_list": [
+    "Gig"
+  ],
+  "description": "Welcome to Anon's World",
+  "dependencies": [
+    "basemod",
+    "actlikeit",
+    "stslib"
+  ],
+  "version": "0.8.64",
+  "sts_version": "05-17-2024",
+  "optional_dependencies": ["sakikoMod"]
+}

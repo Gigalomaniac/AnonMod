@@ -1,0 +1,24 @@
+{
+  "quickRestart:SettingsRestartButton": {
+    "TEXT": [
+      "重新启程"
+    ]
+  },
+  "quickRestart:EndRestartButton": {
+    "TEXT": [
+      "启程"
+    ]
+  },
+  "quickRestart:RoomRestartButton": {
+    "TEXT": [
+      "重启战斗"
+    ]
+  },
+  "quickRestart:OptionsMenu": {
+    "TEXT": [
+      "在死亡或胜利界面显示“启程”按钮",
+      "在进行一局游戏时，在游戏设定界面显示“重新启程”按钮",
+      "在战斗房间时，在游戏设定界面显示“重启战斗”按钮"
+    ]
+  }
+}

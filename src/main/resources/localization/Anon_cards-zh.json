@@ -1,0 +1,621 @@
+{
+ "Strike_Anon": {
+  "NAME": "打击",
+  "DESCRIPTION": "造成 !D! 点伤害。"
+ },
+ "Defend_Anon": {
+  "NAME": "防御",
+  "DESCRIPTION": "获得 !B! 点 格挡 。"
+ },
+ "SavePower": {
+  "NAME": "凝神",
+  "DESCRIPTION": " 保留 。 NL 你的下一张攻击牌造成 !M! 点额外伤害。"
+ },
+ "Printf": {
+  "NAME": "printf(%d)",
+  "DESCRIPTION": "造成 !D! 点伤害。 NL 将一张凝神加入手牌 。"
+ },
+ "MyInflame": {
+  "NAME": "认真一下",
+  "DESCRIPTION": "获得 !M! 点 力量，获得 !M! 点 敏捷 。"
+ },
+ "Tomori": {
+  "NAME": "高松灯的迷茫",
+  "DESCRIPTION": "丢弃所有手牌，每张在你的手牌中增加一张 *小小的瞬间 。 NL 获得 整备中 。 NL 保留 。 消耗 。",
+  "UPGRADE_DESCRIPTION": "丢弃所有手牌，每张在你的手牌中增加一张 *小小的瞬间+ 。 NL 获得 整备中 。 NL 保留 。 消耗 。"
+ },
+ "Soyorin": {
+  "NAME": "长崎爽世的挽留",
+  "DESCRIPTION": "给予等于你当前 重力 层数2倍的 *缠绕 ，获得等量的 *多层护甲。 NL 保留 。 消耗 。 NL （给予 !M! 层 *缠绕 。）",
+  "UPGRADE_DESCRIPTION": "给予等于你当前 重力 层数4倍的 *缠绕 ，获得等量的 *多层护甲。 NL 保留 。 消耗 。 NL （给予 !M! 层 *缠绕 。）"
+ },
+ "Rikki": {
+  "NAME": "椎名立希的坚持",
+  "DESCRIPTION": "切换 节奏 。 NL 获得 !M! 层 变奏 。 NL 这张牌不受 节奏 影响 。 NL 保留 。 消耗 。"
+ },
+ "Mana": {
+  "NAME": "纯田真奈的陪伴",
+  "DESCRIPTION": "移除所有整备中 NL 进入演奏。 NL 保留 消耗 。",
+  "UPGRADE_DESCRIPTION": "移除所有整备中 NL 进入演奏。 NL 保留 。"
+ },
+ "Rana": {
+  "NAME": "要乐奈的归属",
+  "DESCRIPTION": "造成 !D! 点伤害。 NL 将2张 *特供芭菲 放入你的抽牌堆中。 NL 保留 。 消耗 。",
+  "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 将3张 *特供芭菲+ 放入你的抽牌堆中。 NL 保留 。 消耗 。"
+ },
+ "Sakiko": {
+  "NAME": "丰川祥子的工资",
+  "DESCRIPTION": "获得 20 金币 NL 保留 消耗",
+  "UPGRADE_DESCRIPTION": "获得 20 金币 NL 给予所有敌人 !M! 层虚弱和易伤（层数为你所受 重力 的4倍） NL 保留 消耗 。"
+ },
+ "Mutsumi": {
+  "NAME": "若叶睦的守望",
+  "DESCRIPTION": "造成 !D! 点伤害。 NL 击晕目标1回合 NL (对Ｂoss无效)。 NL 保留 消耗 。",
+  "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 击晕目标2回合 NL (对Ｂoss无效)。 NL 保留 消耗 。"
+ },
+ "GiveNote": {
+  "NAME": "给音符buff",
+  "DESCRIPTION": ""
+ },
+ "BasicSongs": {
+  "NAME": "基础音乐",
+  "DESCRIPTION": "选择 演奏 ： 名無声 、 潜在表明 或 碧天伴走 。 NL 这张牌无视 节奏 。",
+  "UPGRADE_DESCRIPTION": "保留 。 NL 选择 演奏 ： 从名無声 、 潜在表明 或 碧天伴走 。 NL 这张牌无视 节奏 。"
+ },
+ "OtoichieSongs": {
+  "NAME": "音一会",
+  "DESCRIPTION": "抽1张牌。 NL 演奏 ： 音一会 。 NL 这张牌无视 节奏 。"
+ },
+ "NamonakiSongs": {
+  "NAME": "名無声",
+  "DESCRIPTION": "演奏 效果：移除你的所有负面状态并且获得20点 格挡 。"
+ },
+ "HaruhikageSongs": {
+  "NAME": "春日影",
+  "DESCRIPTION": "抽1张牌。 NL 演奏 ： 春日影 。 NL 这张牌无视 节奏 。 NL （某些人可能不想听……）。 消耗 。"
+ },
+ "HekitenbansouSongs": {
+  "NAME": "碧天伴走",
+  "DESCRIPTION": "演奏 效果：获得 [E] [E] 并且抽2张牌。"
+ },
+ "UtakotobaSongs": {
+  "NAME": "詩超絆",
+  "DESCRIPTION": "抽1张牌。 NL 演奏 ： 詩超絆 。 NL 这张牌无视 节奏 。"
+ },
+ "KiritorisenSongs": {
+  "NAME": "剪切线",
+  "DESCRIPTION": "抽1张牌。 NL 演奏 ： 剪切线 。 NL 这张牌无视 节奏 。"
+ },
+ "HitoshizukuSongs": {
+  "NAME": "壱雫空",
+  "DESCRIPTION": "抽1张牌。 NL 演奏 ： 壱雫空 。 NL 这张牌无视 节奏 。"
+ },
+ "SilhouetteSongs": {
+  "NAME": "影色舞",
+  "DESCRIPTION": "抽1张牌。 NL 演奏 ： 影色舞 。 NL 这张牌无视 节奏 。"
+ },
+ "SenzaihyoumeiSongs": {
+  "NAME": "潜在表明",
+  "DESCRIPTION": "演奏 效果：获得2点 力量 和 敏捷 。"
+ },
+ "RestOrPractice": {
+  "NAME": "延宕",
+  "DESCRIPTION": "造成 !D! 点伤害。 NL 如果敌人的意图不是攻击，则再造成 !D! 点伤害。"
+ },
+ "ChangeToAttackSongs": {
+  "NAME": "切换节奏：攻击 ",
+  "DESCRIPTION": "切换到攻击 节奏 。"
+ },
+ "ChangeToSkillSongs": {
+  "NAME": "切换节奏：技能 ",
+  "DESCRIPTION": "切换到技能 节奏 。"
+ },
+ "ChangeToPowerSongs": {
+  "NAME": "切换节奏：能力",
+  "DESCRIPTION": "切换到能力 节奏 。"
+ },
+ "ChangeStateSongs": {
+  "NAME": "切换节奏 ",
+  "DESCRIPTION": "切换到你选择的 节奏 。 NL 这张牌不受 节奏 影响。",
+  "UPGRADE_DESCRIPTION": "保留 。 NL 切换到你选择的 节奏 。 NL 这张牌不受 节奏 影响。"
+ },
+ "Minute": {
+  "NAME": "小小的瞬间",
+  "DESCRIPTION": "虚无 。 NL 抽1张牌。 NL 消耗 。",
+  "UPGRADE_DESCRIPTION": "保留 。 NL 抽1张牌。 NL 消耗 。"
+ },
+ "Idea": {
+  "NAME": "新点子",
+  "DESCRIPTION": "从3张随机牌中选择1张加入你的手牌。这张牌在本回合耗能变为0并且 消耗 。 NL 虚无 。 消耗 。",
+  "UPGRADE_DESCRIPTION": "从3张随机牌中选择1张加入你的手牌。这张牌在本回合耗能变为0并且 消耗 。"
+ },
+ "LittleExercise": {
+  "NAME": "小练习",
+  "DESCRIPTION": "造成 !D! 点伤害。 NL 增加一张 *小小的瞬间 到你的手牌。"
+ },
+ "Pafe": {
+  "NAME": "特供芭菲",
+  "DESCRIPTION": "失去10金币。 NL 回复 !M! 点生命。 NL （买不起别乱摸。） NL 消耗 。",
+  "UPGRADE_DESCRIPTION": "回复 !M! 点生命。 NL （已经有人付过钱了。） NL 消耗 。"
+ },
+ "MindInflate": {
+  "NAME": "灵感爆发",
+  "DESCRIPTION": "将X张 点子 放入你的抽牌堆中。 NL 下一回合多抽X张牌。 NL 消耗 。",
+  "UPGRADE_DESCRIPTION": "将X+1张 点子 放入你的抽牌堆中。 NL 下一回合多抽X+1张牌。 NL 消耗 。"
+ },
+ "HastyFinish": {
+  "NAME": "仓促收尾",
+  "DESCRIPTION": "使用所有 节奏 ，每点 节奏 对所有敌人造成 !D! 点伤害。"
+ },
+ "VocalMe": {
+  "NAME": "我是如此暗淡",
+  "DESCRIPTION": "给予所有敌人 !M! 层 虚弱 。"
+ },
+ "UrgentPractice": {
+  "NAME": "紧急练习",
+  "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !M! 层 变奏 。"
+ },
+ "EveryMinutes": {
+  "NAME": "一生的约定",
+  "DESCRIPTION": "增加 !M! 张 *小小的瞬间 到你的手牌。"
+ },
+ "NoroshiSongs": {
+  "NAME": "無路矢",
+  "DESCRIPTION": "演奏：無路矢 NL  演奏 开始时给予所有敌人 5 层 虚弱 和 易伤 NL 抽1张牌。"
+ },
+ "Release": {
+  "NAME": "爆裂绽放",
+  "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 在 演奏 回合伤害翻倍。"
+ },
+ "IdeaKing": {
+  "NAME": "点子王",
+  "DESCRIPTION": "虚无 。 NL 在每回合开始时，触发 点子 。",
+  "UPGRADE_DESCRIPTION": "在每回合开始时，触发 点子 。"
+ },
+ "PassionPlay": {
+  "NAME": "激情演奏",
+  "DESCRIPTION": "演奏 回合才能被打出。 NL 对所有敌人造成 !D! 点伤害。 NL 每当这张牌被 保留 时，将其在本场战斗的伤害增加 !M! 点。 NL 保留 。"
+ },
+ "CurtainCall": {
+  "NAME": "华丽谢幕",
+  "DESCRIPTION": "演奏 回合才能被打出。 NL 对所有敌人造成 !D! 点伤害。 NL 结束你的回合。"
+ },
+ "Compressive": {
+  "NAME": "大敌当前",
+  "DESCRIPTION": "获得 !B! 点 格挡。 NL 每有一名敌人，额外获得 !M! 点 格挡 。"
+ },
+ "Gravity": {
+  "NAME": " 重力场",
+  "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 额外造成你当前 重力 的伤害。",
+  "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 额外造成你当前 重力 2倍的伤害。"
+ },
+ "OnStage": {
+  "NAME": "台前幕后",
+  "DESCRIPTION": "只有不在 演奏 回合才能被打出。 NL 造成 !D! 点伤害。 NL 在本回合 保留 你的手牌。"
+ },
+ "BetEverything": {
+  "NAME": "豪赌",
+  "DESCRIPTION": "清空 节奏 。 NL 进入 演奏 回合。 NL 结束你的回合。 NL 消耗 。"
+ },
+ "Thinking": {
+  "NAME": "-_-",
+  "DESCRIPTION": "不能被打出 。 NL 抽到这张牌时，在本场战斗中 升级 手牌中的除这张牌外的所有牌。 NL 虚无 。",
+  "UPGRADE_DESCRIPTION": "不能被打出 。 NL 每当你抽到这张牌，在本场战斗中 升级 手牌中的所有牌。"
+ },
+ "BrainStorming": {
+  "NAME": "头脑风暴",
+  "DESCRIPTION": "退出 演奏预备 。 NL 获得 整备中 。 NL 消耗 所有手牌，每张将一张 点子 加入手牌。 NL 消耗 。",
+  "UPGRADE_DESCRIPTION": "退出 演奏预备 。 NL 获得 整备中 。 NL 消耗 所有手牌，将 消耗 数量+1张 点子 加入手牌。 NL 消耗 。"
+ },
+ "Absolute": {
+  "NAME": "跟你爆了！",
+  "DESCRIPTION": "造成 !D! 点伤害。 NL 获得与所造成的伤害相等的 变奏 。 NL 消耗 。"
+ },
+ "PrePreparation": {
+  "NAME": "Live的事前准备",
+  "DESCRIPTION": "在每回合开始时额外抽 !M! 张牌。 NL 如果是 演奏 回合，额外获得 !M! 点 [E] 。"
+ },
+ "ReadyExercise": {
+  "NAME": "练习准备",
+  "DESCRIPTION": "造成 !D! 点伤害。 NL 如果不是在 演奏 回合，则获得 [E] 。"
+ },
+ "ReLive": {
+  "NAME": "再 生 産",
+  "DESCRIPTION": "移除你的1层 整备中 。 NL 退出 演奏 回合。 NL 消耗 。",
+  "UPGRADE_DESCRIPTION": "移除你的1层 整备中 。 NL 退出 演奏 回合。"
+ },
+ "allShing": {
+  "NAME": "温暖光芒",
+  "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 额外造成你 闪耀 层数5倍的伤害。 NL （你有 !M! 层 闪耀 。）",
+  "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 额外造成你 闪耀 层数8倍的伤害。 NL （你有 !M! 层 闪耀 。）",
+  "FLAVOR": "Design by 爱音B杯季军 NL  ---琉曦年---"
+ },
+ "Encore": {
+  "NAME": "安可",
+  "DESCRIPTION": "充满节奏条时，获得 [E] 。如果处于整备中，额外获得1点 力量 和1点 敏捷 。 虚无 ",
+  "UPGRADE_DESCRIPTION": "充满节奏条时，获得 [E] 。如果处于整备中，额外获得1点 力量 和1点 敏捷 。",
+  "FLAVOR": "Design by 爱音B杯亚军 NL  ---才羽绿---"
+ },
+ "FaceDear": {
+  "NAME": "直面",
+  "DESCRIPTION": "失去一半的当前生命值，获得与所失去的生命值相等的 多层护甲 。",
+  "FLAVOR": "Design by 爱音B杯冠军 NL  ---Asahi---"
+ },
+ "PerfectPitch": {
+  "NAME": "绝对音感",
+  "DESCRIPTION": "切换到你选择的 节奏 ，你每次选择乐曲时，将这张牌从弃牌堆放回你的手牌。",
+  "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 切换到你选择的 节奏。 NL 你每次选择乐曲时，将这张牌从弃牌堆放回你的手牌。"
+ },
+ "IBegYou": {
+  "NAME": "哦内该",
+  "DESCRIPTION": "给予 !M! 层 缠绕 。 NL 额外给予敌人等于你身上 重力 层数的 缠绕 。"
+ },
+ "Logic": {
+  "NAME": "逻辑破碎",
+  "DESCRIPTION": "获得与你当前 消耗 堆中牌数+4相等的 格挡 。",
+  "UPGRADE_DESCRIPTION": "获得与你当前 消耗 堆中牌数+7的 格挡 。",
+  "EXTENDED_DESCRIPTION": [
+   " NL （获得 !B! 点 格挡 。）"
+  ]
+ },
+ "LittleStar": {
+  "NAME": "微小的星屑",
+  "DESCRIPTION": "随机对敌人造成 !D! 点伤害2次。你每有一层 闪耀 ，则再随机对敌人造成 !D! 点伤害。 NL （你有 !M! 层 闪耀 ，最多99次。）"
+ },
+ "FinishBand": {
+  "NAME": "我是来结束乐队的",
+  "DESCRIPTION": "抽 !M! 张牌。 NL 清空你的歌单，每移除一首歌获得 [E] 。"
+ },
+ "Ha": {
+  "NAME": "哈？",
+  "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 等同于伤害的 格挡 。 NL 每打出一次，这张牌在本局游戏中的数值永久性增加1。 NL 消耗 。"
+ },
+ "StarLight": {
+  "NAME": "你也曾闪耀吗",
+  "DESCRIPTION": "造成 !D! 点伤害。 NL 抽1张牌。 NL 抽等于你身上 闪耀 层数的牌。 NL （你有 !M! 层 闪耀 。）"
+ },
+ "LongTimeVagetarian": {
+  "NAME": "长期素食导致的",
+  "DESCRIPTION": "释放永生不死：获得 6 层 *多重护甲 。 NL 你每有一层点子王额外释放一次（你现在有 !M! 层）。",
+  "UPGRADE_DESCRIPTION": "释放永生不死：获得 8 层 *多重护甲 。 NL 你每有一层点子王额外释放一次（你现在有 !M! 层）。"
+ },
+ "KiraKiraDokiDoki": {
+  "NAME": "KiraKiraDokiDoki",
+  "DESCRIPTION": "获得 !M! 层 闪耀 。"
+ },
+ "FutureVision": {
+  "NAME": "预知未来",
+  "DESCRIPTION": "回合开始时，如果是 演奏 阶段， NL 预见 !M! 。"
+ },
+ "GravitationalCollapse": {
+  "NAME": "引力坍缩",
+  "DESCRIPTION": "造成 !D! 点伤害。 NL 给予敌人你 重力 层数 的 重力 。"
+ },
+ "DreamComeTrue": {
+  "NAME": "梦想成真",
+  "DESCRIPTION": "触发你当前 演奏 的曲目的第一首歌的效果。 NL 消耗 。",
+  "UPGRADE_DESCRIPTION": "触发你当前 演奏 的曲目的第一首歌的效果。"
+ },
+ "RhythmGuitar": {
+  "NAME": "节奏吉他",
+  "DESCRIPTION": "手牌中每有一张攻击牌，造成 !D! 点伤害。",
+  "EXTENDED_DESCRIPTION": [
+   " NL （你有",
+   "张攻击牌。）",
+   "张攻击牌。）"
+  ]
+ },
+ "Traction": {
+  "NAME": "被重力束缚的灵魂啊",
+  "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 [E] 。 NL 获得1层 重力 。",
+  "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 获得 [E] 。 NL 获得2层 重力 。"
+ },
+ "Simper": {
+  "NAME": "“假笑”",
+  "DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果你乐队已经组成，抽 !M! 张牌。否则下一回合抽 !M! 张牌。"
+ },
+ "LogicDeepDive": {
+  "NAME": "思维深潜",
+  "DESCRIPTION": "选择一张已消耗的牌，将其放入你的手牌，将等同于其消耗的虚空加入抽牌堆。这张牌本回合耗能变为0。(有人不想加班)。 NL 消耗 。",
+  "UPGRADE_DESCRIPTION": "选择一张已消耗的牌，将其放入你的手牌将等同于其消耗的虚空加入抽牌堆。这张牌本回合耗能变为0。(有人不想加班)。 NL 消耗 。"
+ },
+ "Unite": {
+  "NAME": "总攻击！",
+  "DESCRIPTION": "对所有敌人造成 !M! 点伤害。 NL 你每有一名乐队成员，额外造成一次 !D! 点的随机伤害。 NL （立希会偷偷多打2点）。",
+  "UPGRADE_DESCRIPTION": "对所有敌人造成 !M! 点伤害。 NL 你每有一名乐队成员，额外造成一次 !D! 点的随机伤害。 NL （立希会偷偷多打2点）。"
+ },
+ "AreYourequired": {
+  "NAME": "你也是被需要的吗？",
+  "DESCRIPTION": "造成 !D! 点伤害。 NL 每有一名其他敌人，获得 [E] 。"
+ },
+ "FirstCosmicVelocity": {
+  "NAME": "第一宇宙速度",
+  "DESCRIPTION": "你的 重力 不再增加收到的伤害。 NL 虚无 ",
+  "UPGRADE_DESCRIPTION": "你的 重力 不再增加收到的伤害。"
+ },
+ "Stars": {
+  "NAME": "邦祖邦宗",
+  "DESCRIPTION": "移除所有 闪耀 。 NL 每层 闪耀 获得1点 力量 和 敏捷 。 NL （你有 !M! 层 闪耀 。）"
+ },
+ "WholeLifeTime": {
+  "NAME": "一辈子……？",
+  "DESCRIPTION": "在你的回合结束时，将1张 *小小的瞬间 放入你的抽牌堆中，获得 !M! 点 格挡 , NL 获得 1 点重力 。"
+ },
+ "Accomplice": {
+  "NAME": "共犯",
+  "DESCRIPTION": "获得3点 重力 给予目标3点 重力 。 NL 之后给予目标你身上重力层数的缠绕（现在可以给予 !M! 点）。 消耗 ",
+  "UPGRADE_DESCRIPTION": "获得3点 重力 ，给予目标3点 重力 NL 之后给予目标你身上重力层数的缠绕（现在可以给予 !M! 点）。"
+ },
+ "AnonTokyo": {
+  "NAME": "ANON TOKYO",
+  "DESCRIPTION": "将你的所有乐队成员牌加入你的手牌。 NL 消耗 。"
+ },
+ "WishYouHappiness": {
+  "NAME": "“祝你幸福”",
+  "DESCRIPTION": "给予 !M! 层 *缠绕 。 NL 然后造成敌人身上 *缠绕 层数的伤害。"
+ },
+ "Crychic": {
+  "NAME": "Crychic的阴影",
+  "DESCRIPTION": "你的乐队中每有一名Crychic成员，给予 3 层 *缠绕 。每有一名ＭyGO成员，给予3层 重力 。 NL 消耗。",
+  "UPGRADE_DESCRIPTION": "你的乐队中每有一名Crychic成员，给予 3 层 *缠绕 。每有一名ＭyGO成员，给予3层 重力 。"
+ },
+ "AmIRequired": {
+  "NAME": "我，是被需要的吗？",
+  "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得你重力层数的 *多层护甲 。"
+ },
+ "RiNGInvite": {
+  "NAME": "RiNG的演出支援",
+  "DESCRIPTION": " 获得 [E] 。如果 演奏 已经开始，再获得一次。。 NL 消耗。",
+  "UPGRADE_DESCRIPTION": "获得 [E] [E] 。如果 演奏 已经开始，再获得一次。 NL 消耗。"
+ },
+ "Determination": {
+  "NAME": "“决心”",
+  "DESCRIPTION": "在每回合开始时，获得等于你 闪耀 层数的 [E] 。"
+ },
+ "Grin": {
+  "NAME": "唐笑",
+  "DESCRIPTION": "消耗所有 节奏 。 NL 每层 节奏 获得 !B! 点 格挡 并且下一回合抽 !M! 张牌。"
+ },
+ "NeverSleepLate": {
+  "NAME": "不熬夜主义",
+  "DESCRIPTION": "获得所有敌人 *缠绕 总数的 格挡 。",
+  "UPGRADE_DESCRIPTION": "获得所有敌人 *缠绕 总数2倍的 格挡 。"
+ },
+ "DespairBreak": {
+  "NAME": "绝望突破",
+  "DESCRIPTION": "只有 整备中 且未处于演出预备状态下才能使用。获得等同于乐队人数层数的 无实体 。 NL （获得 !M! 层 无实体 。） NL 消耗 。"
+ },
+ "HopeBanish": {
+  "NAME": "希望追放",
+  "DESCRIPTION": "将你的 闪耀 层数翻倍，然后造成等同于你 闪耀 层数的伤害。 NL （你有 !M! 层 闪耀 。） NL 消耗 。",
+  "UPGRADE_DESCRIPTION": "将你的 闪耀 层数翻3倍，然后造成等同于你 闪耀 层数的伤害。 NL （你有 !M! 层 闪耀 。） NL 消耗 。"
+ },
+ "AstoundingWisdom": {
+  "NAME": "惊世智慧",
+  "DESCRIPTION": "你的 点子 不再 消耗 NL 还有春日影（小声）。"
+ },
+ "Reversion": {
+  "NAME": "逆转乐手",
+  "DESCRIPTION": "逆转你的歌单。 NL 获得相同层数的临时 力量 和临时 敏捷 。（现在有 !B! 层）"
+ },
+ "WhyShouldWePlay": {
+  "NAME": "为什么要演奏___!",
+  "DESCRIPTION": "移除你最早的一首歌，造成 !D! 点伤害。将一张 点子 加入你的手牌。 NL （ 春日影 则会重新加进歌单。）"
+ },
+ "LoveMeIFYouCan": {
+  "NAME": "LoveMe'IF'YouCan",
+  "DESCRIPTION": "使灰爱音下次 演奏 无法产生效果。"
+ },
+ "ItsChord": {
+  "NAME": "和弦演示",
+  "DESCRIPTION": "虚无 。 NL 造成 !D! 点伤害。 NL 你在这个回合内每打出过一张牌，就获得1层 变奏 。",
+  "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 你在这个回合内每打出过一张牌，就获得1层 变奏 。",
+  "EXTENDED_DESCRIPTION": [
+   " NL （你本回合打出过",
+   "张牌。）",
+   "张牌。）"
+  ]
+ },
+ "Sad": {
+  "NAME": "┭┮Д┭┮",
+  "DESCRIPTION": "进入live时，额外 演奏 一首歌。"
+ },
+ "MachineHeartSongs": {
+  "NAME": "机械心",
+  "DESCRIPTION": " 抽1张牌 NL 演奏：机械心 NL 演奏 开始时获得3层 人工制品。这张卡可以无视 节奏 。"
+ },
+ "WholeLifeBand": {
+  "NAME": "我从来没有觉得玩乐队开心过",
+  "DESCRIPTION": " 对在场所有敌人造成 !D! 点伤害，你每有1点 重力 就多触发1次。"
+ },
+ "barrel": {
+  "NAME": "鼠老师给的桶",
+  "DESCRIPTION": "支付一半金币和生命值，所有人一起提桶跑路！"
+ },
+ "CatHero": {
+  "NAME": "素颜",
+  "DESCRIPTION": "失去1点 重力 ，获得 !M! 点力量， !M! 点敏捷。"
+ },
+ "WhyWholeLifeBand": {
+  "NAME": "要组一辈子的乐队！",
+  "DESCRIPTION": "在本次战斗中 *小小的瞬间 不再被 消耗 ，并且每当你打出其时，使你和所有敌人获得 !M! 层 重力 ，使你获得 !M! 层 *多层护甲 。"
+ },
+ "WhiteTrio": {
+  "NAME": "虚白三重奏",
+  "DESCRIPTION": " 从三场revue演出节目中选择一场。 NL 这张牌无视 节奏 。",
+  "UPGRADE_DESCRIPTION": "保留 。 NL 从三场revue演出节目中选择一场。 NL 这张牌无视 节奏 。"
+ },
+ "GirlsReboot": {
+  "NAME": "毁灭你，与你何干？",
+  "DESCRIPTION": "演奏 开始时：获得 《逆行》 ，获得重力层数一半层数+5层多重护甲，获得人工制品1层，然后全场所有目标获得1层 虚弱。"
+ },
+ "WorldLegacy": {
+  "NAME": "拯救你，与你何干？",
+  "DESCRIPTION": "演奏 开始时：获得 《星遗物》 ，清除自身2个负面状态，获得4层再生，和 [E] 。"
+ },
+ "WhiteMythology": {
+  "NAME": "我爱你，与你何干？",
+  "DESCRIPTION": "演奏 开始时：获得 《白神话》 ，抽5张卡，手牌随机交换费用。然后将费用最高的手牌费用-1，重复闪耀层数的一半加1次。"
+ },
+ "WhiteAnonHaruhikageSongs": {
+  "NAME": "咫尺天涯的春日影",
+  "DESCRIPTION": "消耗5点生命值。抽一张卡。演奏：春日影（Fiona.ver）。演奏开始时，获得1层无实体，赋予敌我全场易伤2层。这张卡可以无视节奏。 虚无 ， 消耗 。"
+ },
+ "WorldLegacyAnon": {
+  "NAME": "闪光灯记忆",
+  "DESCRIPTION": "延长 *时间见证者 的生效时间10分钟。使用后移除出本场战斗。"
+ },
+ "haventFiguredItOut": {
+  "NAME": "暖场演出",
+  "DESCRIPTION": "丢弃两张牌，抽等量牌。 消耗 ",
+  "UPGRADE_DESCRIPTION": "丢弃两张牌，增加两张 *小小的瞬间 到手牌。 消耗 ",
+  "FLAVOR": "Design by 爱音A杯冠军 NL  ---冰水---"
+ },
+ "LockMachineHeartSongs": {
+  "NAME": "机械心",
+  "DESCRIPTION": " 抽1张牌 NL 演奏：机械心 NL 演奏 开始时获得3层 人工制品。这张卡可以无视 节奏 。",
+  "EXTENDED_DESCRIPTION":[
+   "机械心",
+   " 抽1张牌 NL 演奏：机械心 NL 演奏 开始时获得3层 人工制品。这张卡可以无视 节奏 。 NL （需要2把钥匙解锁）",
+   "你已经找到了真正的心。"
+  ]
+ },
+ "AIHeartSongs": {
+  "NAME": "AIHeartSongs",
+  "DESCRIPTION":
+  "演奏：机械心 NL 演奏 开始时获得3层 人工制品。这张卡可以无视 节奏 。 NL （还需要 !M! 把钥匙解锁）",
+  "UPGRADE_DESCRIPTION": "演奏：机械心 NL 演奏 开始时获得3层 人工制品。这张卡可以无视 节奏 。 NL （锁已经打开了)",
+  "EXTENDED_DESCRIPTION":[
+   "机械心",
+   "演奏：机械心 NL 演奏 开始时获得3层 人工制品。这张卡可以无视 节奏 。 NL （还需要 !M! 把钥匙解锁）",
+   "耳边仿佛回响着告诫，她正在轻轻安抚着你，轻声啜泣。",
+   "演奏：机械心 NL 演奏 开始时获得3层 人工制品。这张卡可以无视 节奏 。 NL 这张卡可以用两把钥匙打开"
+  ],
+  "FLAVOR": "制御、応答、最適、補給 NL 歓喜、哀傷、躊躇、共鳴 NL 條件、過負荷、停止、稼動"
+ },
+ "yuzu_SimplifiedCombo": {
+  "NAME": "简化连招",
+  "DESCRIPTION": "选择：选择至多 !M! 张手牌转化为耗能为0的打击+X；耗能为0的防御+X。 NL 消耗 。"
+ },
+ "yuzu_Image": {
+  "NAME": "稻草人偶",
+  "DESCRIPTION": " 保留 。 NL 获得 !M! 点临时生命，当临时生命被击破后，从非boss战中逃跑。",
+  "FLAVOR": "似乎活人总是怪物们的最末级攻击对象。"
+ },
+ "yuzu_Climax": {
+  "NAME": "渐进高潮",
+  "DESCRIPTION": "选择：抽你抽到了这张牌次数的牌、获得你抽到了这张牌次数的 [E] 。 NL 虚无 。",
+  "UPGRADE_DESCRIPTION": "选择：抽你抽到了这张牌次数的牌、获得你抽到了这张牌次数的 [E] 。",
+  "FLAVOR": "该嗨起来了，不过现在暂且还在热场。"
+ },
+ "KoiKouEnishiSongs": {
+  "NAME": "以恋结缘",
+  "DESCRIPTION": "演奏：以恋结缘 NL  演奏 开始时本场战斗中升级你抽到的前6张未升级牌。这张卡可以无视 节奏 。 ",
+  "FLAVOR": "Ciallo～(∠・ω< )⌒★"
+ },
+ "yuzu_ClimaxOption": {
+  "NAME": "渐进高潮",
+  "DESCRIPTION": "",
+  "EXTENDED_DESCRIPTION": [
+   "抽 !M! 张牌。",
+   "获得 !M! [E] 。"
+  ]
+ },
+ "KarenShing": {
+  "NAME": "下一个舞台",
+  "DESCRIPTION": "这张卡不能 升级 ，不能被打出 。 NL 这张卡抽到手牌时，给予爱城华恋 *1 层闪耀，抽一张牌。不会被 消耗 ",
+  "FLAVOR": "因为想再次站在舞台上，因为观众想要，来自少女歌剧mod的舞台少女穿越而来。"
+ },
+ "dust": {
+  "NAME": "打灰",
+  "DESCRIPTION": "失去 !M! 点生命，获得 !B! 点 格挡 。 ",
+  "FLAVOR": "“披星戴月打灰也不过日常”"
+ },
+ "Scapegoat": {
+  "NAME": "背锅",
+  "DESCRIPTION": "使指定敌方单位获得 签字 ， 消耗。 ",
+  "FLAVOR": "“我一个实习生有这么大权利签字？”"
+ },
+ "UnderMixer": {
+  "NAME": "搅拌机下",
+  "DESCRIPTION": "扣除所有的护甲值造成伤害。",
+  "UPGRADE_DESCRIPTION": " NL （造成 !D! 点伤害。）",
+  "FLAVOR": "“我站在搅拌机下，倒入青春年华”"
+ },
+ "ProjectTwo": {
+  "NAME": "“春日影”二期工程",
+  "DESCRIPTION": "对敌方全体造成 !D! 点伤害，未被格挡的伤害将获得等额金币 消耗 。",
+  "FLAVOR": "“这个项目干完能拿不少钱吧？”"
+ },
+ "CatchCivilEngineering": {
+  "NAME": "抓来干土木",
+  "DESCRIPTION": "使敌方全员获得 签字 ， 消耗 。",
+  "UPGRADE_DESCRIPTION": "使敌方全员获得 签字 ，自身获得5层 金属化 消耗。",
+  "FLAVOR": "“从来没觉得干土木开心过！”"
+ },
+ "RelatedHouseholds": {
+  "NAME": "关系户",
+  "DESCRIPTION": "抽 !M! 张卡，获得 !M! 瓶药水，获得 !B! 点 格挡 ，  消耗 。",
+  "FLAVOR": "“我奶奶可是项目经理！”"
+ },
+ "RedRomantic": {
+  "NAME": "红浪漫",
+  "DESCRIPTION": "消耗所有格挡，恢复消耗的 格挡 的一半生命",
+  "UPGRADE_DESCRIPTION": "消耗所有格挡，恢复消耗的 格挡 的生命",
+  "FLAVOR": "“干工地不学会放松可不行”"
+ },
+ "LeadershipInspection": {
+  "NAME": "领导视察",
+  "DESCRIPTION": "清除所有敌人身上的 签字 状态，每清除一个 签字 ，获得 !M! 层 力量 ， !M! 层 敏捷" ,
+  "FLAVOR": "“领导没事来视察，工头天天找茬”"
+ },
+ "Mixer": {
+  "NAME": "搅拌车",
+  "DESCRIPTION": "将生命值降为1点，获得99点格挡，和1层 力量 ， 消耗 。 ",
+  "FLAVOR": "“搅拌车来了，今晚一定把灰给打完！”"
+ },
+ "LeaderScapegoat": {
+  "NAME": "领导叫你背锅！",
+  "DESCRIPTION": "使指定敌方单位获得 签字 NL 固有 消耗 。 ",
+  "FLAVOR": "“我一个实习生有这么大权利签字？”"
+ },
+ "Roselia": {
+  "NAME": "Roselia",
+  "DESCRIPTION": "这张卡不能 升级 ，不能被打出 。这张卡抽到手牌时，结束你的演奏，失去 1 点 力量 和 敏捷 。 NL 不会被 消耗 ",
+  "FLAVOR": "目指す場所は今も変わらないわ。私達が目指すのは『頂点』、ただ1つよ!"
+ },
+ "UntouchableFuture": {
+  "NAME": "无法触及的未来",
+  "DESCRIPTION": "将本回合受到的所有伤害送往未来 。 消耗 保留 。",
+  "UPGRADE_DESCRIPTION": "将本回合受到的所有伤害送往未来 。 消耗 保留 。",
+  "FLAVOR": "你的愿望？还是，你的报应……"
+ },
+ "untouchableFutureToken": {
+  "NAME": "无法触及的未来衍生物",
+  "DESCRIPTION": "这张卡被消耗时，收到 !M! 点生命流失。 虚无 "
+ },
+ "YouthfulBeautifulSongs": {
+  "NAME": "youthfulbeautiful",
+  "DESCRIPTION": "演奏：潜在表明 NL  演奏 开始时获得 20 格挡。孤独：获得2点 力量 和2点 敏捷 。。"
+ },
+ "LackOfVitalitySongs": {
+  "NAME": "毫无活力",
+  "DESCRIPTION": "演奏：毫无活力 NL  演奏 开始时给予所有敌人3层虚弱。 孤独 ：所有敌人失去2点力量。"
+ },
+ "HekitenbansouStarSongs": {
+  "NAME": "碧天伴走(星)",
+  "DESCRIPTION": "演奏：碧天伴走(星) NL  演奏 开始时抽3张牌。 孤独 ：获得2点能量，下回合抽2张牌。"
+ },
+ "SoloConcertSongs": {
+  "NAME": "独奏演唱会",
+  "DESCRIPTION": "从以下三首歌曲中选择一首演奏：youthful beautiful，毫无活力，碧天伴走。这张牌可以无视节奏。",
+  "UPGRADE_DESCRIPTION": "从以下三首歌曲中选择一首演奏：youthful beautiful，毫无活力，碧天伴走。这张牌可以无视节奏。 保留 。 ",
+  "FLAVOR": "记忆，仍旧在沉睡。"
+ },
+ "OtherHelp": {
+  "NAME": "场外援助",
+  "DESCRIPTION": "发现一张来自其他爱音的帮助，这张牌视作点子。 消耗 ",
+  "UPGRADE_DESCRIPTION": "发现一张来自其他爱音的帮助，使其强化，这张牌视作点子。 消耗 ",
+  "FLAVOR": "绝望的深渊中……"
+ }
+}

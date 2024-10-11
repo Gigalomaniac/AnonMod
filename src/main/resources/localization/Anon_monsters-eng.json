@@ -1,0 +1,47 @@
+{
+  "Nina": {
+    "NAME": "Nina Igusa",
+    "DIALOG": ["Let's dance under the spotlight!"],
+    "MOVES": ["Dance Studio Lights!"]
+  },
+  "s486": {
+    "NAME": "Subaru Aoi",
+    "DIALOG": ["Feel the power of the drummer!", "Take this drumstick to the face!"],
+    "MOVES": ["Drummer's Strength!", "Here's a Hammer!"]
+  },
+  "mmk": {
+    "NAME": "Kaede Momiji",
+    "DIALOG": ["Prepare to be serenaded!", "mmk's hand knife strikes!"],
+    "MOVES": ["Guitar Slash!", "mmk Hand Knife!"]
+  },
+  "Crane": {
+    "NAME": "Super Large Tower Crane Equipment",
+    "DIALOG": [],
+    "MOVES": ["Protect Mode!", "Guard Mode!"]
+  },
+  "RoadRoller": {
+    "NAME": "Armored Road Roller",
+    "DIALOG": [],
+    "MOVES": ["Crush You!", "Here's a Hammer!"]
+  },
+  "LeaderAnon": {
+    "NAME": "Leader Anon",
+    "DIALOG": [],
+    "MOVES": ["I Am the Leader!", "Here's a Hammer!"]
+  },
+  "KSMNoss": {
+    "NAME": "Kasumi Toyama",
+    "DIALOG": [],
+    "MOVES": ["Let's Shine Together!", "Here's a Hammer!", "Here's a Hammer!", "Do We Really Have To Do This?", "Here's a Hammer!"]
+  },
+  "ARSBoss": {
+    "NAME": "Arisu Ichigaya",
+    "DIALOG": [],
+    "MOVES": ["Just Get to Work...", "Here's a Hammer!", "Here's a Hammer!", "Let's Give It Some More Effort", "Here's a Hammer!"]
+  },
+  "AijoKaren": {
+    "NAME": "Arisu Ichigaya",
+    "DIALOG": [],
+    "MOVES": ["Just Get to Work...", "Here's a Hammer!", "Here's a Hammer!", "Let's Give It Some More Effort", "Here's a Hammer!"]
+  }
+}

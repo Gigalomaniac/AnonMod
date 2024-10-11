@@ -1,0 +1,24 @@
+{
+  "quickRestart:SettingsRestartButton": {
+    "TEXT": [
+      "Start A New Run"
+    ]
+  },
+  "quickRestart:EndRestartButton": {
+    "TEXT": [
+      "New Run"
+    ]
+  },
+  "quickRestart:RoomRestartButton": {
+    "TEXT": [
+      "Restart Combat"
+    ]
+  },
+  "quickRestart:OptionsMenu": {
+    "TEXT": [
+      "Show the \"New Run\" Button on death and victory",
+      "Show the \"Start A New Run\" Button during a run in the Settings",
+      "Show the \"Restart Combat\" Button in combat rooms in the Settings"
+    ]
+  }
+}

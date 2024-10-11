@@ -1,0 +1,20 @@
+
+Karen.png
+size: 381,264
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+karen_stand_2
+  rotate: true
+  xy: 2, 2
+  size: 260, 353
+  orig: 281, 397
+  offset: 11, 22
+  index: -1
+shadow
+  rotate: true
+  xy: 357, 175
+  size: 87, 22
+  orig: 148, 25
+  offset: 29, 2
+  index: -1

@@ -1,0 +1,71 @@
+{
+  "StarAnonEvent": {
+    "NAME": "Convergence",
+    "OPTIONS": [
+      "What could it be?",
+      "(Something feels off)",
+      "[Attempt Conversation]: Excuse me, but have we met somewhere before? (Obtain a special relic)",
+      "[Attempt Conversation] (You have not collected all the keys)",
+      "(…)"
+    ],
+    "DESCRIPTIONS": [
+      "You have just finished your band's performance at the livehouse and are preparing to stay as an audience to watch the last band's performance. NL The only one who steps onto the stage is a girl dressed in black. Looking at her figure, the dazzling #rpink long hair seems to remind you of #rsomething",
+      "You fall into deep thought with your head down. And when you come back to your senses, the girl's song just ended, and the audience is applauding for her",
+      "You suddenly feel a strong sense of incongruity, as if things should not end here. Before your reason draws a conclusion, your body moves on its own. You step forward and grab the corner of the girl's dress with your hand. NL The girl does not seem surprised. She does not speak, but just looks back at you.",
+      "Your eyes meet a slight curve at the corner of the girl's mouth. But she does not speak, just shoves the guitar in her hand into your arms and leaves with a flourish. This is strange... When did she take it? (Obtain? Anon's Guitar)",
+      "She did not say much and left without a word."
+    ]
+  },
+  "StarAnonEventAgain": {
+    "NAME": "The Clock Hand Moving Counterclockwise",
+    "OPTIONS": [
+      "What could it be?",
+      "(When did it come to my side?)",
+      "#y'Revisit', the endpoint of this journey"
+    ],
+    "DESCRIPTIONS": [
+      "You are back here once more. The surroundings still hold the image of having just finished the band's performance at the livehouse, and you are hesitating, preparing to stay as an audience to watch the last band's performance. NL But this time, the girl in black with the dazzling #rpink long hair did not appear.",
+      "The guitar on your back has lost its luster, and you have also understood that you cannot rely on it as an anchor point again. NL Suddenly, you find a silver wristwatch on your wrist. But it is clear that you did not have the habit of wearing a wristwatch before.",
+      "Suddenly, you feel a strong resonance from your wrist. It seems to be able to sense your thoughts and is responding to you in this way. NL You look at the counterclockwise moving hand of the watch and gradually understand its method of use, as well as the meaning of 'her' giving you this wristwatch. NL 'Will you also stand behind and watch me like her?' NL 'Thank you... I will also keep this promise. This time, please watch me closely!'"
+    ]
+  },
+  "Present": {
+    "NAME": "Chihaya Aine's Realization",
+    "OPTIONS": [
+      "Uphold the belief with pride (Gain Toxic Egg, Magma Egg, and Frost Egg)",
+      "Embrace the rationality of excellence (Gain 8 potion slots, and fill all empty slots with Chaos Potions)",
+
+      "Long for the meaning of existence (Upgrade all cards)",
+      "Resolve to protect others (Increase maximum energy by [E] [E] [E])",
+
+      "Trustworthiness to entrust (Gain 99999 gold and a Deliveryman)",
+      "Courage to survive (Your maximum HP is multiplied by 100, and fully recover after each combat)",
+
+      "Hope for greater kindness (A final reward, wishing you a joyful playtime)"
+    ],
+    "DESCRIPTIONS": [
+      "Choose your boon",
+      "Wishing you a joyful playtime"
+    ]
+},
+  "BeyondTheStar": {
+    "NAME": "BeyondTheStar"
+  },
+  "promiseOnStage": {
+    "NAME": "The Stage of Promise"
+  },
+  "RevueEvent": {
+    "NAME": "On Stage",
+    "OPTIONS": [
+      "Gain 1000 Gold",
+      "Double your Max HP",
+      "Gain 2 Potion slots and fill all empty slots with Idea Potions",
+
+      "Proceed to the #yCenter of the Stage of Promise"
+    ],
+    "DESCRIPTIONS": [
+      "POSITION ZERO NL What I anticipate is a stage that is even more dazzling, a performance that is even more brilliant, and a shine that surpasses everything@  NL The train will eventually go to the next station NL And what help do you need——",
+      "#r~The train will surely arrive at the next station, but what about this story? What about you?~"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+
+Karen.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Karen
+  rotate: false
+  xy: 1, 1
+  size: 383, 356
+  orig: 400, 400
+  offset: 7, 20
+  index: -1

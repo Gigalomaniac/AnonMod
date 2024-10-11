@@ -1,0 +1,33 @@
+{
+"skeleton": {
+	"hash": "zNgm2/UiREsS6iXPpRvZWAzyDPU",
+	"spine": "3.8.75",
+	"x": -187.24,
+	"y": -27.85,
+	"width": 405.92,
+	"height": 397,
+	"images": "../",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "karen_stand_2", "bone": "root" },
+	{ "name": "shadow", "bone": "root", "attachment": "shadow" },
+	{ "name": "karen_stand_3", "bone": "root", "attachment": "karen_stand_2" }
+],
+"animations": {
+	"animation": {}
+},
+"skins": {
+	"default": {
+		"karen_stand_3": {
+			"karen_stand_2": { "x": -4.04, "y": 170.65, "width": 281, "height": 397 }
+		},
+		"shadow": {
+			"shadow": { "x": 15.72, "y": 5.91, "scaleX": -2.7427, "scaleY": 2.3076, "width": 148, "height": 25 }
+		}
+	}
+}
+}

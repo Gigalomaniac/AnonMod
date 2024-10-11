@@ -1,0 +1,24 @@
+{
+  "quickRestart:SettingsRestartButton": {
+    "TEXT": [
+      "새 게임 시작"
+    ]
+  },
+  "quickRestart:EndRestartButton": {
+    "TEXT": [
+      "새 게임 시작"
+    ]
+  },
+  "quickRestart:RoomRestartButton": {
+    "TEXT": [
+      "전투 다시하기"
+    ]
+  },
+  "quickRestart:OptionsMenu": {
+    "TEXT": [
+      "사망 및 승리시 '새 게임 시작' 버튼 표시",
+      "설정에 '새 게임 시작' 버튼 표시",
+      "설정에 '전투 다시하기' 버튼 표시"
+    ]
+  }
+}

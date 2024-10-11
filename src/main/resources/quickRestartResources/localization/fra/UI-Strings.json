@@ -1,0 +1,24 @@
+{
+  "quickRestart:SettingsRestartButton": {
+    "TEXT": [
+      "Nouvelle partie"
+    ]
+  },
+  "quickRestart:EndRestartButton": {
+    "TEXT": [
+      "Nouvelle partie"
+    ]
+  },
+  "quickRestart:RoomRestartButton": {
+    "TEXT": [
+      "Recommencer le combat"
+    ]
+  },
+  "quickRestart:OptionsMenu": {
+    "TEXT": [
+      "Montrer le bouton \"Nouvelle partie\" après une victoire ou une défaite.",
+      "Montrer le bouton \"Nouvelle partie\" dans les paramètres durant la partie.",
+      "Montrer le bouton \"Recommencer le combat\" dans les paramètres durant un comabt."
+    ]
+  }
+}
