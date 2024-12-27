@@ -1,0 +1,107 @@
+{
+  "Life": {
+    "name": "红茶",
+    "description": "恢复20%生命值。",
+    "message": "",
+    "price": 20,
+    "count": 2
+  },
+  "Smith": {
+    "name": "强化石",
+    "description": "随机升级1张牌组的牌。",
+    "message": "没有能够强化的牌。",
+    "price": 50,
+    "count": 2
+  },
+  "CrystalHaniwa": {
+    "name": "欧帕兹",
+    "description": "下2场精英或boss战开始时，给予所有敌人3层易伤，3层虚弱。",
+    "message": "",
+    "price": 150,
+    "count": 1
+  },
+  "Key": {
+    "name": "一把钥匙",
+    "description": "捡到的奇怪钥匙，不知道有什么用。",
+    "message": "",
+    "price": 130,
+    "count": 1
+  },
+  "Challenge": {
+    "name": "挑战券",
+    "description": "下个房间变为随机精英战斗。",
+    "message": "",
+    "price": 30,
+    "count": 1
+  },
+  "SecretStone": {
+    "name": "神明文字",
+    "description": "",
+    "message": "",
+    "price": 30,
+    "count": 1
+  },
+  "InitialRelics": {
+    "name": "初始遗物",
+    "description": "你可以再来一份。",
+    "message": "",
+    "price": 120,
+    "count": 1
+  },
+  "PotionSlot": {
+    "name": "药水栏位",
+    "description": "药水栏位加1，附赠1瓶随机药水。",
+    "message": "",
+    "price": 100,
+    "count": 2
+  },
+  "Telephone": {
+    "name": "小空的电话",
+    "description": "第4幕会出现小空的商店，且下个小空的商店降价30%。",
+    "message": "",
+    "price": 50,
+    "count": 1
+  },
+  "Sexy": {
+    "name": "特殊服务",
+    "description": "小祥的特殊服务",
+    "message": "",
+    "price": 9999,
+    "count": 1
+  },
+  "liveboost": {
+    "name": "liveboost",
+    "description": "liveboost饮料",
+    "message": "",
+    "price": 50,
+    "count": 1
+  },
+  "IDEAPOTIONS": {
+    "name": "点子药水",
+    "description": "点子药水",
+    "message": "",
+    "price": 30,
+    "count": 1
+  },
+  "WorkWork": {
+    "name": "打工",
+    "description": "打工赚钱",
+    "message": "",
+    "price": 50,
+    "count": 1
+  },
+  "Purge": {
+    "name": "删牌",
+    "description": "可以进行一次删牌",
+    "message": "",
+    "price": 100,
+    "count": 1
+  },
+  "ExcessiveFantasy": {
+    "name": "小票",
+    "description": "一张小票，收款是RiNG。不是很便宜的菜品给你一种似曾相识的感觉。",
+    "message": "",
+    "price": 100,
+    "count": 1
+  }
+}
