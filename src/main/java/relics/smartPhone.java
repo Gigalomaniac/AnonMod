@@ -1,5 +1,6 @@
 package relics;
 import TheTreeOfQliphoth.TheTreeOfQliphoth;
+import basemod.BaseMod;
 import basemod.abstracts.CustomRelic;
 import basemod.abstracts.CustomSavable;
 import bossRoom.effect.LatterEffect;
@@ -74,6 +75,8 @@ public class smartPhone extends CustomRelic implements CustomSavable<Integer> {
         char_Anon.beatState = "";
         songs.LiveSongsNum  = 2;
         Inspiration.AllCount = 0;
+        BaseMod.MAX_HAND_SIZE =10;
+
     }
     @Override
     public void usedUp() {

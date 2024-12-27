@@ -1,5 +1,8 @@
 package patch;
 
+ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+ import com.megacrit.cardcrawl.core.Settings;
+ import com.megacrit.cardcrawl.helpers.FontHelper;
  import power.StarAnon.DeterminationToProtectHer;
  import star.StarAnonSide;
  import com.evacipated.cardcrawl.modthespire.lib.SpireInsertPatch;

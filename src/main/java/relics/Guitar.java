@@ -4,10 +4,14 @@ import characters.char_Anon;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.ui.campfire.AbstractCampfireOption;
+import com.megacrit.cardcrawl.ui.campfire.RestOption;
+import com.megacrit.cardcrawl.ui.campfire.SmithOption;
 import power.Shining;
 import power.musicStart;
 import power.songs;
@@ -56,5 +60,10 @@ public class Guitar extends CustomRelic {
         }
 
     }
-
+//    public boolean canUseCampfireOption(AbstractCampfireOption option) {
+//        if (option instanceof RestOption && option.getClass().getName().equals(SmithOption.class.getName())) {
+//            return false;
+//        }
+//        return true;
+//    }
 }

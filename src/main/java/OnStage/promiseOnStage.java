@@ -80,6 +80,7 @@ public AbstractScene DungeonScene() { return new TheEndingScene(); }
 
 
  protected void makeMap() {
+     AbstractDungeon.levelNum = "少女歌剧";
      smartPhone.ifHeart = false;
    map = new ArrayList();
    ArrayList<MapRoomNode> row1 = new ArrayList<MapRoomNode>();

@@ -328,11 +328,6 @@ public class StarAnonSide extends AbstractSpriterMonster {
             AbstractDungeon.getCurrRoom().spawnRelicAndObtain((Settings.WIDTH / 2), (Settings.HEIGHT / 2), (AbstractRelic) StarAnonPocketWatch);
         }
         this.imageEventText.setDialogOption(options[0]);
-        if (Settings.language == Settings.GameLanguage.ZHS) {
-            ReflectionHacks.setPrivate(this.imageEventText, GenericEventDialog.class, "title", " Crychic的阴影 ");
-        }else {
-            ReflectionHacks.setPrivate(this.imageEventText, GenericEventDialog.class, "title", " Crychic's shadow ");
-        }
         (AbstractDungeon.getCurrRoom()).cannotLose = true;
         CardCrawlGame.music.silenceBGM();
         AbstractDungeon.scene.fadeOutAmbiance();

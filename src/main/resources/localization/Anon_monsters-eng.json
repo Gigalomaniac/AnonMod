@@ -43,5 +43,66 @@
     "NAME": "Arisu Ichigaya",
     "DIALOG": [],
     "MOVES": ["Just Get to Work...", "Here's a Hammer!", "Here's a Hammer!", "Let's Give It Some More Effort", "Here's a Hammer!"]
+  },
+  "Yukina": {
+    "NAME": "Yukina",
+    "DIALOG": [
+      "Do you have the sense to gamble everything?",
+      "Please, also, arrive at the top ......"
+    ],
+    "MOVES": [
+      "Opening!",
+      "It's time for curtain call. Boring people."
+    ]
+  },
+  "TheConsciousnessOfTheWorld": {
+    "NAME": "the Consciousness of the world",
+    "DIALOG": [
+      "Do you have the sense to gamble everything?",
+      "Please, also, arrive at the top ......"
+    ],
+    "MOVES": [
+      "Opening!",
+      "It's time for curtain call. Boring people."
+    ]
+  },
+  "wa": {
+    "NAME": "roof tile",
+    "DIALOG": [
+      ""
+    ],
+    "MOVES": [
+      ""
+    ]
+  },
+  "Car": {
+    "NAME": "Car?",
+    "DIALOG": [
+      ""
+    ],
+    "MOVES": [
+      ""
+    ]
+  },
+  "caicai": {
+    "NAME": "caicai",
+    "DIALOG": [
+      "Is it possible that ...... you are also a colored black?"
+    ],
+    "MOVES": [
+      "Shoo, shoo, shoo.",
+      "Split Tile!",
+      "hand knife"
+    ]
+  },
+  "mika": {
+    "NAME": "mika",
+    "DIALOG": [
+      "？"
+    ],
+    "MOVES": [
+      "Call of the Stars",
+      "Kyrie Eleison!"
+    ]
   }
 }

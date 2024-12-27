@@ -8,6 +8,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpirePrefixPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpireReturn;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.dungeons.Exordium;
 import com.megacrit.cardcrawl.dungeons.TheCity;
 import java.util.Collections;
 import java.util.Random;
@@ -33,8 +34,10 @@ public class Act2BossPatch {
             } else if (AnonMod.onlymodboss  && AbstractDungeon.player instanceof char_Anon) {
                 TheCity.bossList.add("Poppin'Party");
                 TheCity.bossList.add("Roselia");
+                TheCity.bossList.add("Pastel*Palettes");
                 TheCity.bossList.add("Poppin'Party");
                 TheCity.bossList.add("Roselia");
+                TheCity.bossList.add("Pastel*Palettes");
                 Collections.shuffle(TheCity.bossList, new Random(AbstractDungeon.monsterRng.randomLong()));
             } else {
                 TheCity.bossList.add("Poppin'Party");
@@ -46,7 +49,17 @@ public class Act2BossPatch {
                 AbstractDungeon.bossList.remove(AbstractDungeon.bossList.size() - 1);
             }
 //        }
-
+        switch (TheCity.bossList.get(0)){
+            case "Poppin'Party":
+                AnonMod.saves.setString("Stage2","pp");
+                break;
+            case "Roselia":
+                AnonMod.saves.setString("Stage2","ros");
+                break;
+            default:
+                AnonMod.saves.setString("Stage2","pp");
+                break;
+        }
         return SpireReturn.Return();
     }
 }

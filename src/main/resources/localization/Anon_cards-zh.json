@@ -617,5 +617,59 @@
   "DESCRIPTION": "发现一张来自其他爱音的帮助，这张牌视作点子。 消耗 ",
   "UPGRADE_DESCRIPTION": "发现一张来自其他爱音的帮助，使其强化，这张牌视作点子。 消耗 ",
   "FLAVOR": "绝望的深渊中……"
+ },
+ "TheConsciousnessOfTheWorldToken": {
+  "NAME": "记忆碎片",
+  "DESCRIPTION": "恢复存储的能力：",
+  "FLAVOR": "过去，现在，未来。"
+ },
+ "MikaSwissRoll": {
+  "NAME": "瑞士卷",
+  "DESCRIPTION": "抽到这张牌时，会被消耗。消耗时给予未花 1 层充能并恢复 30 生命。如果充能已满，改为进入对手回合。 消耗 "
+ },
+ "OurCitySongs": {
+  "NAME": "熙熙攘攘、我们的城市",
+  "DESCRIPTION": " 右键切换 演奏：熙熙攘攘、我们的城市 NL 演奏 开始时获得1层 飞行。这张卡可以无视 节奏 。 消耗 ",
+  "UPGRADE_DESCRIPTION": " 右键切换 演奏：空之箱 NL 演奏 开始时消耗抽牌堆所有“打击”和“防御”牌。这张卡可以无视 节奏 。 消耗 ",
+  "EXTENDED_DESCRIPTION": [
+   "熙熙攘攘、我们的城市",
+   "空之箱"
+  ]
+ },
+ "OurCitySongsNullBox": {
+  "NAME": "空之箱",
+  "DESCRIPTION": " 右键切换 演奏：空之箱 NL 演奏 开始时消耗抽牌堆所有“打击”和“防御”牌。这张卡可以无视 节奏 。 消耗 "
+ },
+ "BocchiAndPlanetSongs": {
+  "NAME": "吉他与孤独与蓝色星球",
+  "DESCRIPTION": " 演奏：吉他与孤独与蓝色星球 NL 演奏 开始时获得2层 缓冲。这张卡可以无视 节奏 。 消耗 "
+ },
+ "Mika": {
+  "NAME": "背叛",
+  "DESCRIPTION": " 不能被打出 保留 。每当你打出攻击牌，如果你的 力量 小于10，获得 1 点 力量 。"
+ },
+ "KarenRewardCard": {
+  "NAME": "舞台少女 Encore",
+  "DESCRIPTION": " 不能被打出 ，当你收到致死伤害后，恢复所有生命值，移除这张牌。"
+ },
+ "DustAnonRewards": {
+  "NAME": "打灰！",
+  "DESCRIPTION": " 战斗结束时，如果你打出过5次这张牌，额外获得100金币。"
+ },
+ "PoppinPartyRewardSongs": {
+  "NAME": "ときめきエクスペリエンス！",
+  "DESCRIPTION": " 演奏：ときめきエクスペリエンス！ NL 演奏 开始时获得5层 闪耀 。这张卡可以无视 节奏 。 消耗 "
+ },
+ "FIREBIRDSongs": {
+  "NAME": "FIREBIRD",
+  "DESCRIPTION": " 演奏：FIREＢIRＤ NL 演奏 开始时获得10层 涅槃 3层 预见 。这张卡可以无视 节奏 。 消耗 "
+ },
+ "xiuwaxiuwaSongs": {
+  "NAME": "しゅわりん☆どり～みん",
+  "DESCRIPTION": " 演奏：しゅわりん☆どり～みん NL 演奏 将3张自我修复加入手牌。这张卡可以无视 节奏 。 消耗 "
+ },
+ "HifuuClubSongs": {
+  "NAME": "卫星露天咖啡屋",
+  "DESCRIPTION": " 演奏：卫星露天咖啡屋 NL 演奏 手牌上限增加2。这张卡可以无视 节奏 。 消耗 "
  }
 }

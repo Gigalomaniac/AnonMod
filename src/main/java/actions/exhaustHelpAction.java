@@ -116,7 +116,7 @@ public class exhaustHelpAction extends AbstractGameAction {
         derp.add(new AIHeart());
         derp.add(new WhiteAnonHaruhikageSongs(0));
         derp.add(new UntouchableFuture());
-        derp.add(new YUZUSimplifiedCombo());
+//        derp.add(new YUZUSimplifiedCombo());
         return derp;
     }
 }

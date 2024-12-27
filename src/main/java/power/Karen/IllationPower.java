@@ -3,6 +3,7 @@ package power.Karen;
 import bossRoom.effect.LatterEffect;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.common.RollMoveAction;
 import com.megacrit.cardcrawl.actions.common.SuicideAction;
@@ -23,6 +24,7 @@ import com.megacrit.cardcrawl.vfx.SpeechBubble;
 import monster.ShoujoKageki.LastWordVideoEffect;
 import relics.PositionZero;
 import relics.yakusokuNoBasho;
+import vfx.animation.TimeLateEffect;
 
 public class IllationPower extends AbstractPower {
     // 能力的ID
@@ -81,8 +83,14 @@ public class IllationPower extends AbstractPower {
             AbstractDungeon.effectList.add(new LatterEffect(() -> {
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new CanLoseAction());
             AbstractDungeon.topLevelEffectsQueue.add(new LastWordVideoEffect());
-            addToBot((AbstractGameAction)new SuicideAction((AbstractMonster)this.owner));
             },1F));
+            AbstractDungeon.effectList.add(new LatterEffect(() -> {
+                addToBot((AbstractGameAction)new SuicideAction((AbstractMonster)this.owner));
+            },6F));
+            if(AbstractDungeon.actNum==3)
+                        AbstractDungeon.effectList.add(new LatterEffect(() -> {
+            AbstractDungeon.combatRewardScreen.open();
+            },7f));
         }
         if (this.amount ==0) {
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));

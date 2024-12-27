@@ -1,5 +1,6 @@
 package monster.ShoujoKageki;
 
+import Mod.AnonMod;
 import actions.RemoveNumDebuffsAction;
 import actions.SkipEnemiesTurnFalseAction;
 import basemod.ReflectionHacks;
@@ -46,6 +47,7 @@ import power.notLive;
 import star.StarAnon.WorldChalice;
 import star.StarAnon.WorldCrown;
 import star.StarAnonSide;
+import utils.DreamCardRewards;
 import utils.Invoker;
 import vfx.animation.TimeLateEffect;
 
@@ -255,6 +257,7 @@ public class Karen extends AbstractSpriterMonster {
     }
 
     public void usePreBattleAction() {
+        (AbstractDungeon.getCurrRoom()).rewards.add(new DreamCardRewards(31));
         AbstractScene TheEndingScene = new TheEndingScene();
         AbstractDungeon.scene= TheEndingScene;
         ifAwake = false;
@@ -282,6 +285,7 @@ public class Karen extends AbstractSpriterMonster {
 
     @Override
     public void die() {
+
         if (!(AbstractDungeon.getCurrRoom()).cannotLose) {
             super.die();
             useFastShakeAnimation(5.0F);
@@ -295,10 +299,8 @@ public class Karen extends AbstractSpriterMonster {
                     AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new EscapeAction(m));
             }
             onBossVictoryLogic();
-//            UnlockTracker.hardUnlockOverride("CROW");
-//            UnlockTracker.unlockAchievement("CROW");
             onFinalBossVictoryLogic();
-            finInfo = -1;
+
         }
     }
 
@@ -403,6 +405,7 @@ public class Karen extends AbstractSpriterMonster {
                     addToBot((AbstractGameAction) new RemoveNumDebuffsAction((AbstractCreature) this));
             addToBot((AbstractGameAction) new ApplyPowerAction(this, this, (AbstractPower) new IllationPower(this, 1), 1));
                 addToTop((AbstractGameAction) new ApplyPowerAction(this, this, (AbstractPower) new RevueStarlight(this,false), 1));
+                if(!this.isDeadOrEscaped())
                 this.addToBot(new ReducePowerAction(this, this, KarenShining.POWER_ID, this.getPower(KarenShining.POWER_ID).amount/2));
 
                 if((this.hasPower(KarenShining.POWER_ID) && this.getPower(KarenShining.POWER_ID).amount >= 30 )|| (this.hasPower(IllationPower.POWER_ID) && this.getPower(IllationPower.POWER_ID).amount >= 3)){

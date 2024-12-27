@@ -1,6 +1,8 @@
 package monster.act1;
 
 import BandFriends.crychic.TomoriCrychic;
+import BossRewards.OurCitySongs;
+import Mod.AnonMod;
 import actions.SummonGBCFriends486Action;
 import actions.SummonGBCFriendsmmkAction;
 import bossRoom.AbstractSpriterMonster;
@@ -33,6 +35,7 @@ import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import power.GIRLSBANDCRY;
+import utils.DreamCardRewards;
 import utils.Invoker;
 
 import java.util.ArrayList;
@@ -170,6 +173,7 @@ public  class TOGETOGE extends AbstractSpriterMonster {
 
     private ChangeScene effect;
     public void usePreBattleAction() {
+        (AbstractDungeon.getCurrRoom()).rewards.add(new DreamCardRewards(1));
         victory = false;
         s486heatlth = false;
         mmkHealth = false;

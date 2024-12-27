@@ -1,5 +1,6 @@
 package monster.act3;
 
+import Mod.AnonMod;
 import bossRoom.AbstractSpriterMonster;
 import bossRoom.effect.ChangeScene;
 import bossRoom.effect.LatterEffect;
@@ -31,6 +32,7 @@ import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import com.megacrit.cardcrawl.vfx.combat.MindblastEffect;
 import power.Shining;
 import power.notLive;
+import utils.DreamCardRewards;
 import utils.Invoker;
 import vfx.CraneMindblastEffect;
 import vfx.moryyEffect;
@@ -83,6 +85,9 @@ public class Crane extends AbstractSpriterMonster {
             if (!m.isDying && m instanceof LeaderAnon) {
                 AbstractDungeon.actionManager.addToBottom(new EscapeAction(m));
                 AbstractDungeon.effectList.add(new SpeechBubble(m.hb.cX + m.dialogX, m.hb.cY + m.dialogY + 50, 5F, "“这工地谁爱干谁干！”", false));
+                AbstractDungeon.effectList.add(new LatterEffect(() -> {
+                    AbstractDungeon.combatRewardScreen.open();
+                },3f));
             }
         }
     }
@@ -156,6 +161,7 @@ public class Crane extends AbstractSpriterMonster {
     }
 
     public void usePreBattleAction() {
+        (AbstractDungeon.getCurrRoom()).rewards.add(new DreamCardRewards(33));
         AbstractScene TheEndingScene = new TheEndingScene();
         AbstractDungeon.scene= TheEndingScene;
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new InvinciblePower(this, 300), 300));

@@ -1,5 +1,8 @@
  package Mod;
 
+ import BossRewards.*;
+ import ExcessiveFantasy.SakikoShop;
+ import ExcessiveFantasy.ExcessiveFantasyWorld;
  import actlikeit.ActLikeIt;
  import bandFriendsCard.*;
  import basemod.*;
@@ -10,6 +13,7 @@
  import bossRoom.CrychicSide;
  import bossRoom.InnerFavillaeSide;
  import cards.SpecialCard.AIHeart;
+ import cards.SpecialCard.MikaSwissRoll;
  import cards.SpecialCard.haventFiguredItOut;
  import cards.common.*;
  import cards.dust.*;
@@ -40,7 +44,6 @@
  import com.megacrit.cardcrawl.core.Settings;
  import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
  import com.megacrit.cardcrawl.dungeons.Exordium;
- import com.megacrit.cardcrawl.dungeons.TheBeyond;
  import com.megacrit.cardcrawl.dungeons.TheCity;
  import com.megacrit.cardcrawl.helpers.CardHelper;
  import com.megacrit.cardcrawl.helpers.FontHelper;
@@ -49,11 +52,14 @@
  import com.megacrit.cardcrawl.monsters.MonsterGroup;
  import com.megacrit.cardcrawl.powers.AbstractPower;
  import com.megacrit.cardcrawl.relics.AbstractRelic;
+ import com.megacrit.cardcrawl.rewards.RewardSave;
  import com.megacrit.cardcrawl.rooms.AbstractRoom;
  import com.megacrit.cardcrawl.unlock.UnlockTracker;
  import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDrawPileEffect;
  import monster.BocchiTheRock.Bocchi;
  import monster.BocchiTheRock.Ikuyo;
+ import monster.HifuuClub.Hearn;
+ import monster.HifuuClub.Renko;
  import monster.Roselia.Yukina;
  import monster.ShoujoKageki.Karen;
  import monster.act1.soyorin;
@@ -63,6 +69,7 @@
  import monster.act3.FakeDungeon;
  import monster.act3.LeaderAnon;
  import monster.act3.RoadRoller;
+ import monster.caicai.caicai;
  import patch.FixAscenscionUnlockOnGameoverWinPatch;
  import pathes.SkinSelectPatch;
  import potions.IdeaPotion;
@@ -74,6 +81,7 @@
  import star.RestartRunHelper;
  import star.StarAnonEvent;
  import monster.act1.TOGETOGE;
+ import monster.mika.mika;
  import org.apache.logging.log4j.LogManager;
  import org.apache.logging.log4j.Logger;
  import org.scannotation.AnnotationDB;
@@ -84,6 +92,8 @@
  import TheTreeOfQliphoth.TheTreeOfQliphoth;
  import star.StarAnonSide;
  import ui.SkinSelectScreen;
+ import utils.DreamCardRewards;
+ import utils.RewardTypeEnum;
 
  import java.io.IOException;
  import java.nio.charset.StandardCharsets;
@@ -94,7 +104,7 @@
          PostDungeonInitializeSubscriber, EditCharactersSubscriber, PostInitializeSubscriber, EditRelicsSubscriber, EditCardsSubscriber, EditStringsSubscriber,
          OnCardUseSubscriber, EditKeywordsSubscriber, OnPowersModifiedSubscriber, PostDrawSubscriber, PostEnergyRechargeSubscriber,PostDeathSubscriber
          ,PostRenderSubscriber,
-         StartGameSubscriber , PostCreateStartingDeckSubscriber,StartActSubscriber, PostUpdateSubscriber,PostCreateStartingRelicsSubscriber{
+         StartGameSubscriber , PostCreateStartingDeckSubscriber,StartActSubscriber, PostUpdateSubscriber,PostCreateStartingRelicsSubscriber,AddAudioSubscriber{
      public static SpireConfig saves;
      public static final Color Anon_PUPPETEER_FLAVOR = CardHelper.getColor(250, 250, 210);
      private static final String MOD_BADGE = "img/UI_Seles/badge.png";
@@ -116,7 +126,10 @@
      public static boolean limitedSLOption;
      public static float time;
      public static boolean forcecanclebosslogic;
-
+     /**
+      * 3d
+      */
+     public static boolean done = false;
      public static boolean onlymodboss;
      private ArrayList<AbstractCard> cardsToAdd = new ArrayList<>();
    public static ArrayList<AbstractCard> recyclecards = new ArrayList<>();
@@ -200,7 +213,6 @@
 
      @Override
      public void receiveStartGame() {
-
          SkinSelectScreen.shouldUpdateBackground = true;
          FixAscenscionUnlockOnGameoverWinPatch.updateAscProgress = true;
          if (AbstractDungeon.floorNum == 0) {
@@ -208,6 +220,11 @@
              saves.setBool("MachineHeartLocked",true);
              saves.setInt("shopCount", 0);
              saves.setInt("shopLastFloor", 0);
+             saves.setString("Stage1","gbc");
+             saves.setString("Stage2","pp");
+             saves.setString("Stage3","Karen");
+             saves.setString("Stage4","InnerAnon");
+             saves.setString("choice","soyo");
              try {
                  saves.save();
              } catch (IOException var4) {
@@ -215,7 +232,6 @@
              }
          }
          clearPostProcessors();
-
          AbstractPlayer player = AbstractDungeon.player;
 
          ThirdPerspectiveViewPatches.setEnable(false);
@@ -243,7 +259,7 @@
 
    @Override
    public void receivePostDungeonInitialize() {
-//       BaseMod.addEvent((new AddEventParams.Builder("Falling", Falling.class)).dungeonID(Narration.ID).playerClass(CustomCharacter.Anon).create());
+
 //       BaseMod.addEvent(StarEvent.ID, StarEvent.class, Narration.ID);
 //       BaseMod.addEvent((new AddEventParams.Builder("BandFriendsEvent", BandFriendsEvent.class)).dungeonID("test").playerClass(CustomCharacter.Anon).create());
    }
@@ -454,13 +470,23 @@
        this.cardsToAdd.add(new WholeLifeBand());
        this.cardsToAdd.add(new WhyWholeLifeBand());
        this.cardsToAdd.add(new barrel());
-       this.cardsToAdd.add(new image());
-       this.cardsToAdd.add(new YUZUClimax());
-       this.cardsToAdd.add(new YUZUSimplifiedCombo());
-       this.cardsToAdd.add(new KoiKouEnishiSongs());
+//       this.cardsToAdd.add(new image());
+//       this.cardsToAdd.add(new YUZUClimax());
+//       this.cardsToAdd.add(new YUZUSimplifiedCombo());
+//       this.cardsToAdd.add(new KoiKouEnishiSongs());
+       this.cardsToAdd.add(new MikaSwissRoll());
+       this.cardsToAdd.add(new BocchiAndPlanetSongs());
+       this.cardsToAdd.add(new OurCitySongs());
+       this.cardsToAdd.add(new Mika());
+       this.cardsToAdd.add(new KarenRewardCard());
+       this.cardsToAdd.add(new HifuuClubSongs());
+       this.cardsToAdd.add(new DustAnonRewards());
+       this.cardsToAdd.add(new PoppinPartyRewardSongs());
+       this.cardsToAdd.add(new xiuwaxiuwaSongs());
+       this.cardsToAdd.add(new FIREBIRDSongs());
+//       this.cardsToAdd.add(new OurCitySongsFake());
 //       this.cardsToAdd.add(new LockMachineHeartSongs());
-
-//       CatHero.setBackgroundTexture("img/pink/test/bg_skill_white.png","img/pink/test/bg_skill_white_512.png");
+       
        this.cardsToAdd.add(new CatHero());
        try{
            this.cardsToAdd.add(new WhiteTrio());
@@ -502,6 +528,7 @@
        BaseMod.addRelicToCustomPool((AbstractRelic)new relics.FrenchFries(),AbstractCardEnum.Anon_COLOR);
        BaseMod.addRelicToCustomPool((AbstractRelic)new relics.StarAnonBike(),AbstractCardEnum.Anon_COLOR);
        BaseMod.addRelic(new PositionZero(), RelicType.SHARED);
+       BaseMod.addRelic(new Receipts(), RelicType.SHARED);
        BaseMod.addRelic(new yakusokuNoBasho(), RelicType.SHARED);
        BaseMod.addRelic(new Anon_determination(), RelicType.SHARED);
        BaseMod.addRelic(new AiHeartBlessing(), RelicType.SHARED);
@@ -640,6 +667,9 @@
        BaseMod.addMonster("Nina", TOGETOGE::new);
            BaseMod.addBoss(Exordium.ID, "Nina", "img/map/ToTo500.png", "img/map/ToTo500.png");
 
+       BaseMod.addMonster("Mika", mika::new);
+       BaseMod.addBoss(FakeDungeon.id, "Mika", "img/map/mikaboss.png", "img/map/mikaboss.png");
+
        BaseMod.addMonster("Bocchi", ()->{
            AbstractMonster[] Act1Boss = new AbstractMonster[2];
            Act1Boss[0] = new Bocchi(-100,0);
@@ -647,7 +677,13 @@
            return new MonsterGroup(Act1Boss);
        });
        BaseMod.addBoss(Exordium.ID, "Bocchi", "img/map/BocchiLogo.png", "img/map/BocchiLogo.png");
-
+       BaseMod.addMonster("HifuuClub", ()->{
+           AbstractMonster[] Act1Boss = new AbstractMonster[2];
+           Act1Boss[0] = new Renko(-100,0);
+           Act1Boss[1] = new Hearn(200,0);
+           return new MonsterGroup(Act1Boss);
+       });
+       BaseMod.addBoss(Exordium.ID, "HifuuClub", "img/map/HifuuClubLogo.png", "img/map/HifuuClubLogo.png");
        BaseMod.addMonster("Roselia", ()->{
            AbstractMonster[] Roselia = new AbstractMonster[1];
            Roselia[0] = new Yukina(0,0);
@@ -662,7 +698,12 @@
            return new MonsterGroup(Act2Boss);
        });
        BaseMod.addBoss(TheCity.ID, "Poppin'Party", "img/map/PPLOGO.png", "img/map/PPLOGO.png");
-
+       BaseMod.addMonster("Pastel*Palettes", ()->{
+           AbstractMonster[] Act2Boss = new AbstractMonster[1];
+           Act2Boss[0] = new caicai(200,0);
+           return new MonsterGroup(Act2Boss);
+       });
+       BaseMod.addBoss(TheCity.ID, "Pastel*Palettes", "img/map/PPLOGO2.png", "img/map/PPLOGO2.png");
        BaseMod.addMonster("DustAnon", ()->{
            AbstractMonster[] DustAnon = new AbstractMonster[3];
            DustAnon[0] = new Crane(0,0);
@@ -671,6 +712,7 @@
            return new MonsterGroup(DustAnon);
        });
        BaseMod.addBoss(FakeDungeon.id, "DustAnon", "img/map/tong.png", "img/map/tong.png");
+       
        BaseMod.addMonster("ShoujoKageki", ()->{
            AbstractMonster[] Act3Boss = new AbstractMonster[1];
            Act3Boss[0] = new Karen(0,0);
@@ -679,8 +721,10 @@
        BaseMod.addBoss(FakeDungeon.id, "ShoujoKageki", "img/char/karen/skin_fan/aijo.png", "img/char/karen/skin_fan/aijo.png");
 
        BaseMod.addEvent(StarAnonEvent.StarAnonEventID, StarAnonEvent.class, BeyondTheStar.ID);
+//       BaseMod.addEvent(SakikoShop.ID, SakikoShop.class, Exordium.ID);
 
        BeyondTheStar.NarrationAdd();
+       ExcessiveFantasyWorld.ExcessiveFantasyWorldAdd();
        promiseOnStage.Add();
        TheTreeOfQliphoth.TheTreeOfQliphothAdd();
 
@@ -709,22 +753,18 @@
 
        BaseMod.addPotion(liveboost.class, liveboost.liquidColor, liveboost.hybridColor, liveboost.spotsColor, liveboost.ID);
        BaseMod.addPotion(IdeaPotion.class, IdeaPotion.liquidColor, IdeaPotion.hybridColor, IdeaPotion.spotsColor, IdeaPotion.ID);
+
+
+       BaseMod.registerCustomReward(
+               RewardTypeEnum.REWARD,
+               (rewardSave) -> { // 该类型加载时的处理
+                   return new DreamCardRewards(rewardSave.amount);
+               },
+               (customReward) -> { // 该类型保存时的处理
+                   return new RewardSave(customReward.type.toString(), null, ((DreamCardRewards)customReward).amount, 0);
+               });
+
    }
-//     public static void unlockAscensionLevel() {
-//         UnlockTracker.hardUnlockOverride("The Silent");
-//         UnlockTracker.hardUnlockOverride("Defect");
-//         UnlockTracker.hardUnlockOverride("Watcher");
-//         UnlockTracker.hardUnlockOverride("Anon_COLOR");
-//         UnlockTracker.hardUnlockOverride("Anon");
-//         CardCrawlGame.characterManager.getAllPrefs().stream().limit(6L).forEach(pref -> {
-//             if (pref.getInteger("WIN_COUNT", 0) == 0)
-//                 pref.putInteger("WIN_COUNT", 1);
-//             pref.putInteger("ASCENSION_LEVEL", 20);
-//             pref.putInteger("LAST_ASCENSION_LEVEL", 20);
-//             pref.flush();
-//         });
-//         Stream.of(new String[] { "CROW", "DONUT", "WIZARD" }).forEach(UnlockTracker::markBossAsSeen);
-//     }
 
      public static void unlockFinalAct() {
          CardCrawlGame.playerPref.putBoolean(String.valueOf(AbstractPlayer.PlayerClass.IRONCLAD.name()) + "_WIN", true);
@@ -907,6 +947,11 @@
      @Override
      public void receivePostDeath() {
 
+     }
+
+     @Override
+     public void receiveAddAudio() {
+         BaseMod.addAudio("murimuri","vfx/CH0069_Battle_Defense_1.ogg");
      }
 
 

@@ -205,21 +205,21 @@ public class SkinSelectScreen implements ISubscriber, CustomSavable<Integer> {
         if (Settings.language == Settings.GameLanguage.ZHS) {
             text1 = new String[]{"选择你的爱音",
                     "爱音","灰爱音（少女们的逆行）","爱音（白神话）","星千早（星遗物）","劈瓦爱音","爱音(FES)","爱音(赠送)","爱音(爱灯素)","致幻爱音","肥驹爱音","黑暗爱音",
-                    "爱猫爱音", "不是爱音，是爽世", "打灰爱音，鉴定为小工","打灰爱音，鉴定为技术","打灰爱音，鉴定为领导","闪光爱音","是柚子哦"};
+                    "爱猫爱音", "不是爱音，是爽世", "打灰爱音，鉴定为小工","打灰爱音，鉴定为技术","打灰爱音，鉴定为领导","闪光爱音","欠草爱音","圣园未花"};
             special1 = new String[]{"",
                     "","初始携带“机械心”,你的乐队为“她”留着位置……","初始携带“吉他-浅草&微露”,更换专属初始卡组","初始携带摩托，独奏演唱会，无法触及的未来","","","","","","","","",
-                    "", "初始携带“鼠老师给的桶”和打灰套装","","初始携带“鼠老师给的桶”和“领导叫你背锅！”","初始额外携带“KiraKiraDokiDoki”","初始携带“以恋结缘”，“稻草人”,“渐进高潮”和“简化连招”"};
+                    "", "初始携带“鼠老师给的桶”和打灰套装","","初始携带“鼠老师给的桶”和“领导叫你背锅！”","初始额外携带“KiraKiraDokiDoki”","","测试中！"};
         }else {
             text1 = new String[]{"选择你的爱音",
                     "Anon","AshAnon","Tile destroyer Anon","White Anon","星千早（星遗物）","Anon (FES)","Anon (Gift)","Anon (Aideng Su)","Hallucination Anon","FeiJuAnon","DarkAnon","CatLoverAnon",
-                    "Not Anon, is Soyorin", "Dusting Anon, Identified as Laborer","Dusting Anon, Identified as Technician","Dusting Anon, Identified as Leader","KiraKira Anon","It's yuzu"};
+                    "Not Anon, is Soyorin", "Dusting Anon, Identified as Laborer","Dusting Anon, Identified as Technician","Dusting Anon, Identified as Leader","KiraKira Anon","AnonLackFuck","mika"};
             special1 = new String[]{"",
                     "","Replaces 'Basic Music'  with 'kikaikokoro:-AI Heart-”","White","初始携带摩托，无法触及的未来","","","","","","","","",
-                    "", "Comes with 'The Barrel from the Da Laoshu'","","","Initially Carrying 'KiraKiraDokiDoki'","Begin the game with the cards 'Bonded by Love', 'Scarecrow', 'Climbing to a Crescendo', and 'Simplified Combo' in your possession."};
+                    "", "Comes with 'The Barrel from the Da Laoshu'","","","Initially Carrying 'KiraKiraDokiDoki'","","testing"};
         }
         BGindex = new String[]{
                 null,"img/test/BG/AshAnonBG.png","img/test/BG/WhiteAnon.png","img/test/BG/StarBG.png",null,null,null,null,null,
-                null, null, null,null,null,null,null,null,null};
+                null, null, null,null,null,null,null,null,null,null};
 
         Special = special1;
         TEXT = text1;
@@ -241,6 +241,7 @@ public class SkinSelectScreen implements ISubscriber, CustomSavable<Integer> {
         SKINS.add(new Skin(15, "leader"));
         SKINS.add(new Skin(16, "KSM"));
         SKINS.add(new Skin(17, "yuzu"));
+        SKINS.add(new Skin(18, "mika"));
         Inst = new SkinSelectScreen();
     }
 
@@ -300,10 +301,13 @@ public class SkinSelectScreen implements ISubscriber, CustomSavable<Integer> {
                 this.charPath = "img/test/KSM.png";
             }
             if(charPath.equals("yuzu")){
-                this.charPath = "img/test/yuzu.png";
+                this.charPath = "img/test/rabbit.png";
             }
             if(charPath.equals("star")){
                 this.charPath = "img/test/AnonStar.png";
+            }
+            if(charPath.equals("mika")){
+                this.charPath = "img/test/mikaIMG.png";
             }
             this.name = SkinSelectScreen.TEXT[index + 1];
             this.special = SkinSelectScreen.Special[index + 1];

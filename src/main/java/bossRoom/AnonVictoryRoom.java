@@ -1,8 +1,7 @@
 package bossRoom;
 
-import actions.movie.AnonEndingEffect;
 import actions.movie.CanStopMediaPlayerAction;
-import actions.movie.SimplePlayVideoEffect;
+import actions.movie.AnonEndingSimplePlayVideoEffect;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
@@ -22,7 +21,10 @@ public class AnonVictoryRoom
             AbstractDungeon.isScreenUp = true;
             AbstractDungeon.overlayMenu.proceedButton.hide();
             CardCrawlGame.fadeIn(1.0F);
-            addToBot(new CanStopMediaPlayerAction(new SimplePlayVideoEffect("movie/mygo片尾曲.webm")));
+            CardCrawlGame.music.silenceBGM();
+            CardCrawlGame.music.silenceBGMInstantly();
+            CardCrawlGame.music.silenceTempBgmInstantly();
+            addToBot(new CanStopMediaPlayerAction(new AnonEndingSimplePlayVideoEffect("movie/mygo片尾曲.webm")));
 
     }
 }

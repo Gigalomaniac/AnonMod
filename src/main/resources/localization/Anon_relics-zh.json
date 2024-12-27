@@ -197,7 +197,7 @@
     ]
   },
   "PositionZero": {
-    "NAME": "PositionZero1",
+    "NAME": "PositionZero",
     "FLAVOR": "无论多少次，我一定会到达……",
     "DESCRIPTIONS": [
       "在回合开始时获得 [E] 。 战斗开始时，获得3倍点数的 力量 , 敏捷 和 闪耀 ，死亡时回到舞台前，计数+1。"
@@ -210,16 +210,11 @@
       "右键使用，前往约定的舞台。"
     ]
   },
-  "relic.SpiritFire": {
-  "NAME": "精神小火",
-  "FLAVOR": "小火它很高兴。",
-  "DESCRIPTIONS": [
-    "你可以在休息处战斗。",
-    "战斗",
-    "战斗以获得奖励。",
-    "红宝石钥匙",
-    "回复 %d 点生命",
-    "你无法拾起这个，因为启用了loadout mod"
-  ]
-}
+  "Receipts": {
+    "NAME": "RiNG的票据",
+    "FLAVOR": "一张小票，收款是RiNG。不是很便宜的菜品给你一种似曾相识的感觉。",
+    "DESCRIPTIONS": [
+      "在你需要的时候，她都在你身边。"
+    ]
+  }
 }

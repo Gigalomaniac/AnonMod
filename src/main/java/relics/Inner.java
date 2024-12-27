@@ -6,6 +6,7 @@ import bossRoom.InnerFavillaeSide;
 import bossRoom.MonsterRoomMyBoss;
 import com.google.gson.JsonElement;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.dungeons.TheEnding;
 import com.megacrit.cardcrawl.events.AbstractEvent;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.monsters.MonsterGroup;
@@ -73,6 +74,7 @@ public class Inner extends ClickableRelic implements CustomSavable<SoulHeartSave
             enteredBloodShop = false;
             isOn = false;
         }
+        if (AbstractDungeon.id.equals(TheEnding.ID))
         makeHeartToAnon();
 //        makeBossToMonstro();
 //        makeAllToHush();

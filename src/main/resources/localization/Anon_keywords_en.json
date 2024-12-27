@@ -1,80 +1,74 @@
 [
   {
     "NAMES": [
-      "Variation"
+      "variation"
     ],
-    "DESCRIPTION": "When you have #yVariation, the cards you play are considered to be of the same type as the current rhythm."
+    "DESCRIPTION": "When you have the #y variation, all cards played are considered to be of the same type as the current tempo."
   },
   {
     "NAMES": [
-      "Idea"
+      "point (of argument)"
     ],
-    "DESCRIPTION": "Discover 1 card and add it to your hand. This card costs 0 for the turn and is Exhausted after use."
+    "DESCRIPTION": "Discover 1 card to add to your hand. This card's energy consumption becomes 0 for the turn and is consumed after use."
   },
   {
     "NAMES": [
-      "Rhythm"
+      "beats"
     ],
-    "DESCRIPTION": "Whenever you play a card, gain a layer of the card type's #yRhythm. NL Playing a card of a different type from the current #yRhythm will clear the current #yRhythm. NL When you have 7 layers of #yRhythm, spend 7 layers of #yRhythm to gain an extra turn and enter the #yPerformance state!"
+    "DESCRIPTION": "Whenever a card is played, gain a layer of #y tempo of that card type NL Playing a card of a different type than the current tempo clears the current #y tempo NL When you have 7 layers of #y tempo, consume 7 layers of #y tempo , gain an extra turn, and go into play!"
   },
   {
     "NAMES": [
-      "Gravity"
+      "gravitational"
     ],
-    "DESCRIPTION": "For each layer of #yGravity you have, damage received is increased by 5%."
+    "DESCRIPTION": "For each layer of #y gravity you have, damage received is increased by 5%."
   },
   {
     "NAMES": [
-      "Shine"
+      "glitter"
     ],
-    "DESCRIPTION": "Gain 1 layer of #yShine. (Shine gives some of your cards additional effects.)"
+    "DESCRIPTION": "Shine will give some of your cards an extra effect."
   },
   {
     "NAMES": [
-      "Performance"
+      "play a musical instrument"
     ],
-    "DESCRIPTION": "Enter an additional turn and trigger the #yPerformance effect of the Live song. The Performance turn inherits the remaining Energy from the previous turn and gains an additional [E]."
+    "DESCRIPTION": "Goes into an extra turn and triggers the #y playing effect of the Live song . The playing turn inherits the remaining cost from the previous turn and gains an additional [E] ."
   },
   {
     "NAMES": [
-      "Preparing"
+      "in preparation"
     ],
-    "DESCRIPTION": "Cannot enter Performance."
+    "DESCRIPTION": "Can't get into playing."
   },
   {
     "NAMES": [
-      "Music Score"
+      "a musical score"
     ],
-    "DESCRIPTION": "Namonaki: Clear negative effects and gain 20 Block. NL Senzaihyoumei: Gain 2 Strength and 2 Agility. NL Hekitenbansou: Gain [E] [E] and draw 2 cards. NL Kiritorisen: Gain 2 new Ideas. NL A Hitoshizuku: Apply 5 stacks of Weak and Vulnerable to all enemies. NL Silhouette Dance: Gain Block equal to the unblocked damage dealt. NL Haruhikage: Stun all enemies. NL Utakotoba: All your attack damage is doubled. NL Otoichie: Gain a Barrier and gain 20 Block. NL kikaikokoro: Gain 3 artifact."
+    "DESCRIPTION": "Name and Reputation:Gain 20 block points by clearing negative effects. NL Potential Indication:Gain 2 Strength and 2 Agility. NL Beyoncé Walk:Gain [E] [E] NL Draw 2 cards . NL Cutting Line:Gain 2 new dots. NL 壱雫空: Gives all enemies 5 levels of Weakness and Vulnerability. NL Shadow Dance: Gain a block equal to the unblocked damage dealt. NL Kasuga Shadow:Stun all enemies NL Shishoujou: Double the damage of all your attacks . NL Tone One Momo: Gain Barrier, gain 20 block points ."
   },
   {
     "NAMES": [
-      "《girl's reboot》"
+      "Retrograde."
     ],
-    "DESCRIPTION": "For every performance of 'The Triple Fugue of Void and Whiteness', gain +1 Strength and +1 Agility. If the number of Gravity and Shimmer cards is unequal, there's a 50% chance that 'I Love You What's It To You?' will draw one less card and a 50% chance to trigger one less cost reduction when played"
+    "DESCRIPTION": "The Void-White Trio +1 Strength +1 Agility per play; if Gravity and Shine are not equal in number, \"I love you, what's it to you?\" There is a 50% chance of drawing one less card when played, and a 50% chance of triggering one less cost reduction."
   },
   {
     "NAMES": [
-      "《WorldLegacy》"
+      "Relic of the Stars"
     ],
-    "DESCRIPTION": "For every guitar performance of '-Asakusa & Miru-' from ‘The Triple Fugue of Void and Whiteness’, remove all 'Preparation' statuses. If all three Revues have been performed, gain a premonition of 5 every time you obtain a Performance Readiness."
+    "DESCRIPTION": "The Void White Trio removes all \"in readiness\" each time it plays the Guitar - Asakusa & Shimmering Dew triggers; if all three revues have been played, foresee 5 each time it gets a performance ready."
   },
   {
     "NAMES": [
-      "《mythology》"
+      "The White Myth"
     ],
-    "DESCRIPTION": " Every performance of 'The Triple Fugue of Void and Whiteness' applies 2 layers of Gravity and 4 layers of Bind to all enemies and allies on the field. When 'Destroy You, What's It To You?' is performed, no Artifacts are gained."
+    "DESCRIPTION": "The Void-White Trio applies 2 levels of gravity and 4 levels of entanglement to the entire enemy field each time it is played; \"Destroy you, and what have you to do with it?\" No longer gains artifacts when played."
   },
   {
     "NAMES": [
-      "Signature"
+      "alone"
     ],
-    "DESCRIPTION": "When a Signature is on the field, it grants you a Barrier."
-  },
-  {
-    "NAMES": [
-      "lonely"
-    ],
-    "DESCRIPTION": "When there is only one song in the playlist, trigger an additional effect."
+    "DESCRIPTION": "Triggers additional effects when there is only 1 song in the song list."
   }
 ]

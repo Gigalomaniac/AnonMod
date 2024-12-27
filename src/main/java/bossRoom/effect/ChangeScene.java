@@ -81,11 +81,8 @@ public class ChangeScene extends AbstractChangeSceneEffect{
     public void render(SpriteBatch sb) {
         sb.flush();
         sb.setColor(Color.WHITE.toFloatBits());
-        if (this.x == 0.0F) {
-            sb.draw(this.img, 0.0F, 0.0F, Settings.WIDTH, Settings.HEIGHT);
-        } else {
-            drawForeground(sb, (int)this.img.getWidth(), 0, (int)(Settings.WIDTH / 0.8F), Settings.HEIGHT);
-        }
+
+        sb.draw(this.img, 0.0F, 0.0F, Settings.WIDTH, Settings.HEIGHT);
 
 
     }

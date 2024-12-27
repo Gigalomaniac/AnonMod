@@ -1,71 +1,212 @@
 {
   "StarAnonEvent": {
-    "NAME": "Convergence",
+    "NAME": "bunch up",
     "OPTIONS": [
-      "What could it be?",
-      "(Something feels off)",
-      "[Attempt Conversation]: Excuse me, but have we met somewhere before? (Obtain a special relic)",
-      "[Attempt Conversation] (You have not collected all the keys)",
-      "(…)"
+      "What is ......?",
+      "（Something's wrong.)",
+      "[Attempts to talk]: I'm sorry, but haven't we met somewhere before. (Obtains a special relic)",
+      "[Trying to talk] (You haven't collected all the keys.)",
+      "（……）"
     ],
     "DESCRIPTIONS": [
-      "You have just finished your band's performance at the livehouse and are preparing to stay as an audience to watch the last band's performance. NL The only one who steps onto the stage is a girl dressed in black. Looking at her figure, the dazzling #rpink long hair seems to remind you of #rsomething",
-      "You fall into deep thought with your head down. And when you come back to your senses, the girl's song just ended, and the audience is applauding for her",
-      "You suddenly feel a strong sense of incongruity, as if things should not end here. Before your reason draws a conclusion, your body moves on its own. You step forward and grab the corner of the girl's dress with your hand. NL The girl does not seem surprised. She does not speak, but just looks back at you.",
-      "Your eyes meet a slight curve at the corner of the girl's mouth. But she does not speak, just shoves the guitar in her hand into your arms and leaves with a flourish. This is strange... When did she take it? (Obtain? Anon's Guitar)",
-      "She did not say much and left without a word."
+      "You've just finished the band's gig at the livehouse and are going to stay as an audience member to watch the last band play. NL But the only person walking onto the stage is a young girl dressed all in black. Looking at her figure, that dazzling #r long pink hair seems to remind you of #r something",
+      "You look down in deep thought. And when you come back to your senses that young girl happens to finish her song, and the audience on stage applauds her",
+      "You suddenly feel a strong sense of defiance, as if things shouldn't end there. Before reason could come to a conclusion, your body took the liberty of moving. You stepped forward and grabbed the young girl's coat with your hand. NL The young girl doesn't seem surprised. She doesn't say anything, just looks back at you.",
+      "You see the corners of the young girl's mouth lift in an arc. But she didn't say anything, she just shoved the guitar in her hands into your arms and then dashed off. This is really strange ...... When did she take it away? (Acquired? Aiyo's guitar)",
+      "She didn't say anything more and left without a word."
     ]
   },
   "StarAnonEventAgain": {
-    "NAME": "The Clock Hand Moving Counterclockwise",
+    "NAME": "counterclockwise",
     "OPTIONS": [
-      "What could it be?",
-      "(When did it come to my side?)",
-      "#y'Revisit', the endpoint of this journey"
+      "What is ......?",
+      "（When did it come to me?)",
+      "#You're going again, this time to the end of the journey #"
     ],
     "DESCRIPTIONS": [
-      "You are back here once more. The surroundings still hold the image of having just finished the band's performance at the livehouse, and you are hesitating, preparing to stay as an audience to watch the last band's performance. NL But this time, the girl in black with the dazzling #rpink long hair did not appear.",
-      "The guitar on your back has lost its luster, and you have also understood that you cannot rely on it as an anchor point again. NL Suddenly, you find a silver wristwatch on your wrist. But it is clear that you did not have the habit of wearing a wristwatch before.",
-      "Suddenly, you feel a strong resonance from your wrist. It seems to be able to sense your thoughts and is responding to you in this way. NL You look at the counterclockwise moving hand of the watch and gradually understand its method of use, as well as the meaning of 'her' giving you this wristwatch. NL 'Will you also stand behind and watch me like her?' NL 'Thank you... I will also keep this promise. This time, please watch me closely!'"
+      "You're back again, and the images around you are still left of the band that just finished playing at the livehouse, and you're hesitantly ready to stay as an audience member to watch the last band play. NL But this time, the black girl with the dazzling #r long pink hair doesn't show up.",
+      "The guitar behind you has lost its glow, and you've come to realize that you can't rely on it that anchor point again. NL Suddenly you realize that you are wearing a silver wristwatch on your wrist. But it is obvious that you have not been in the habit of wearing a wristwatch before.",
+      "Suddenly, you feel a strong resonance from your wrist, as if it can sense your thoughts and is responding to you in this way. NL As you look at the counterclockwise hands on the watch, you gradually understand how to use it and what she meant when she gave it to you. NL \"Will you stand back and watch me just like she did?\" NL \"Thank you ...... for this promise, and I will keep it. Please just watch it this time!\""
     ]
   },
   "Present": {
-    "NAME": "Chihaya Aine's Realization",
+    "NAME": "Chihaya Aine's realization",
     "OPTIONS": [
-      "Uphold the belief with pride (Gain Toxic Egg, Magma Egg, and Frost Egg)",
-      "Embrace the rationality of excellence (Gain 8 potion slots, and fill all empty slots with Chaos Potions)",
-
-      "Long for the meaning of existence (Upgrade all cards)",
-      "Resolve to protect others (Increase maximum energy by [E] [E] [E])",
-
-      "Trustworthiness to entrust (Gain 99999 gold and a Deliveryman)",
-      "Courage to survive (Your maximum HP is multiplied by 100, and fully recover after each combat)",
-
-      "Hope for greater kindness (A final reward, wishing you a joyful playtime)"
+      "Headlong Faith (Whenever you gain a card, upgrade it . At the beginning of the turn, gain 3 tiers of artifacts.)",
+      "Draconic Rationality (Gain 8 potion bars and fill all empty bars with dot potions, repeat at the end of each battle.)",
+      "Visions of Existential Significance (strengthens all cards)",
+      null,
+      "Trustworthy Trust (gets 2000 gold and delivery man)",
+      "Courage to Survive (your max life is increased to 100x and fully restored after each battle)",
+      "Hope for the Kinder and Kinder (final bonus, have fun)"
     ],
     "DESCRIPTIONS": [
-      "Choose your boon",
-      "Wishing you a joyful playtime"
+      "Choose Your Gift",
+      "Have fun."
     ]
-},
+  },
   "BeyondTheStar": {
-    "NAME": "BeyondTheStar"
+    "NAME": "The Other Side of the Star"
   },
   "promiseOnStage": {
-    "NAME": "The Stage of Promise"
+    "NAME": "The stage is set."
   },
   "RevueEvent": {
-    "NAME": "On Stage",
+    "NAME": "Stage front",
     "OPTIONS": [
-      "Gain 1000 Gold",
-      "Double your Max HP",
-      "Gain 2 Potion slots and fill all empty slots with Idea Potions",
-
-      "Proceed to the #yCenter of the Stage of Promise"
+      "Get 1000 gold coins",
+      "Double Life Limit",
+      "Gain 2 potion fields and fill all empty fields with dot potions",
+      "Going to the center stage of the #y pact"
     ],
     "DESCRIPTIONS": [
-      "POSITION ZERO NL What I anticipate is a stage that is even more dazzling, a performance that is even more brilliant, and a shine that surpasses everything@  NL The train will eventually go to the next station NL And what help do you need——",
-      "#r~The train will surely arrive at the next station, but what about this story? What about you?~"
+      "POSTITON ZERO NL #r@ What I'm looking forward to is an even more unbelievably dazzling stage, an unbelievably dazzling show, and a sparkle that outshines everything else@ NL The train will eventually make its way to the next station NL And you, what do you need help with- NL",
+      "#r~The train will surely reach the next stop, what about this story? What about you guys? ~McMillan ~"
+    ]
+  },
+  "ExcessiveFantasyAwake": {
+    "NAME": "scales fall from the eyes",
+    "OPTIONS": [
+      "Touch the RiNG ticket, #r restore the power that belongs to you.",
+      "#r \"Next, it's up to me!\""
+    ],
+    "DESCRIPTIONS": [
+      "The streets are swarming with #g strange creatures and people are scattering. NL You've just separated from your friends and you're ready to return to a safe place. NL At this moment the ticket you were carrying with you suddenly radiates #b great energy , and when you touch it, a vague sense of familiarity spreads into your thoughts.",
+      "Familiar powers well up from the depths of your mind NL #b You regain the abilities that were once yours."
+    ]
+  },
+  "AnotherStoryEnding": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "The story should have come to an end here. For me it was like, a long, long dream ......",
+      "I woke up that day at the bottom of that dark tower and set out on a journey into the unknown with the guitar and cell phone I had with me.",
+      "It was new to stop and go along the way, but it was nice to reach out to people at rest stops and get their help.",
+      "With everyone's help, we managed to walk to the deepest part of the tower ......",
+      "When I regained consciousness again, it was a few rays of sunlight shining across the skylight into my room. Scanning the room, it was still a familiar room with a familiar layout.",
+      "Closing my eyes in slight contemplation, I can still recall that yesterday was an ordinary day. Going to Feather Hills in the morning to read, and back to RiNG in the evening to rehearse a new song.",
+      "Still holding the ...... she gave me."
+    ],
+    "OPTIONS": []
+  },
+  "ExcessiveFantasyOne": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "Oooh, it's over, my head is full of the dream I had last night, I didn't listen to any of the lesson at all.",
+      "Ai is a bit strange today. It's like there's something on her mind.",
+      "Thanks Tomori, but I'm fine. You have practice tonight, right?",
+      "Ah, ah ...... Well, good, Ai must come too.",
+      "Wasn't that a good one?",
+      "(Luckily I've been playing guitar in my dreams too, I didn't think I'd remember it when I woke up.)",
+      "Well, it feels like Lovey played great today.",
+      "Ha-? Though I don't know why you've suddenly leveled up so much lately, there's still some time before the next Live, as long as you can keep up with us.",
+      "Rikki, you don't want me to keep practicing my ass off until the next Live starts, do you?",
+      "Naaah Soyorin, please talk about Rikki for me too, it's important to rest, rest!",
+      "Hey, let's just practice here today, it wouldn't be a bad thing for Aiyo to become more skillful, right?",
+      "Rikki, I want to eat Matcha Barfi.",
+      "No, didn't I just buy you one before practice ......",
+      "Rikki~",
+      "Hey, I know. I'll buy it for you later, but don't run around in the future. We'll go first ......",
+      "What to do with the next bit of time?"
+    ],
+    "OPTIONS": []
+  },
+  "ExcessiveFantasySoyo": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "Soyorin, I'm coming to play with you!",
+      "Hey ...... feel free to sit down, I will get something to drink. Does Ai have something to discuss with me?",
+      "It's nothing special. It's a rare day when practice ends early. Would Soyorin like to have a chat?",
+      "...... always felt like Ai was thinking something bad, but this time it's whatever.",
+      "What's wrong with me? I feel like Soyorin's being a little biased towards me today.",
+      "Hey, I heard from the little light side oh.",
+      "Hey?",
+      "Although you made a lot of progress in practice today, you've been distracted all night. Lamp and I told you that you've been deserting during the day at school, too.",
+      "I guess I can't hide it, Soyorin. You want to know?",
+      "Neither did ...... everyone has their own little secrets, but I'm sure you can work it out on your own, right?",
+      "Awesome! soyo san love~! Can I stay a little longer?",
+      "I can't do anything about you. I'll prepare black tea. You can rest here tonight."
+    ],
+    "OPTIONS": []
+  },
+  "ExcessiveFantasyTomori": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "Wow! So many colorful fish! Look, look, look, look, look, look, look, look, look, look, look, look, look, look, look, look, look, look, look, look, look, look, look, look, look, look, look, look, look, look, look!",
+      "I'm sorry! I'm obviously the one who dragged you here, Little Lights, and I'm the one who ended up talking all the time.",
+      "Well it's okay, as long as it's Ai's word.",
+      "Looking up at this fantasy scene, Aiyin subconsciously sneaked a glance at the serious Xiao Lantern ...... \"Let's keep walking\" Aiyin pulled away Xiao Lantern's hand and walked towards the next fork in the road.",
+      "Wow, that's a lot! Swimming penguins!",
+      "These are Adelie penguins, and they like to live in groups, and they're also big on mateships ...... just like, well, humans are.",
+      "Really, Xiao Lantern don't say that again in the future oh. The little memories we've made along the way are the proof of our existence as human beings.",
+      "Ai, suddenly became so mature. It's like something happened that I didn't know about.",
+      "Hey, does Lamp want to know what's going on so badly?",
+      "(Shakes his head slightly) It's okay, I believe in Ai, and I'll always wait for her.",
+      "This, so ah ...... haha I'm a little embarrassed too. But someday, I'll tell you the story.",
+      "In the end, Aiyin once again took Lamp's hand and walked to the end of the aquarium ......"
+    ],
+    "OPTIONS": []
+  },
+  "AnotherStoryExcessiveFantasyEndingSoyo": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "It's 7:10 a.m., Friday, a rare sunny day.",
+      "This series of strange encounters kind of came to an end, and I was actually surprisingly calm, as if it were a lifetime ago. It seemed that something was guiding me step by step, familiar and nostalgic.",
+      "\"Done dazed for too long, I'm going out~!\"",
+      "Ai-chan, you've been playing wrong too many times in practice today. What's on your mind again?",
+      "I'm sure I can't hide it from Soyorin. Do you want to hear my story, Soyorin?",
+      "Hey, I'm not that interested either. So, tell me about it.",
+      "I thought Soyorin didn't want to hear it, so I'm going to start.",
+      "Yes, this is the story of my dreams ...... This is The Adventure of Chihaya Aine .",
+      "Thank you For Playing!",
+      "Let's meet again in the next story!"
+    ],
+    "OPTIONS": []
+  },
+  "AnotherStoryExcessiveFantasyEndingTomori": {
+    "NAME": "",
+    "DESCRIPTIONS": [
+      "It's 7:10 a.m., Friday, a rare sunny day.",
+      "This series of strange encounters sort of came to a close, and I was actually at a surprisingly calm, like a world away. It seemed that something was guiding me step by step, familiar and nostalgic.",
+      "\"Done dazed for too long, I'm going out~!\"",
+      "Ai ...... also fell asleep in class today ...... is there something on your mind?",
+      "No, Lamplighter. By the way, I had an interesting dream recently. Would you like to hear about it?",
+      "Well, is this the story Ai told last time?",
+      "That's right. There's a lot of weird stuff that the little lights will be interested in.",
+      "Yes, this is the story of my dreams ...... This is The Adventure of Chihaya Aine .",
+      "Thank you For Playing!",
+      "Let's meet again in the next story!"
+    ],
+    "OPTIONS": []
+  },
+  "SakikoShop": {
+    "NAME": "convenience store",
+    "OPTIONS": [
+      "Access to Supermarkets"
+    ],
+    "DESCRIPTIONS": [
+      "A faint light comes from the dark depths, attracting lost travelers. NL This feeling of déjà vu and not being able to recall it draws you in, and the answers to all questions point to this place. NL The lost children will eventually find their way back, just as every buried dream will find its way back."
+    ]
+  },
+  "TheFinSakikoShop": {
+    "NAME": "convenience store",
+    "OPTIONS": [
+      "Access to Supermarkets"
+    ],
+    "DESCRIPTIONS": [
+      "You're back here again. NL She's been waiting for you."
+    ]
+  },
+  "TheConsciousnessOfTheWorld": {
+    "NAME": "the will of the world",
+    "OPTIONS": [
+      "？？？"
+    ],
+    "DESCRIPTIONS": [
+      "placeholder",
+      "I'm Alpha, I'm Omega.",
+      "I am the beginning and I am the end.",
+      "I am the ideal, I am the reality.",
+      "I am the beginning of a dream, I am the end of a journey."
     ]
   }
 }

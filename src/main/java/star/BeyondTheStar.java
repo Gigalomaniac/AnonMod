@@ -83,6 +83,7 @@ import java.util.ArrayList;
 
 
   protected void makeMap() {
+      AbstractDungeon.levelNum = "星遗物";
       smartPhone.ifHeart = false;
     map = new ArrayList();
     ArrayList<MapRoomNode> row1 = new ArrayList<MapRoomNode>();

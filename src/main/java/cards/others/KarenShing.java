@@ -1,5 +1,6 @@
 package cards.others;
 
+import ExcessiveFantasy.boss.TheConsciousnessOfTheWorld;
 import Mod.AnonCardSignStrings;
 import OnStage.theEndKaren;
 import actions.ThinkingAction;
@@ -82,6 +83,9 @@ public class KarenShing extends SpecialAnonCard {
                         addToTop((AbstractGameAction) new ApplyPowerAction((AbstractCreature) mo, (AbstractCreature) mo, (AbstractPower) new KarenShining((AbstractCreature) mo, 1), 1));
                         break;
                     case theEndKaren.ID:
+                        addToTop((AbstractGameAction) new ApplyPowerAction((AbstractCreature) mo, (AbstractCreature) mo, (AbstractPower) new TheEndKarenShining((AbstractCreature) mo, 1), 1));
+                        break;
+                    case TheConsciousnessOfTheWorld.ID:
                         addToTop((AbstractGameAction) new ApplyPowerAction((AbstractCreature) mo, (AbstractCreature) mo, (AbstractPower) new TheEndKarenShining((AbstractCreature) mo, 1), 1));
                         break;
                 }

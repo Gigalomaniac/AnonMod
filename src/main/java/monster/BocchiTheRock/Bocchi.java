@@ -1,5 +1,6 @@
 package monster.BocchiTheRock;
 
+import Mod.AnonMod;
 import actions.RemoveNumDebuffsAction;
 import bossRoom.AbstractSpriterMonster;
 import bossRoom.InnerFavillaeSide;
@@ -38,6 +39,7 @@ import power.Karen.KarenShining;
 import power.Karen.RevueStarlight;
 import power.Shining;
 import power.notLive;
+import utils.DreamCardRewards;
 import utils.Invoker;
 
 import java.util.ArrayList;
@@ -246,6 +248,7 @@ public class Bocchi extends AbstractSpriterMonster {
     }
 
     public void usePreBattleAction() {
+        (AbstractDungeon.getCurrRoom()).rewards.add(new DreamCardRewards(2));
         AbstractScene TheEndingScene = new TheEndingScene();
         AbstractDungeon.scene= TheEndingScene;
         CardCrawlGame.music.silenceTempBgmInstantly();

@@ -1,6 +1,7 @@
 package patch.boss;
 
 
+import ExcessiveFantasy.SakikoEventRoom;
 import bossRoom.AnonVictoryRoom;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
@@ -33,30 +34,6 @@ public class TheEndPatch {
         }
     }
 
-//    @SpirePatch(
-//            clz = Exordium.class,
-//            method = "initializeBoss"
-//    )
-//    public static class InsertSV {
-//        @SpirePatch(clz = Exordium.class, method = "initializeBoss")
-//        public static class initializeBossPatch1
-//        {
-//            public static SpireReturn<Void> Prefix(Exordium Exordium) {
-//                if (!AnonMod.onlymodboss){
-//                    System.out.println("!AnonMod.onlymodboss");
-//                    return SpireReturn.Continue();}
-//                if (AnonMod.onlymodboss) {
-//                    return SpireReturn.Continue();
-//                }
-//                System.out.println("AnonMod.onlymodboss");
-//                AbstractDungeon.bossList.clear();
-//                AbstractDungeon.bossList.add("Nina");
-//                AbstractDungeon.bossList.add("Nina");
-//                return SpireReturn.Return(null);
-//
-//            }
-//        }
-//    }
 
     @SpirePatch(
             clz = TheEnding.class,
@@ -72,8 +49,11 @@ public class TheEndPatch {
             ArrayList<MapRoomNode> row1 = new ArrayList();
             MapRoomNode restNode = new MapRoomNode(3, 0);
             restNode.room = new RestRoom();
-            MapRoomNode shopNode = new MapRoomNode(3, 1);
+            MapRoomNode shopNode = new MapRoomNode(2, 1);
             shopNode.room = new ShopRoom();
+            MapRoomNode SakikoshopNode = new MapRoomNode(4, 1);
+            SakikoshopNode.room = new SakikoEventRoom(SakikoshopNode,"shop");
+            SakikoshopNode.room.setMapImg(ImageMaster.loadImage("img/UI/FamilyMart.png"), ImageMaster.loadImage("img/UI/FamilyMart.png"));
             MapRoomNode enemyNode = new MapRoomNode(4, 2);
             enemyNode.room = new MonsterRoomElite();
             MapRoomNode Act4EventRoom = new MapRoomNode(3, 2);
@@ -84,9 +64,11 @@ public class TheEndPatch {
             MapRoomNode victoryNode = new MapRoomNode(3, 4);
             victoryNode.room = new AnonVictoryRoom();
             connectNode(restNode, shopNode);
+            connectNode(restNode, SakikoshopNode);
 //            connectNode(shopNode, enemyNode);
             connectNode(Act4EventRoom, enemyNode);
             connectNode(shopNode, Act4EventRoom);
+            connectNode(SakikoshopNode, Act4EventRoom);
             enemyNode.addEdge(new MapEdge(enemyNode.x, enemyNode.y, enemyNode.offsetX, enemyNode.offsetY, bossNode.x, bossNode.y+1, bossNode.offsetX, bossNode.offsetY, false));
             Act4EventRoom.addEdge(new MapEdge(Act4EventRoom.x, Act4EventRoom.y, Act4EventRoom.offsetX, Act4EventRoom.offsetY, bossNode.x, bossNode.y+1, bossNode.offsetX, bossNode.offsetY, false));
             row1.add(new MapRoomNode(0, 0));
@@ -99,9 +81,9 @@ public class TheEndPatch {
             ArrayList<MapRoomNode> row2 = new ArrayList();
             row2.add(new MapRoomNode(0, 1));
             row2.add(new MapRoomNode(1, 1));
-            row2.add(new MapRoomNode(2, 1));
+            row2.add(new MapRoomNode(3, 1));
             row2.add(shopNode);
-            row2.add(new MapRoomNode(4, 1));
+            row2.add(SakikoshopNode);
             row2.add(new MapRoomNode(5, 1));
             row2.add(new MapRoomNode(6, 1));
             ArrayList<MapRoomNode> row3 = new ArrayList();

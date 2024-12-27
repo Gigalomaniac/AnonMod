@@ -3,6 +3,7 @@ package power;
 import actions.exhaustDiscoveryAction;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -45,7 +46,6 @@ public class PrePreparationPower extends AbstractPower {
         this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 0, 0, 32, 32);
         AbstractPlayer var10000 = AbstractDungeon.player;
-        var10000.gameHandSize += amount;
         // 首次添加能力更新描述
         this.updateDescription();
         AllCount = this.amount;
@@ -58,7 +58,7 @@ public class PrePreparationPower extends AbstractPower {
 
     public void stackPower(int stackAmount) {
         super.stackPower(stackAmount);
-        AllCount = this.amount;
+
         if (this.amount >= 999)
             this.amount = 999;
     }
@@ -69,13 +69,13 @@ public class PrePreparationPower extends AbstractPower {
     }
 
     public void reducePower(int reduceAmount) {
-        this.fontScale = 8.0F;
-        this.amount -= reduceAmount;
-        if (this.amount == 0) {
-            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, "Draw"));
-        }
-
+      super.reducePower(reduceAmount);
     }
+
+    public void onRemove() {
+      super.onRemove();
+    }
+
     public void onUseCard(AbstractCard card, UseCardAction action) {
 //        if (card.type == AbstractCard.CardType.SKILL) {
 //            flash();
@@ -84,12 +84,8 @@ public class PrePreparationPower extends AbstractPower {
         AllCount = this.amount;
     }
 
-    public void onRemove() {
-        AbstractPlayer var10000 = AbstractDungeon.player;
-        var10000.gameHandSize -= this.amount;
-    }
-
     public void atStartOfTurn() {
+        addToBot(new DrawCardAction(this.amount));
        if(musicStart.ifStart == 0){
             this.addToBot(new GainEnergyAction(this.amount));
         }

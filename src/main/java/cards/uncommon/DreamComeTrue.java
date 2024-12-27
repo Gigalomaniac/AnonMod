@@ -1,15 +1,21 @@
 package cards.uncommon;
 
+import BossRewards.KarenRewardCard;
 import actions.dislocateAction;
+import basemod.BaseMod;
 import basemod.abstracts.CustomCard;
+import basemod.helpers.BaseModCardTags;
 import bossRoom.CrychicSide;
 import cards.token.Idea;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.StunMonsterAction;
+import com.evacipated.cardcrawl.modthespire.lib.SpireReturn;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.unique.RemoveDebuffsAction;
 import com.megacrit.cardcrawl.actions.utility.ScryAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.blue.SelfRepair;
+import com.megacrit.cardcrawl.cards.status.Burn;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -18,11 +24,16 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.*;
 import characters.char_Anon;
+import com.megacrit.cardcrawl.powers.watcher.ForesightPower;
+import com.megacrit.cardcrawl.powers.watcher.NirvanaPower;
 import pathes.AbstractCardEnum;
 import power.*;
+import power.FlightPower;
 import relics.GuitarWhiteAnon;
 
 import java.util.*;
+
+import static utils.AnonSpireKit.addToTop;
 
 /**
  * 每一个瞬间的积累
@@ -232,8 +243,6 @@ public class DreamComeTrue extends CustomCard {
 
             addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) p, (AbstractCreature) p, (AbstractPower) new WhiteMythology((AbstractCreature) p), 1));
             addToBot((AbstractGameAction) new dislocateAction((AbstractCreature) p, this));
-//            for(int i = 0 ; i < HandSize ; i ++){
-//                HandSizeCost[i] = AbstractDungeon.player.hand.
 
         }
 
@@ -264,6 +273,39 @@ public class DreamComeTrue extends CustomCard {
         }
         if (Objects.equals(songs.SongsList[0], "以恋结缘")) {
             this.addToBot(new ApplyPowerAction(p, p, new KoiKouEnishi(p, 6), 6));
+        }
+        if (Objects.equals(songs.SongsList[0], "熙熙攘攘、我们的城市")) {
+            this.addToBot(new ApplyPowerAction(p, p, new FlightPower(p, 1), 1));
+        }
+        if (Objects.equals(songs.SongsList[0], "空之箱")) {
+            if(!AbstractDungeon.player.drawPile.isEmpty()) {
+                Iterator var3 = AbstractDungeon.player.drawPile.group.iterator();
+                while(var3.hasNext()) {
+                    AbstractCard e = (AbstractCard) var3.next();
+                    if (e.hasTag(AbstractCard.CardTags.STARTER_DEFEND) || e.hasTag(AbstractCard.CardTags.STARTER_STRIKE)) {
+                        addToTop(new ExhaustSpecificCardAction(e, AbstractDungeon.player.drawPile));
+                    }
+                }
+            }
+        }
+        if (Objects.equals(songs.SongsList[0], "ときめきエクスペリエンス！")) {
+            this.addToBot(new ApplyPowerAction(p, p, new Shining(p, 5), 5));
+        }
+        if (Objects.equals(songs.SongsList[0], "FIREBIRD")) {
+            this.addToBot(new ApplyPowerAction(p, p, new NirvanaPower(p, 10), 10));
+            this.addToBot(new ApplyPowerAction(p, p, new ForesightPower(p, 3), 3));
+        }
+        if (Objects.equals(songs.SongsList[0], "しゅわりん☆どり～みん")) {
+           AbstractCard xiuwaxiuwa = new SelfRepair();
+            this.addToBot(new MakeTempCardInHandAction(xiuwaxiuwa, 3));
+        }
+        if (Objects.equals(songs.SongsList[0], "吉他与孤独与蓝色星球")) {
+            this.addToBot(new ApplyPowerAction(p, p, new BufferPower(p, 2), 2));
+        }
+        if (Objects.equals(songs.SongsList[0], "卫星露天咖啡屋")) {
+//            AbstractDungeon.player.gameHandSize+=2;
+            BaseMod.MAX_HAND_SIZE+=2;
+
         }
 }
 }

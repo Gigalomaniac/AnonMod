@@ -167,9 +167,9 @@ public class smartPhoneSearchNumbers extends AbstractCampfireOption {
                     AbstractDungeon.getCurrRoom().onPlayerEntry();
                     AbstractDungeon.scene.nextRoom(node.room);
                     AbstractDungeon.rs =AbstractDungeon.RenderScene.NORMAL;
-//                    (AbstractDungeon.getCurrRoom()).phase = AbstractRoom.RoomPhase.COMPLETE;
                     smartPhone smartPhone = new smartPhone();
                     AbstractDungeon.getCurrRoom().spawnRelicAndObtain((Settings.WIDTH / 2), (Settings.HEIGHT / 2), (AbstractRelic) smartPhone);
+
                     if(AnonMod.givekey){
                         AbstractDungeon.topLevelEffects.add(new ObtainKeyEffect(ObtainKeyEffect.KeyColor.RED));
                         AbstractDungeon.topLevelEffects.add(new ObtainKeyEffect(ObtainKeyEffect.KeyColor.BLUE));

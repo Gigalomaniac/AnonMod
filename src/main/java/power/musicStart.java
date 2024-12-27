@@ -2,6 +2,7 @@ package power;
 
 import actions.RemoveNumDebuffsAction;
 import actions.dislocateAction;
+import basemod.BaseMod;
 import bossRoom.CrychicSide;
 import cards.token.Idea;
 import characters.char_Anon;
@@ -12,6 +13,7 @@ import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.unique.RemoveDebuffsAction;
 import com.megacrit.cardcrawl.actions.utility.ScryAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.blue.SelfRepair;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -20,6 +22,8 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.*;
+import com.megacrit.cardcrawl.powers.watcher.ForesightPower;
+import com.megacrit.cardcrawl.powers.watcher.NirvanaPower;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import relics.GuitarWhiteAnon;
 
@@ -319,6 +323,38 @@ public class musicStart extends AbstractPower {
     }
         if (Objects.equals(songs.SongsList[songsNum], "以恋结缘")) {
             this.addToBot(new ApplyPowerAction(p, p, new KoiKouEnishi(p, 6), 6));
+        }
+        if (Objects.equals(songs.SongsList[songsNum], "熙熙攘攘、我们的城市")) {
+            this.addToBot(new ApplyPowerAction(p, p, new FlightPower(p, 1), 1));
+        }
+        if (Objects.equals(songs.SongsList[songsNum], "空之箱")) {
+            if(!AbstractDungeon.player.drawPile.isEmpty()) {
+                Iterator var3 = AbstractDungeon.player.drawPile.group.iterator();
+                while(var3.hasNext()) {
+                    AbstractCard e = (AbstractCard) var3.next();
+                    if (e.hasTag(AbstractCard.CardTags.STARTER_DEFEND) || e.hasTag(AbstractCard.CardTags.STARTER_STRIKE)) {
+                        addToTop(new ExhaustSpecificCardAction(e, AbstractDungeon.player.drawPile));
+                    }
+                }
+            }
+        }
+        if (Objects.equals(songs.SongsList[songsNum], "吉他与孤独与蓝色星球")) {
+            this.addToBot(new ApplyPowerAction(p, p, new BufferPower(p, 2), 2));
+        }
+
+        if (Objects.equals(songs.SongsList[songsNum], "ときめきエクスペリエンス！")) {
+            this.addToBot(new ApplyPowerAction(p, p, new Shining(p, 5), 5));
+        }
+        if (Objects.equals(songs.SongsList[songsNum], "FIREBIRD")) {
+            this.addToBot(new ApplyPowerAction(p, p, new NirvanaPower(p, 10), 10));
+            this.addToBot(new ApplyPowerAction(p, p, new ForesightPower(p, 3), 3));
+        }
+        if (Objects.equals(songs.SongsList[songsNum], "しゅわりん☆どり～みん")) {
+            AbstractCard xiuwaxiuwa = new SelfRepair();
+            this.addToBot(new MakeTempCardInHandAction(xiuwaxiuwa, 3));
+        }
+        if (Objects.equals(songs.SongsList[songsNum], "卫星露天咖啡屋")) {
+            BaseMod.MAX_HAND_SIZE +=2;
         }
     }
 }

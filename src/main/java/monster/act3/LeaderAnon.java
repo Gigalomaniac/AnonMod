@@ -2,6 +2,7 @@ package monster.act3;
 
 import bossRoom.AbstractSpriterMonster;
 import bossRoom.effect.ChangeScene;
+import bossRoom.effect.LatterEffect;
 import cards.uncommon.KiraKiraDokiDoki;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
@@ -26,6 +27,7 @@ import power.KiraKiraShining;
 import power.Leader;
 import power.Shining;
 import power.notLive;
+import utils.DreamCardRewards;
 
 import java.util.Iterator;
 
@@ -65,6 +67,7 @@ public class LeaderAnon extends AbstractSpriterMonster {
     public void die() {
 
             super.die();
+
 
     }
     /**

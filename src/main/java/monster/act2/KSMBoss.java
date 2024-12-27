@@ -1,5 +1,6 @@
 package monster.act2;
 
+import Mod.AnonMod;
 import bossRoom.AbstractSpriterMonster;
 import bossRoom.effect.ChangeScene;
 import bossRoom.effect.LatterEffect;
@@ -37,6 +38,7 @@ import monster.act1.TOGETOGE;
 import power.KiraKiraShining;
 import power.Shining;
 import power.notLive;
+import utils.DreamCardRewards;
 import utils.Invoker;
 
 import java.util.ArrayList;
@@ -170,9 +172,7 @@ public class KSMBoss extends AbstractSpriterMonster {
     }
 
     public void usePreBattleAction() {
-        AbstractDungeon.actionManager.clear();
-        AbstractDungeon.effectsQueue.clear();
-        AbstractDungeon.effectList.clear();
+
         this.effect = new ChangeScene(ImageMaster.loadImage("img/boss/ACT2BossBG.png"));
         AbstractDungeon.effectList.add(new LatterEffect(() -> {
             AbstractDungeon.effectsQueue.add(this.effect);
@@ -182,6 +182,7 @@ public class KSMBoss extends AbstractSpriterMonster {
         CardCrawlGame.music.silenceBGMInstantly();
         CardCrawlGame.music.playTempBgmInstantly("2. ティアドロップス.mp3", true);
         this.halfDead = false;
+        (AbstractDungeon.getCurrRoom()).rewards.add(new DreamCardRewards(21));
     }
     public void damage(DamageInfo info) {
         super.damage(info);

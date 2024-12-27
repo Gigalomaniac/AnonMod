@@ -2,6 +2,7 @@ package actions;
 
 import bandFriendsCard.Mutsumi;
 import bandFriendsCard.Sakiko;
+import bossRoom.effect.LatterEffect;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
@@ -57,6 +58,9 @@ public class LogicDeepDiveAction extends AbstractGameAction {
                     if (AbstractDungeon.player.hasPower("Corruption") && a.type == AbstractCard.CardType.SKILL) {
                         a.setCostForTurn(-9);
                     }
+                        AbstractDungeon.effectList.add(new LatterEffect(() -> {
+                            a.setCostForTurn(-9);
+                        },0.5f));
                     a.setCostForTurn(-9);
                     this.p.exhaustPile.removeCard(a);
                     if (this.upgrade && a.canUpgrade()) {

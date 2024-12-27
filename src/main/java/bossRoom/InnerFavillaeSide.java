@@ -1,6 +1,7 @@
 package bossRoom;
 
 
+import Mod.AnonMod;
 import actions.AshAnonTalkAction;
 import basemod.ReflectionHacks;
 import bossRoom.crychic.Amoris;
@@ -319,6 +320,7 @@ public class InnerFavillaeSide extends AbstractSpriterMonster  {
 
     private ChangeScene effect;
     public void usePreBattleAction() {
+        AnonMod.saves.setString("Stage4","Ash");
         ifTheRightProcess = false;
         light = true;
         InnerFavillaeSide.Stage = 1;

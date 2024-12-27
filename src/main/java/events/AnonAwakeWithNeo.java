@@ -22,9 +22,7 @@ import com.megacrit.cardcrawl.vfx.FastSmoke;
 import com.megacrit.cardcrawl.vfx.InfiniteSpeechBubble;
 import com.megacrit.cardcrawl.vfx.combat.InflameEffect;
 import com.megacrit.cardcrawl.vfx.combat.SmokeBlurEffect;
-import relics.BandRoom;
-import relics.smartPhone;
-import relics.smartPhoneSearchNumbers;
+import relics.*;
 
 import java.lang.reflect.Field;
 
@@ -40,6 +38,25 @@ public interface AnonAwakeWithNeo {
     public static class AddBetterRewardsButton {
         @SpirePostfixPatch
         public static void Postfix(NeowRoom room, boolean b) {
+            int relicAtIndex = 0;
+            if(AbstractDungeon.player.hasRelic(Guitar.ID)) {
+                for (int i = 0; i < AbstractDungeon.player.relics.size(); ++i) {
+                    if (((AbstractRelic) AbstractDungeon.player.relics.get(i)).relicId.equals(StarAnonBike.ID)) {
+                        relicAtIndex = i;
+                        System.out.println(relicAtIndex);
+                        AbstractDungeon.player.loseRelic(StarAnonBike.ID);
+                        break;
+                    }
+                }
+                for (int i = 0; i < AbstractDungeon.player.relics.size(); ++i) {
+                    if (((AbstractRelic) AbstractDungeon.player.relics.get(i)).relicId.equals(GuitarWhiteAnon.ID)) {
+                        relicAtIndex = i;
+                        System.out.println(relicAtIndex);
+                        AbstractDungeon.player.loseRelic(GuitarWhiteAnon.ID);
+                        break;
+                    }
+                }
+            }
             boolean isNeowDone = b;
             if (!b) {
                 if("Anon".equals(AbstractDungeon.player.name)){

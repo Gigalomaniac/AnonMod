@@ -34,9 +34,12 @@ public class Act1BossPatch {
             } else if (AnonMod.onlymodboss && AbstractDungeon.player instanceof char_Anon) {
                 Exordium.bossList.add("Nina");
                 Exordium.bossList.add("Bocchi");
+                Exordium.bossList.add("HifuuClub");
                 Exordium.bossList.add("Nina");
                 Exordium.bossList.add("Bocchi");
+                Exordium.bossList.add("HifuuClub");
             } else {
+                Exordium.bossList.add("HifuuClub");
                 Exordium.bossList.add("Nina");
                 Exordium.bossList.add("Bocchi");
                 Exordium.bossList.add("The Guardian");
@@ -47,6 +50,17 @@ public class Act1BossPatch {
             }
 //        }
         System.out.println(Exordium.bossList);
+            switch (Exordium.bossList.get(0)){
+                case "Nina":
+                    AnonMod.saves.setString("Stage1","gbc");
+                    break;
+                case "Bocchi":
+                    AnonMod.saves.setString("Stage1","Bocchi");
+                    break;
+                default:
+                    AnonMod.saves.setString("Stage1","gbc");
+                    break;
+            }
         return SpireReturn.Return();
     }
 }

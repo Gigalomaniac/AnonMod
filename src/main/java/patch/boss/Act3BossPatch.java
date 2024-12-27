@@ -36,6 +36,7 @@ public class Act3BossPatch {
             } else if (AnonMod.onlymodboss && AbstractDungeon.player instanceof char_Anon) {
                 TheBeyond.bossList.add("ShoujoKageki");
                 TheBeyond.bossList.add("DustAnon");
+                TheBeyond.bossList.add("Mika");
                 Collections.shuffle(TheBeyond.bossList, new Random(AbstractDungeon.monsterRng.randomLong()));
 
 
@@ -57,6 +58,17 @@ public class Act3BossPatch {
             }
 //        }
             System.out.println(TheBeyond.bossList);
+        switch (TheBeyond.bossList.get(0)){
+            case "ShoujoKageki":
+                AnonMod.saves.setString("Stage3","Karen");
+                break;
+            case "DustAnon":
+                AnonMod.saves.setString("Stage3","dust");
+                break;
+            default:
+                AnonMod.saves.setString("Stage3","Karen");
+                break;
+        }
             return SpireReturn.Return();
         }
 //    public static SpireReturn<Void> Prefix(TheBeyond ad) {

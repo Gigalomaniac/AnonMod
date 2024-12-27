@@ -1,5 +1,6 @@
 package bossRoom;
 
+import Mod.AnonMod;
 import basemod.ReflectionHacks;
 import basemod.abstracts.CustomMonster;
 import bossRoom.effect.ChangeSceneEffect;
@@ -48,6 +49,7 @@ import power.CarryOffShining;
 import power.ImAnon;
 import power.Shining;
 import power.notLive;
+import relics.Crychic;
 import utils.Invoker;
 
 import java.io.File;
@@ -57,6 +59,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class AnonSide extends AbstractSpriterMonster  {
+    public static final String ID = "InnerAnon";
     private boolean form1 = true;
     private boolean isAwake = false;
 
@@ -232,6 +235,7 @@ public class AnonSide extends AbstractSpriterMonster  {
         ++this.moveCount;
     }
     public void usePreBattleAction() {
+        AnonMod.saves.setString("Stage4","InnerAnon");
         ifAwake = false;
         this.imageEventText.setDialogOption(options[0]);
         if (Settings.language == Settings.GameLanguage.ZHS) {
@@ -310,8 +314,7 @@ public class AnonSide extends AbstractSpriterMonster  {
                 if (!m.isDying && m instanceof com.megacrit.cardcrawl.monsters.exordium.Cultist)
                     AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new EscapeAction(m));
             }
-            onBossVictoryLogic();
-            onFinalBossVictoryLogic();
+
             finInfo =-1;
         }
     }

@@ -2,22 +2,18 @@ package characters;
 
 import basemod.abstracts.CustomEnergyOrb;
 import basemod.abstracts.CustomPlayer;
-import basemod.animations.AbstractAnimation;
 import basemod.animations.SpriterAnimation;
-import basemod.interfaces.PostCreateStartingDeckSubscriber;
-import basemod.patches.com.megacrit.cardcrawl.characters.AbstractPlayer.PostInitializeStarterDeckHookSwitch;
 import cards.others.BasicSongs;
-import cards.uncommon.KiraKiraDokiDoki;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.cutscenes.CutscenePanel;
@@ -26,6 +22,7 @@ import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.Hitbox;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import Mod.AnonMod;
 import power.musicStart;
@@ -35,9 +32,7 @@ import relics.Mana_relic;
 import ui.SkinSelectScreen;
 //import ui.SkinSelectScreen;
 
-import javax.smartcardio.Card;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 //import static ui.SkinSelectScreen.Inst;
@@ -112,8 +107,8 @@ public class char_Anon extends CustomPlayer  {
             "img/test/tech.scml",
             "img/test/leader.scml",
             "img/test/KSM.scml",
-            "img/test/yuzu.scml",
-            "img/test/soyo.scml"};
+            "img/test/rabbit.scml",
+            "img/test/mika.scml"};
     public static String[] WhiteAnonskinAnimation = {
             "img/test/AnonWhite.scml","img/test/AnonWhiteAlter.scml"
     };
@@ -128,6 +123,8 @@ public class char_Anon extends CustomPlayer  {
     SpriterAnimation anon = new SpriterAnimation(filepath);
     public static String filepath = "img/test/Anon.scml";
     public static AnimationState.TrackEntry e;
+
+
     public char_Anon(String name) {
         //构造方法，初始化参数
 //        super(name, ThmodClassEnum.Anon_COLOR, ORB_TEXTURES, ORB_VFX, LAYER_SPEED, (String)null, (String)null);
@@ -206,13 +203,13 @@ public class char_Anon extends CustomPlayer  {
                 retVal.add("UntouchableFuture");
                 retVal.add("SoloConcertSongs");
                 break;
-            case 17:
-                retVal.add("yuzu_Image");
-                retVal.add("yuzu_Climax");
-                retVal.add("yuzu_SimplifiedCombo");
-                retVal.add("KoiKouEnishiSongs");
-                retVal.remove("ChangeStateSongs");
-                break;
+//            case 17:
+//                retVal.add("yuzu_Image");
+//                retVal.add("yuzu_Climax");
+//                retVal.add("yuzu_SimplifiedCombo");
+//                retVal.add("KoiKouEnishiSongs");
+//                retVal.remove("ChangeStateSongs");
+//                break;
             default:
                 retVal.add("BasicSongs");
                 break;
@@ -389,6 +386,33 @@ public class char_Anon extends CustomPlayer  {
         }
     }
 
+    private character3DHelper char3D;
+    /*
+    测试皮肤
+     */
+    public void update() {
+        super.update();
+        if(SkinSelectScreen.Inst.index ==18){
+            if (this.char3D == null)
+                try {
+                    this.char3D = new character3DHelper();
+                } catch (Exception e) {
+                }
+            this.char3D.update(0, 0);
+        }
+    }
+//    private void updateSkinType() { int i = SkinSelectScreen.Inst.index;
+//        if (this.formalSkinType != this.skinType) {
+//            this.formalSkinType = this.skinType;
+//            if (this.skinType != -1) {
+//                this.img = ImageMaster.loadImage(stand2D[1]);
+//                this.corpseImg = ImageMaster.loadImage(stand2D[1]);
+//            } else {
+//                this.img = ImageMaster.loadImage(stand2D[0]);
+//                this.corpseImg = ImageMaster.loadImage("tunerResources/img/char/HinaDie.png");
+//            }
+//        }
+//    }
     public void TruthValueUpdatedEvent() {
         this.CorrodeValueWidth = (float) AnonMod.corrode / 5.0F * this.hb.width;
         if (AnonMod.corrode == 5) {
@@ -413,6 +437,19 @@ public class char_Anon extends CustomPlayer  {
         this.renderTruthValueBar(sb, x, y);//两点
         this.TruthValueText(sb, y);//数字文本
     }
+
+    public void render(SpriteBatch spriteBatch) { if (!(AbstractDungeon.getCurrRoom() instanceof com.megacrit.cardcrawl.rooms.RestRoom)) {
+        if (SkinSelectScreen.Inst.index == 18) {
+            if (this.isDead)
+                this.char3D.update(this.drawX, this.drawY);
+            spriteBatch.setColor(Color.WHITE);
+            if (char3D != null) {
+                this.char3D.render(spriteBatch, this.flipHorizontal);
+            } else
+                System.out.println("char3D = null");
+        }
+    }
+        super.render(spriteBatch); }
 // public void onStanceChange(String newStance) {
 //   if (newStance.equals("HakutakuForm")) {
 //     this.animation = new SpriterAnimation(KeineMod.characterPath("animation/hakutaku.scml"));
@@ -426,7 +463,6 @@ public class char_Anon extends CustomPlayer  {
 //            this.animation = new SpriterAnimation("img/test/Ash.scml");
             a++;
         }
-
 
 //        this.eyeState.setAnimation(0, "Calm", true);
 //        this.animation = new SpriterAnimation("img/test/Ash.scml");
@@ -503,11 +539,33 @@ public class char_Anon extends CustomPlayer  {
         beatState = color;
 
     }
-//    public void refreshSkin() {
-//        SkinSelectScreen.Skin skin = SkinSelectScreen.getSkin();
-//        loadAnimation(skin.charPath + ".atlas", skin.charPath + ".json", 0.9F);
-//        AnimationState.TrackEntry e = this.state.setAnimation(0, "Idle", true);
-//        e.setTime(e.getEndTime() * MathUtils.random());
-//        e.setTimeScale(1F);
-//    }
+    public void useCard(AbstractCard c, AbstractMonster monster, int energyOnUse) {
+        if(SkinSelectScreen.Inst.index ==18)
+        applyUseCardAni(c, monster);
+        super.useCard(c, monster, energyOnUse);
+    }
+
+    private void applyUseCardAni(AbstractCard c, AbstractMonster monster) {
+        ArrayList<AnimaItem> list = new ArrayList<AnimaItem>();
+            if (c.type == AbstractCard.CardType.ATTACK)
+                if (c.costForTurn < 2) {
+                    list.add(MikaAnimaItem.Normal_Attack_Ing);
+                    list.add(MikaAnimaItem.Normal_Attack_End);
+                    this.char3D.queueAnimaItem(list, !this.char3D.isAttacking());
+                } else {
+                    list.add(MikaAnimaItem.Normal_Attack_Start);
+                    list.add(MikaAnimaItem.Normal_Attack_Ing);
+                    list.add(MikaAnimaItem.Normal_Attack_End);
+                    this.char3D.queueAnimaItem(list, true);
+                }
+            if (c.type == AbstractCard.CardType.POWER) {
+                list.add(MikaAnimaItem.Cafe_Reaction);
+                CardCrawlGame.sound.play("murimuri");
+                this.char3D.queueAnimaItem(list, true);
+            }
+        if (c.type == AbstractCard.CardType.SKILL) {
+            list.add(MikaAnimaItem.Normal_Reload);
+            this.char3D.queueAnimaItem(list, true);
+        }
+        }
 }

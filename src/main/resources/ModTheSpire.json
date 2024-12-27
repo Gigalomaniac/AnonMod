@@ -10,7 +10,7 @@
     "actlikeit",
     "stslib"
   ],
-  "version": "0.8.64",
+  "version": "1.0.0",
   "sts_version": "05-17-2024",
   "optional_dependencies": ["sakikoMod"]
 }

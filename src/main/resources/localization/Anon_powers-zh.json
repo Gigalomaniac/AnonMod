@@ -69,7 +69,7 @@
     ]
   },
   "CarryOffShining": {
-    "NAME": "不属于你的 ",
+    "NAME": "不属于你的闪耀",
     "DESCRIPTIONS": [
       "不属于你的"," 层闪耀，每层增加5%伤害"
     ]
@@ -504,6 +504,119 @@
     "NAME": "闪耀",
     "DESCRIPTIONS": [
       "爱城华恋现在拥有 #y"," 层闪耀。每层增加5%伤害。"
+    ]
+  },
+  "MemoryToTo": {
+    "NAME": "TOGENASHITOGEARI的记忆",
+    "DESCRIPTIONS": [
+      "回合结束时，恢复20点生命。"
+    ]
+  },
+  "MemoryBocchi": {
+    "NAME": "結束バンド的记忆",
+    "DESCRIPTIONS": [
+      "回合结束时，恢复5层多层护甲。"
+    ]
+  },
+  "MemoryPP": {
+    "NAME": "Poppin'Party!的记忆",
+    "DESCRIPTIONS": [
+      "回合结束时，将2张消耗0获得闪耀1的“KiraKiraDokiDoki”加入弃牌堆。"
+    ]
+  },
+  "MemoryRos": {
+    "NAME": "Roselia的记忆",
+    "DESCRIPTIONS": [
+      "获得时，将两张“Roselia”加入弃牌堆。"
+    ]
+  },
+  "MemoryDust": {
+    "NAME": "打灰爱音的记忆",
+    "DESCRIPTIONS": [
+      "回合结束时，将1张受伤加入弃牌堆。"
+    ]
+  },
+  "MemoryKaren": {
+    "NAME": "少女歌剧的记忆",
+    "DESCRIPTIONS": [
+      "获得时，将两张“下一个舞台”加入弃牌堆。"
+    ]
+  },
+  "MemoryInnerAnon": {
+    "NAME": "MyGO!!!!!的记忆",
+    "DESCRIPTIONS": [
+      "回合结束时，窃取你的2点闪耀。"
+    ]
+  },
+  "MemorySakiko": {
+    "NAME": "AveMujica的记忆",
+    "DESCRIPTIONS": [
+      "回合结束时，获得1层丰川祥子的觉悟和闪耀。"
+    ]
+  },
+  "MemoryAsh": {
+    "NAME": "InnerFavillae的记忆",
+    "DESCRIPTIONS": [
+      "回合结束时，获得3层人工制品。"
+    ]
+  },
+  "MemoryBanishment": {
+    "NAME": "时空潜行阵列",
+    "DESCRIPTIONS": [
+      "构想记忆完成时，将玩家的所有能力用卡牌存储起来。"
+    ]
+  },
+  "waPower": {
+    "NAME": "这是瓦",
+    "DESCRIPTIONS": [
+      "死亡时，给予丸山彩99层虚弱和易伤。"
+    ]
+  },
+  "MikaCharge": {
+    "NAME": "EX充能",
+    "DESCRIPTIONS": [
+      "当前有",
+      "层充能，充满后会释放EX技能：Kyrie Eleison。"
+    ]
+  },
+    "MikaSupport": {
+      "NAME": "Benedictio",
+      "DESCRIPTIONS": [
+        "在你累计使用 #b",
+        " 点费用的牌后，增加 #b",
+        " 张瑞士卷加入你的手牌。累计收到300点伤害后，也会加入 #b1 张瑞士卷到你的抽牌堆。"
+      ]
+
+  },
+  "MikaStartCharge": {
+    "NAME": "请集中注意力！",
+    "DESCRIPTIONS": [
+      "战斗开始时获得3技能COST"
+    ]
+  },
+  "AnonFlightPower": {
+    "NAME": "飞行",
+    "DESCRIPTIONS": [
+      "将所收到的攻击伤害降低 #b50% 。如果在一回合内被攻击伤害 #b",
+      " 次，就会取消。"
+    ]
+  },
+  "StarPower": {
+    "NAME": "星",
+    "DESCRIPTIONS": [
+      "造成的伤害增加 #b50% 。回合结束时获得 #b1 点 力量 。 每当你洗牌时就会交换。"
+    ]
+  },
+  "MoonPower": {
+    "NAME": "月",
+    "DESCRIPTIONS": [
+      "收到的攻击伤害降低 #b50% 。回合结束时获得 #b20 格挡 恢复 #b10 点生命值。 每当你洗牌时就会交换。"
+    ]
+  },
+  "SunPower": {
+    "NAME": "日",
+    "DESCRIPTIONS": [
+      "每个回合开始时，将一张计算下注加入手牌。"
     ]
   }
 }

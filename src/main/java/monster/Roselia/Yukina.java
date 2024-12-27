@@ -1,5 +1,6 @@
 package monster.Roselia;
 
+import Mod.AnonMod;
 import actions.RemoveNumDebuffsAction;
 import bossRoom.AbstractSpriterMonster;
 import bossRoom.crychic.Amoris;
@@ -40,6 +41,7 @@ import power.KiraKiraShining;
 import power.PrepareForLive;
 import power.Shining;
 import power.notLive;
+import utils.DreamCardRewards;
 import utils.Invoker;
 import vfx.CraneMindblastEffect;
 import vfx.animation.TimeLateEffect;
@@ -69,11 +71,11 @@ public class Yukina extends AbstractSpriterMonster {
         this.dialogY = 30.0F * Settings.scale;
         this.type = EnemyType.BOSS;
         this.img = new Texture("img/boss/Ros/Yukina.png");
-        this.damage.add(new DamageInfo(this, 7));
+        this.damage.add(new DamageInfo(this, 6));
         this.damage.add(new DamageInfo(this, 10));
         this.damage.add(new DamageInfo(this, 4));
         this.damage.add(new DamageInfo(this, 20));
-        this.damage.add(new DamageInfo(this, 50));
+        this.damage.add(new DamageInfo(this, 40));
     }
 
 
@@ -178,6 +180,7 @@ public class Yukina extends AbstractSpriterMonster {
         }
 
     public void usePreBattleAction() {
+        (AbstractDungeon.getCurrRoom()).rewards.add(new DreamCardRewards(22));
         AbstractScene TheEndingScene = new TheEndingScene();
         AbstractDungeon.scene= TheEndingScene;
         this.effect = new ChangeScene(ImageMaster.loadImage("img/boss/RosBG.png"));

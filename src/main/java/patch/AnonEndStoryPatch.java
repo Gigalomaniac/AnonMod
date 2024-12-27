@@ -1,12 +1,11 @@
 package patch;
 import actions.movie.CanStopMediaPlayerAction;
-import actions.movie.SimplePlayVideoEffect;
+import actions.movie.AnonEndingSimplePlayVideoEffect;
 import characters.char_Anon;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch2;
 import com.evacipated.cardcrawl.modthespire.lib.SpireReturn;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import pathes.LastWordPatch;
 
 import static utils.AnonSpireKit.addToBot;
 
@@ -18,12 +17,17 @@ public class AnonEndStoryPatch
         public static class AbstractPlayerPowerTipPatch
         {
             public static SpireReturn<Void> Prefix() {
-                if(AbstractDungeon.player instanceof char_Anon){
-                    AbstractDungeon.isScreenUp = true;
-                    AbstractDungeon.overlayMenu.proceedButton.hide();
-                    CardCrawlGame.fadeIn(1.0F);
-                    addToBot(new CanStopMediaPlayerAction(new SimplePlayVideoEffect("movie/mygo片尾曲.webm")));
-                    return SpireReturn.Return();
+                if(AbstractDungeon.player instanceof char_Anon) {
+                        AbstractDungeon.isScreenUp = true;
+                        AbstractDungeon.overlayMenu.proceedButton.hide();
+                        CardCrawlGame.fadeIn(1.0F);
+                    AbstractDungeon.scene.fadeOutAmbiance();
+                    CardCrawlGame.music.silenceBGM();
+                    CardCrawlGame.music.silenceBGMInstantly();
+                    CardCrawlGame.music.silenceTempBgmInstantly();
+                        addToBot(new CanStopMediaPlayerAction(new AnonEndingSimplePlayVideoEffect("movie/mygo片尾曲.webm")));
+                        return SpireReturn.Return();
+
                 }
                 return SpireReturn.Continue();
             } }

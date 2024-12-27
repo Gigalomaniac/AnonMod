@@ -9,7 +9,9 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.esotericsoftware.spine.AnimationState;
+import com.esotericsoftware.spine.SkeletonRendererDebug;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
@@ -35,7 +37,7 @@ import java.util.Iterator;
 
 public  class soyorin extends AbstractSpriterMonster {
 
-    public static final String ID = "Nina";
+    public static final String ID = "soyorin";
     private static MonsterStrings monsterStrings = null;
     public static String NAME;
     public static String[] MOVES;
@@ -55,13 +57,29 @@ public  class soyorin extends AbstractSpriterMonster {
         MOVES = monsterStrings.MOVES;
         DIALOG = monsterStrings.DIALOG;
     }
+    private TextureAtlas atlas;
+    private com.esotericsoftware.spine38.SkeletonJson newjson;
+    private com.esotericsoftware.spine38.SkeletonData data;
+    private com.esotericsoftware.spine38.AnimationStateData stateData;
+    private com.esotericsoftware.spine38.Skeleton skeleton;
+    private com.esotericsoftware.spine38.AnimationState state;
+    private SkeletonRendererDebug debug;
+    private com.esotericsoftware.spine38.SkeletonRenderer renderer;
     public soyorin() {
-        super(NAME, "Nina", 100, 0.0F, -40.0F, 300.0F, 520.0F, null, 00.0F, -50.0F);
-        loadAnimation("img/soyo_benben/daochu/Player_17198.38.atlas", "img/soyo_benben/daochu/Player_17198.38.json", 1F);
-        AnimationState.TrackEntry e = this.state.setAnimation(0, "die", true);
-        e.setTimeScale(0.5F);
-//        loadAnimation("img/soyo_benben/better/Act3Boss/Kirsten.atlas", "img/soyo_benben/better/Act3Boss/Kirsten.json", 0.55F);
-//        AnimationState.TrackEntry e = this.state.setAnimation(0, "Except", true);
+        super(NAME, "soyorin", 100, 0.0F, -40.0F, 300.0F, 520.0F, null, 00.0F, -50.0F);
+        this.atlas = new TextureAtlas("img/soyo_benben/Player_17198.atlas");
+        this.newjson = new com.esotericsoftware.spine38.SkeletonJson(this.atlas);
+        this.newjson.setScale(Settings.renderScale * 0.7F);
+        this.data = newjson.readSkeletonData(Gdx.files.internal("img/soyo_benben/Player_17198.json"));
+        this.skeleton = new com.esotericsoftware.spine38.Skeleton(data);
+        this.skeleton.setColor(Color.WHITE.cpy());
+        this.stateData = new com.esotericsoftware.spine38.AnimationStateData(data);
+        this.state = new com.esotericsoftware.spine38.AnimationState(this.stateData);
+        this.state.addAnimation(0, "die", false, 0);
+//        this.state.addAnimation(0, "Idle_01", true, 0);
+//        loadAnimation("img/soyo_benben/Player_17198.atlas", "img/soyo_benben/Player_17198.atlas.png", 0.55F);
+//        AnimationState.TrackEntry e = this.state.setAnimation(0, "die", true);
+//
 //        e.setTimeScale(1.5F);
         this.dialogX = -90.0F * Settings.scale;
         this.dialogY = 10.0F * Settings.scale;

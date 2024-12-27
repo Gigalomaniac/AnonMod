@@ -4,6 +4,7 @@ package bossRoom;
 import BandFriends.crychic.MutsumiCrychic;
 import BandFriends.crychic.SoyoCrychic;
 import BandFriends.crychic.TomoriCrychic;
+import Mod.AnonMod;
 import basemod.ReflectionHacks;
 import bossRoom.crychic.*;
 import bossRoom.effect.*;
@@ -297,6 +298,7 @@ public class CrychicSide extends AbstractSpriterMonster  {
 
     private ChangeRainScene raineffect;
     public void usePreBattleAction() {
+        AnonMod.saves.setString("Stage4","Sakiko");
         this.raineffect = new ChangeRainScene(ImageMaster.loadImage("img/boss/bg00918 (1).png"));
         AbstractDungeon.effectList.add(new LatterEffect(() -> {
             AbstractDungeon.effectsQueue.add(this.raineffect);
